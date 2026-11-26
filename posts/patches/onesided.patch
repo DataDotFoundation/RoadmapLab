@@ -1,0 +1,41 @@
+diff --git a/TauCetiRoadmap/ShortGRH/OneSidedPrimeSumBoundsAndAdmissibleData/README.md b/TauCetiRoadmap/ShortGRH/OneSidedPrimeSumBoundsAndAdmissibleData/README.md
+index 25b979e4..6948c5f3 100644
+--- a/TauCetiRoadmap/ShortGRH/OneSidedPrimeSumBoundsAndAdmissibleData/README.md
++++ b/TauCetiRoadmap/ShortGRH/OneSidedPrimeSumBoundsAndAdmissibleData/README.md
+@@ -163,6 +163,12 @@ Let `q₀ ≥ 1` with `8 | q₀`, let `d₀ ≡ 7 (mod 8)` be prime to `q₀`, a
+ `d ≡ d₀ (mod q₀)` one has `R_{q₀}^{(d)}(x) ≤ x^{β−1}` for all large real `x`. Then `L(ρ, ψ) ≠ 0` for every Dirichlet
+ character `ψ` modulo `q₀` and every `ρ ≠ 1` with `Re ρ > β`.
+ 
++The hypothesis may equally carry a constant: for each such `d`, `R_{q₀}^{(d)}(x) ≤ A·x^{β−1}` for some real `A` and all
++large `x`. The two statements are equivalent, because for `β < β′ < Re ρ` one has `A·x^{β−1} ≤ x^{β′−1}` for all large
++`x`; the form with a constant is the one in which the bounds of 6.2 arise. The continuation of [ShortProof]
++(References) proves this form, `New/Reduction/Zeros/Criterion` (`New.LFunction_ne_zero_of_primeRemainder_le`), at
++commit `61d870d`.
++
+ *Needs:* 0.1; RiemannHypothesisStatementsAndConsequences §8.4a (the transform of a Riesz sum and its poles at zeros);
+ PositivityOfDirichletSeriesWithKernels §6.4 (Landau's theorem in one-sided form); ZeroFreeRegionsAndPrimesInShortWindows §3.5 (for `β > 1/2`,
+ real `H` and an invertible class modulo `N` all of whose primes are `≡ 7 (mod 8)` and prime to `N`, some prime `d` of
+@@ -986,6 +992,11 @@ Let `P = (q₀, d)` be parameters and `R_q = R_q^{(d)}`.
+ - (b) For `0 < ε < 1/100` and every large integer `x`: `R_{q₀}(x) ≤ (64φ(q₀) + 3)x^{−1/2+6ε}`.
+ - (c) For every `ε > 0` and all large real `y`: `R_{q₀}(y) ≤ y^{−1/2+ε}`.
+ 
++(c) is equivalent to the same bound with a constant factor, `R_{q₀}(y) ≤ C·y^{−1/2+ε}` for some `C` and all large `y`:
++apply that bound with `ε/2` in place of `ε`, and use `C·y^{−ε/2} ≤ 1` for large `y`. The continuation of [ShortProof]
++(References) proves (c) with the constant `C = 128φ(q₀) + 32`, `New/Reduction/OneSidedBound`
++(`New.eventually_primeRemainder_le_mul_rpow`), at commit `61d870d`.
++
+ *Needs:* 0.1, 2.1, 3.3, 3.7, 4.2, 6.1; AnalyticNumberTheoryPartI §0.32 (the Siegel–Walfisz theorem);
+ RieszSumsOverPrimesAndExceptionalZeros §1.4i (the prime number theorem for the Riesz remainder of a character);
+ RiemannHypothesisStatementsAndConsequences §8.4a (the transform of a Riesz sum, for the value of the constant).
+@@ -1121,7 +1132,10 @@ statements are in `Statements`
+ - [ShortProof] The shorter Lean formalization of the Riemann hypothesis and of the Riemann hypothesis for Dirichlet
+   L-functions, a rewriting by the same method of the formal proof that the family RiemannHypothesisForDirichletLFunctions
+   states: the folder `grh` of github.com/lsernau/grh-lean at commit `72fead1`; paths are relative to its directory
+-  `src/`. It is the reference of every target whose origin is particular to this proof.
++  `src/`. It is the reference of every target whose origin is particular to this proof. Its continuation is the
++  branch `main` of github.com/leanprover-community/riemann-hypothesis, which holds that folder from commit `47fcde5`
++  on (paths relative to `src/`); 0.2 and 6.2 cite it at commit `61d870d`. RiemannHypothesisForDirichletLFunctions
++  cites the same repository in its earlier form, which that repository keeps on its branch `alpoge`.
+ - E. Landau, *Über einen Satz von Tschebyschef*, Math. Ann. 61 (1905), 527–550: Landau's theorem on Laplace and Mellin
+   transforms of functions bounded on one side (0.2, through PositivityOfDirichletSeriesWithKernels §6.4).
+ - F. A. Behrend, *On sets of integers which contain no three terms in arithmetical progression*, Proc. Nat. Acad. Sci.
