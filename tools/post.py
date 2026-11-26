@@ -88,6 +88,11 @@ def check(path):
             touched = re.findall(r"^\+\+\+ b/(\S+)", open(p, encoding="utf-8").read(), re.M)
             if any(t.endswith(".lean") for t in touched) and not meta.get("cert1", "").startswith("https://"):
                 errs.append("the patch touches Lean files: cert1 must link a passing cert1 run")
+            added = "\n".join(l[1:] for l in open(p, encoding="utf-8").read().splitlines()
+                               if l.startswith("+") and not l.startswith("+++"))
+            for rx, why in BLOCKERS:
+                if rx.search(added):
+                    errs.append(f"patch: {why}")
             for t in touched:
                 if not t.startswith("TauCetiRoadmap/"):
                     errs.append(f"the patch touches {t}, outside TauCetiRoadmap/ (CONTRIBUTING: a roadmap PR touches only its own directory)")
