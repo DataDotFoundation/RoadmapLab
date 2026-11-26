@@ -1,0 +1,102 @@
+name: post
+
+# One file under posts/ = one outgoing post to another repository (a TauCetiRoadmap PR, review or
+# comment), sent with the poster's token. The human act is the merge: a post is sent only when the
+# pull request that added or changed its file was merged into main by POST_APPROVER, and that PR's
+# own file list contains the file. A direct push to main posts nothing. Dry run unless the repo
+# variable POSTING is `on`. Each post is sent at most once: the target repository is checked first
+# (hidden marker or head branch), and reports/posted.tsv records what was sent.
+#
+# Repository settings:
+#   secret   POSTER_TOKEN       the poster's CLASSIC token with scope `public_repo` (in environment
+#                               `tauceti-post`). A fine-grained token cannot write to public repos the
+#                               user does not own (GitHub docs), so it cannot open the TauCetiRoadmap PR.
+# Merges must be plain merge or squash commits by the approver: rebase merges, auto-merge and the merge
+# queue are refused (they change the merge commit or merged_by).
+#   variable POST_APPROVER      GitHub login whose merge validates a post
+#   variable POST_FORK          owner/TauCetiRoadmap, the poster's fork (kind: pr)
+#   variable POST_AUTHOR_NAME, POST_AUTHOR_EMAIL   commit identity (kind: pr)
+#   variable POSTING            `on` to post for real; anything else is a dry run
+# Recommended: protect main (pull request required, no force push); optionally make the
+# `tauceti-post` environment require the user's approval as a second gate.
+
+on:
+  push:
+    branches: [main]
+    paths: ["posts/**"]
+  pull_request:
+    paths: ["posts/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: post-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    # In the RoadmapLab PR: show exactly what will be posted, and block on any gluing-check mark.
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - name: Render payloads and run the gluing check
+        run: |
+          files=$(git ls-files 'posts/*.md')
+          [ -z "$files" ] && { echo "no posts" >> "$GITHUB_STEP_SUMMARY"; exit 0; }
+          python3 -I tools/post.py render $files >> "$GITHUB_STEP_SUMMARY"
+          python3 -I tools/post.py check $files
+
+  post:
+    needs: render
+    if: github.event_name == 'push'
+    runs-on: ubuntu-24.04
+    environment: tauceti-post
+    permissions:
+      contents: write
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Validate and send (dry run unless POSTING=on)
+        env:
+          REPO_TOKEN: ${{ github.token }}
+          POSTER_TOKEN: ${{ secrets.POSTER_TOKEN }}
+          APPROVER: ${{ vars.POST_APPROVER }}
+          POST_FORK: ${{ vars.POST_FORK }}
+          POST_AUTHOR_NAME: ${{ vars.POST_AUTHOR_NAME }}
+          POST_AUTHOR_EMAIL: ${{ vars.POST_AUTHOR_EMAIL }}
+          POSTING: ${{ vars.POSTING }}
+        run: |
+          set -euo pipefail
+          # Nothing to post (e.g. only posts/.gitkeep or patches changed): succeed before requiring any setting.
+          files=$(python3 -I tools/post.py plan "${{ github.event.before }}" "${{ github.sha }}")
+          [ -z "$files" ] && { echo "nothing new to post"; exit 0; }
+          [ -n "$APPROVER" ] || { echo "::error::repo variable POST_APPROVER is not set; nothing is posted"; exit 1; }
+          for f in $files; do
+            # The human act: this push is the merge of a PR, by the approver, that touches this file.
+            GH_TOKEN="$REPO_TOKEN" python3 -I tools/post.py verify-merge "${{ github.sha }}" "$APPROVER" "$f"
+            if [ "$POSTING" = on ]; then
+              [ -n "$POSTER_TOKEN" ] || { echo "::error::secret POSTER_TOKEN is not set"; exit 1; }
+              GH_TOKEN="$POSTER_TOKEN" python3 -I tools/post.py send "$f"
+            else
+              python3 -I tools/post.py send "$f" --dry-run
+              [ -z "$POSTER_TOKEN" ] || GH_TOKEN="$POSTER_TOKEN" python3 -I tools/post.py probe || echo "::warning::the poster's token cannot read the target"
+            fi
+          done
+
+      - name: Record what was posted
+        if: vars.POSTING == 'on'
+        run: |
+          set -euo pipefail
+          [ -f reports/posted.tsv ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/posted.tsv
+          git diff --cached --quiet && exit 0
+          git commit --quiet -m "post: record posted file(s)"
+          for i in 1 2 3; do git pull --quiet --rebase origin main && git push --quiet && exit 0; sleep 5; done
+          echo "::error::could not record the ledger; the remote markers still prevent re-posting"; exit 1
