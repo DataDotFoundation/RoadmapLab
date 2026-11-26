@@ -40,7 +40,7 @@ jobs:
     # In the RoadmapLab PR: show exactly what will be posted, and block on any gluing-check mark.
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Render payloads and run the gluing check
         run: |
           files=$(git ls-files 'posts/*.md')
@@ -57,7 +57,7 @@ jobs:
       contents: write
       pull-requests: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -72,9 +72,10 @@ jobs:
           POSTING: ${{ vars.POSTING }}
         run: |
           set -euo pipefail
-          [ -n "$APPROVER" ] || { echo "::error::repo variable POST_APPROVER is not set; nothing is posted"; exit 1; }
+          # Nothing to post (e.g. only posts/.gitkeep or patches changed): succeed before requiring any setting.
           files=$(python3 -I tools/post.py plan "${{ github.event.before }}" "${{ github.sha }}")
           [ -z "$files" ] && { echo "nothing new to post"; exit 0; }
+          [ -n "$APPROVER" ] || { echo "::error::repo variable POST_APPROVER is not set; nothing is posted"; exit 1; }
           for f in $files; do
             # The human act: this push is the merge of a PR, by the approver, that touches this file.
             GH_TOKEN="$REPO_TOKEN" python3 -I tools/post.py verify-merge "${{ github.sha }}" "$APPROVER" "$f"
