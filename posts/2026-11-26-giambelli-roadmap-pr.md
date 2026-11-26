@@ -8,7 +8,7 @@ patch: posts/patches/giambelli.patch
 label_comment: awaiting-review
 cert1:
 ---
-TODO-USER: read the roadmap and this description carefully and rewrite them in your own words; resolve the two TODO-USER lines in the README (Lean Pool status in 2.2; Dehaye 2008 Proposition 8.1 in the last section); push the branch to your fork, run RoadmapLab's cert1 workflow on it and paste the run URL into `cert1:` above; then delete this line.
+TODO-USER: read the roadmap and this description carefully and rewrite them in your own words; resolve the TODO-USER line in the README (Lean Pool status in 2.2); push the branch to your fork, run RoadmapLab's cert1 workflow on it and paste the run URL into `cert1:` above; then delete this line.
 
 <!-- roadmap-summary -->
 **What this roadmap builds.** Frobenius coordinates and the Durfee rank of a Young diagram; the hook formula and Giambelli's identity `s_λ = det(s_{(a_i|b_j)})` for Tau Ceti's `diagramSchurPoly` and `schurPoly`, consuming Tau Ceti's Jacobi–Trudi and dual Jacobi–Trudi identities; the vanishing of `[p_μ] s_λ` for `ℓ(μ) < d(λ)` and the hook values at a single power sum, from Tau Ceti's Murnaghan–Nakayama rule. Layer 3 states, as theorems to prove, a dictionary for the monotone paths through two grids of DeterminantsOfThetaLiftChains §5.1: enclosed squares form a Young diagram in the `m × m` box, the diagonal node is its Durfee rank, and orders of the `m²` turns are standard tableaux of shape `(m^m)`.

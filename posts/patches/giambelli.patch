@@ -1,9 +1,9 @@
 diff --git a/TauCetiRoadmap/GiambelliAndThetaLiftGrids/README.md b/TauCetiRoadmap/GiambelliAndThetaLiftGrids/README.md
 new file mode 100644
-index 00000000..adbbda0f
+index 00000000..68495eeb
 --- /dev/null
 +++ b/TauCetiRoadmap/GiambelliAndThetaLiftGrids/README.md
-@@ -0,0 +1,201 @@
+@@ -0,0 +1,200 @@
 +# Roadmap: Giambelli's identity, Frobenius coordinates and the grids of the chain of lifts
 +
 +**Summary.** This roadmap builds the Frobenius coordinates of a Young diagram, and Giambelli's identity for Tau Ceti's Schur polynomials:
@@ -185,7 +185,6 @@ index 00000000..adbbda0f
 +- **If the test succeeds**: whether the `τ` family is a decomposable wedge (a point of a Grassmannian), and whether its pairing recovers the Gram determinant of 3.3.
 +- **If it fails**: a weaker formulation, on determinant lines or with weighted paths.
 +- **Deformed Schur functions as inputs.** Dehaye (2008, §8.1, Proposition 8.1) proves a Giambelli formula for a deformation of Schur functions in Macdonald's ninth variation. Its determinant has Frobenius-coordinate entries `Γ(R − b_j)/Γ(R + a_i + 1) · 1/(a_i! b_j! (1 + a_i + b_j))`. Row and column factors separate from a Cauchy kernel, which is the pairing of monomials on `[0, 1]`.
-+  TODO-USER: confirm this formula and its hypotheses against the paper; it is quoted, not re-read.
 +  Dehaye (2011) studies the operator `exp(Σ_{n≥1} n ∂_{p_n} ∂_{p̃_n})` coupling two alphabets. Its role relative to the Cauchy kernel and to paired theta sectors is an open question.
 +- **Limit shapes.** Plancherel growth, the Vershik–Kerov–Logan–Shepp curve and Airy (Tracy–Widom) scaling at the edge suggest questions about long sweeps of the grid (3.2). None of these features has been shown in the grids.
 +- **The size of the grid.** The proof takes grids of side `m ≍ √x` at the cut-off `x`, in its admissible data, and its main inequality compares `m · totalRemainder` with `f · a · (log b)^5`. Which constraints prevent a larger `m` is a question for the proof's own roadmaps (OneSidedPrimeSumBoundsAndAdmissibleData). Nothing here explains the exponent, and no local (per-cell) form of the global error bounds is claimed.
