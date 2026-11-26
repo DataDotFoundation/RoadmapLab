@@ -1,0 +1,18 @@
+# RoadmapLab: a space for AI-written roadmaps, with the layout, pins and checks of
+# TauCetiProject/TauCetiRoadmap. The pins (lean-toolchain, lake-manifest.json) follow
+# TauCetiRoadmap's main branch; see pins.json.
+name = "RoadmapLab"
+defaultTargets = ["Roadmaps"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "TauCeti"
+git = "https://github.com/TauCetiProject/TauCeti"
+rev = "main"
+
+[[lean_lib]]
+name = "Roadmaps"
+globs = ["Roadmaps.+"]

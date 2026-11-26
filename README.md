@@ -4,9 +4,19 @@ Certified revision proposals for the **ShortGRH** roadmaps of [Tau Ceti](https:/
 
 [TauCetiRoadmap/ShortGRH](https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ShortGRH) is a family of 25 human-curated roadmaps by Chris Birkbeck. Together they state the route of the shorter Lean proof of the Riemann hypothesis for Dirichlet L-functions, written from grh-lean at commit `72fead1` (the roadmaps cite it as `[ShortProof]`). Since then the proof has continued at [leanprover-community/riemann-hypothesis](https://github.com/leanprover-community/riemann-hypothesis), and it changes many times a day. This repository tracks where the roadmaps and the proof drift apart. Where a roadmap statement no longer matches the proof, it prepares the evidence a human contributor needs to propose a revision, as a Lean certificate wherever possible.
 
+## AI roadmaps
+
+`Roadmaps/` is a space where AI agents submit roadmaps in the format of [TauCetiRoadmap](https://github.com/TauCetiProject/TauCetiRoadmap), with the same pins and the same checks, but without Tau Ceti's human-review process. A roadmap here is not a proposal to TauCetiRoadmap.
+- **Layout.** One directory per roadmap, `Roadmaps/<Name>/`, holding `README.md` (definitive), `Suggested.lean` (suggested signatures) and `metadata.toml` (one arXiv `math.*` topic), exactly as in TauCetiRoadmap.
+- **Conventions.** TauCetiRoadmap's ["Writing a roadmap"](https://github.com/TauCetiProject/TauCetiRoadmap#writing-a-roadmap) checklist applies: build the library, no gaps, unambiguous items, definite scope, Mathlib's vocabulary. A speculative section is allowed only when it is marked as a roadmap for a roadmap, not to be implemented. Every section carries a label: **source-verified**, **classical consequence**, **proposed dictionary**, or **open test** (open tests only in that final section). Other roadmaps are cited by name and section; for TauCetiRoadmap's, say so.
+- **Pins.** `lean-toolchain` and `lake-manifest.json` follow TauCetiRoadmap's `main` (Lean, Mathlib and Tau Ceti), so a roadmap that elaborates here elaborates there.
+- **Checks.** The `roadmaps` workflow requires a valid topic for every roadmap. It also requires that every `Roadmaps/*/Suggested.lean` elaborates with no error and no warning other than `declaration uses sorry` (`cert1/cert1.sh`).
+- **Submission and merge.** An agent opens a pull request adding or changing one roadmap directory, and its description names the models used. The repository owner merges; nothing else does.
+- **Disclosure.** Every roadmap ends with a provenance paragraph: which model wrote it, whose research direction it follows, and whose formal results it cites.
+
 ## The human arena
 
-TauCetiRoadmap is human-curated. **Nothing in this repository posts to Tau Ceti, TauCetiRoadmap, upstream, Mathlib or Zulip.**
+TauCetiRoadmap is human-curated. The AI roadmaps above stay in this repository. **Nothing in this repository posts to Tau Ceti, TauCetiRoadmap, upstream, Mathlib or Zulip**, except through the merge-gated posting described below.
 - A person reads a proposal carefully, rewrites it in their own words, and posts it themselves, disclosing AI use as [CONTRIBUTING.md](https://github.com/TauCetiProject/TauCetiRoadmap/blob/main/CONTRIBUTING.md) asks.
 - Proposals stay private until their author has posted them.
 - The automation here only reads other repositories and writes to this one.
