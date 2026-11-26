@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # Cert 1: every ShortGRH Suggested.lean of a TauCetiRoadmap checkout elaborates at that checkout's
 # pins, with no error and no warning other than `declaration uses sorry`.
-# usage: cert1/cert1.sh TAUCETIROADMAP_CHECKOUT OUT_DIR
+# usage: cert1/cert1.sh CHECKOUT OUT_DIR [GLOB]   (GLOB default: TauCetiRoadmap/ShortGRH/*/Suggested.lean)
 # Needs elan. Runs `lake exe cache get` (the Mathlib cache) in the checkout, then `lake env lean` on
 # each file. Writes OUT_DIR/<roadmap>.log and OUT_DIR/summary.md; exits 1 if any file fails.
 set -uo pipefail
-repo=$(cd "$1" && pwd); out=$(mkdir -p "$2" && cd "$2" && pwd)
+repo=$(cd "$1" && pwd); out=$(mkdir -p "$2" && cd "$2" && pwd); glob=${3:-TauCetiRoadmap/ShortGRH/*/Suggested.lean}
 cd "$repo"
 lake exe cache get > "$out/cache-get.log" 2>&1 || { echo "lake exe cache get failed"; tail -20 "$out/cache-get.log"; exit 1; }
 commit=$(git rev-parse --short HEAD 2>/dev/null || echo unknown)
 {
-  echo "# Cert 1: ShortGRH Suggested.lean at TauCetiRoadmap \`$commit\`"
+  echo "# Cert 1: $glob at \`$commit\`"
   echo
   echo "Toolchain \`$(cat lean-toolchain)\`. A file passes if \`lake env lean\` exits 0 and prints no error and no warning other than \`declaration uses sorry\`."
   echo
@@ -18,7 +18,7 @@ commit=$(git rev-parse --short HEAD 2>/dev/null || echo unknown)
   echo "|---|---|---|---|"
 } > "$out/summary.md"
 fail=0
-for f in TauCetiRoadmap/ShortGRH/*/Suggested.lean; do
+for f in $glob; do
   rm_=$(basename "$(dirname "$f")")
   log="$out/$rm_.log"
   lake env lean "$f" > "$log" 2>&1; rc=$?

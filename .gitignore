@@ -7,3 +7,6 @@ CLAUDE.md
 certs/cert1/*.log
 __pycache__/
 *.pyc
+
+# Lake build output
+.lake/
