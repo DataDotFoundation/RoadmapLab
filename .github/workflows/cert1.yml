@@ -1,0 +1,50 @@
+name: cert1
+
+# Cert 1: every ShortGRH Suggested.lean elaborates at the roadmap's own pins, with no error and no
+# warning other than `declaration uses sorry`. Weekly on TauCetiRoadmap main; on demand for any
+# public repository and ref (for example a revision branch on a fork, before it is proposed).
+
+on:
+  schedule:
+    - cron: "41 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "Repository to check (owner/name)"
+        default: "TauCetiProject/TauCetiRoadmap"
+      ref:
+        description: "Branch, tag or commit"
+        default: "main"
+
+permissions:
+  contents: read
+
+jobs:
+  cert1:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ inputs.repo || 'TauCetiProject/TauCetiRoadmap' }}
+          ref: ${{ inputs.ref || 'main' }}
+          path: roadmap
+
+      - name: Install elan
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Elaborate every ShortGRH Suggested.lean
+        run: bash cert1/cert1.sh roadmap "$RUNNER_TEMP/cert1"
+
+      - name: Summary
+        if: always()
+        run: cat "$RUNNER_TEMP/cert1/summary.md" >> "$GITHUB_STEP_SUMMARY" || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cert1-logs
+          path: ${{ runner.temp }}/cert1

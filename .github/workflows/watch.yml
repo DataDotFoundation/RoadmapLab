@@ -1,0 +1,79 @@
+name: watch
+
+# Daily: which declarations cited by the ShortGRH roadmaps no longer resolve upstream.
+# Commits reports/latest.{md,json}; opens or updates one issue (label `drift`) when names newly go
+# missing. Read-only towards other repositories: it clones them, it never writes to them.
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sparse clones (roadmap family, upstream head, upstream at 72fead1)
+        run: |
+          set -euo pipefail
+          git clone --quiet --depth 1 --filter=blob:none --sparse \
+            https://github.com/TauCetiProject/TauCetiRoadmap.git "$RUNNER_TEMP/roadmap"
+          git -C "$RUNNER_TEMP/roadmap" sparse-checkout set TauCetiRoadmap/ShortGRH
+          git clone --quiet --depth 1 --filter=blob:none --sparse \
+            https://github.com/leanprover-community/riemann-hypothesis.git "$RUNNER_TEMP/up"
+          git -C "$RUNNER_TEMP/up" sparse-checkout set src
+          start=$(jq -r .shortproof.commit pins.json)
+          git -C "$RUNNER_TEMP/up" fetch --quiet --depth 1 --filter=blob:none origin "$start"
+          git -C "$RUNNER_TEMP/up" worktree add --quiet --no-checkout "$RUNNER_TEMP/up72" FETCH_HEAD
+          git -C "$RUNNER_TEMP/up72" sparse-checkout set grh/src
+          git -C "$RUNNER_TEMP/up72" checkout --quiet
+          echo "ROADMAP_SHA=$(git -C "$RUNNER_TEMP/roadmap" rev-parse --short=8 HEAD)" >> "$GITHUB_ENV"
+          echo "UPSTREAM_SHA=$(git -C "$RUNNER_TEMP/up" rev-parse --short=8 HEAD)" >> "$GITHUB_ENV"
+
+      - name: Run the watch
+        id: run
+        run: |
+          set -uo pipefail
+          rc=0
+          python3 -I watch/watch.py "$RUNNER_TEMP/roadmap/TauCetiRoadmap/ShortGRH" "$RUNNER_TEMP/up/src" \
+            "$RUNNER_TEMP/out" --src72 "$RUNNER_TEMP/up72/grh/src" --baseline reports/latest.json \
+            --meta "roadmap=$ROADMAP_SHA" --meta "upstream=$UPSTREAM_SHA" || rc=$?
+          [ "$rc" -eq 0 ] || [ "$rc" -eq 3 ] || exit "$rc"
+          echo "new_drift=$([ "$rc" -eq 3 ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+          cp "$RUNNER_TEMP/out/latest.md" "$RUNNER_TEMP/out/latest.json" reports/
+
+      - name: Commit the report
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/latest.md reports/latest.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit --quiet -m "watch: roadmap $ROADMAP_SHA, upstream $UPSTREAM_SHA"
+          git push --quiet
+
+      - name: Open or update the drift issue
+        if: steps.run.outputs.new_drift == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh label create drift --color B60205 --description "ShortGRH citations missing upstream" --force >/dev/null
+          body="$RUNNER_TEMP/body.md"
+          { echo "Upstream \`$UPSTREAM_SHA\`, roadmap \`$ROADMAP_SHA\`. Full report: https://github.com/${{ github.repository }}/blob/main/reports/latest.md"
+            echo
+            sed -n '/^## Since the previous run/,/^## Missing at upstream head/p' reports/latest.md | sed '$d'
+          } > "$body"
+          n=$(gh issue list --label drift --state open --json number --jq '.[0].number // empty')
+          if [ -n "$n" ]; then gh issue comment "$n" --body-file "$body"
+          else gh issue create --title "ShortGRH citations newly missing upstream" --label drift --body-file "$body"; fi

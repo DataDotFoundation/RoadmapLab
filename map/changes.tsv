@@ -1,0 +1,205 @@
+# name	kind	detail
+New.AutChar.exists_pair_heckeCoeff_ne	cosmetic	.heckeChar->.character
+New.CMLattice.IsComplexMultiplicationData	substantive	-[𝔠 : Ideal ( 𝓞 ( QuadField d ) ) ) (] +[]
+New.CMLattice.complex_multiplication_theta	substantive	-[𝔠 : Ideal ( 𝓞 ( QuadField d ) ) ) (] +[] / -[𝔠] +[]
+New.CMLattice.exists_polynomial_of_even	substantive	-[h_int] +[h_le] / -[C.HasIntegralValues] +[∀ z : ℂ , ‖ ιₚ ( f z ) ‖ ≤ C.naiveHeight z ^] / -[f] +[]
+New.CMLattice.exists_rescale_eq_theta_pow_mul	substantive	-[hG_int] +[hG_le] / -[C'.HasIntegralValues] +[∀ w : ℂ , ‖ ιₚ] / -[p] +[G w ) ‖ ≤ C'.naiveHeight w ^ n ) : ∃ u ∈ C.integralSeriesRing , ( taylorVia ιₚ G ) .rescale ( ιₚ a ) = ( taylorVia ιₚ C.θ ^ N ) ^ n * u]
+New.CMLattice.exists_taylorVia_eq_theta_pow_mul	substantive	-[h_int] +[h_le] / -[C.HasIntegralValues] +[∀ z : ℂ , ‖ ιₚ ( f z ) ‖ ≤ C.naiveHeight z ^] / -[f] +[]
+New.CMLattice.hasIntegralValues_monomialSection	drop-inst	[PrimeSevenModEight d]
+New.CMLattice.mem_span_monomialSection	substantive	-[h_int] +[h_le] / -[C.HasIntegralValues] +[∀ z : ℂ , ‖ ιₚ ( f z ) ‖ ≤ C.naiveHeight z ^] / -[f] +[]
+New.CMLattice.norm_scaledDisc_le_one	substantive	-[( ∀ b : ℂ , b = quadGen d ∨ b = conj ( quadGen d ) → ‖ ι ( ( D 𝒞 ) .scaledDisc ( b * ( D 𝒞 ) .t ) ) ‖ ≤ 1 ) ∧] +[]
+New.CMLattice.subst_mem_multiSeriesRing	drop-inst	[PrimeSevenModEight d]
+New.Data.CriticalPair.norm_sq_trivialLift_eq_sum	cosmetic	ϑ'.toAutChar.1->ϑ'.toAutChar.val
+New.Data.IsChainDatum.gluedTensor_eq_sum_translates	substantive	-[(] +[] / -[) ∧ Fintype.card D.GluingClasses ≤ D.N ^ ( D.f * D.m * D.n D.m / 2 ) ∧ ∀ y : D.GluingClasses , gluingTuple y ∈ D.supportedTranslations D.N] +[]
+New.Data.IsMarked.sum_neighborExponent_add_neighborCharge_le	cosmetic	.1->.val; h.1->h.val
+New.Data.exists_transfersPeriods_off_diagonal	substantive	-[(] +[] / -[] +[Γ] / -[)] +[, Γ'.Turn] / -[q : GridPath 0 D.m a] +[bif z then]
+New.Data.finrank_principalForms_spaceW	substantive	-[] +[D.filling.besselDegree *] / -[* ∏ v : D.Φ , ( toHCParam 1 ( D.paramW v ) ) .formalDegree] +[]
+New.Data.gaugeLe_chainCombination	substantive	-[: D.Translations] +[∈ Ψ.support]
+New.Data.heckeAlgebra	substantive	-[( ∀ { s : D.RowIndex → ℤˣ } ( V : Space D.E D.RowIndex s ) , End ℂ ( D.principalForms V ) )] +[D.OperatorFamily]
+New.Data.inner_poincareAt	cosmetic	r.1->r.val; y.1->y.val; φ.1->φ.val
+New.Data.integral_mul_poincareAt	cosmetic	.1->.val; q.out.1->q.out.val; r.1->r.val; φ.1->φ.val
+New.Data.isEquivariant_sourceFn	cosmetic	φ.1->φ.val
+New.Data.isLargeDegree_of_le_card	drop-inst	[NeZero N]
+New.Data.le_of_hasLogBound	substantive	-[] +[( h_exp] / -[F ≤ G] +[l < l']
+New.Data.normalizedPoincare_mem_integralVectors	cosmetic	ι.1->ι.prime
+New.Data.pointForm_mem_integralForms	drop-inst	[WeilData E]
+New.Data.three_mul_divisorConstant_le	drop-inst	[NeZero N]
+New.Data.unfoldStage	drop-inst	[Fintype X]
+New.Data.unfoldStage_update	drop-inst	[Fintype X]
+New.DescentPair.exists_smul_mem_integralForms_maximal	drop-inst	[WeilData E]
+New.Exchange.ReadsAt.isTargetBounded	cosmetic	
+New.Exchange.apply_eq_zero_of_forall_fixed_eq_zero	drop-inst	[T2Space G]
+New.Exchange.exchange_of_matches	substantive	-[] +[n₁ p : Type } [Fintype n₁] [DecidableEq n₁] [Fintype p] [DecidableEq p] [Nonempty p] { s₁ : n₁ → ℤˣ } ( X : Space E n₁ s₁ ) ( A : ( hyperbolicSum Unit X ) .Splitting W p ) [IsBaseAdapted A] {] / -[s] +[s₁] / -[s] +[s₁] / -[] +[( h_planes : 1 + negCount s₁ = card p + negCount s )]
+New.Exchange.exists_equalRankThetaRatio_ne_zero	substantive	-[] +[X : Space E n s ) ( h_rank : card n = 2 * k + 2 * negCount s ) (] / -[1] +[s] / -[1] +[s] / -[( stdSpace E m )] +[X]
+New.Exchange.exists_equalRankThetaRatio_sq_eq	substantive	-[] +[p : Type } [Fintype p] [DecidableEq p] [Nonempty p] ( X : Space E n s ) ( A : ( hyperbolicSum Unit X ) .Splitting J p ) [IsBaseAdapted A] ( h_planes : 1 + negCount s = card p ) {] / -[( 1 : m → ℤˣ )] +[s] / -[( 1 : m → ℤˣ )] +[s] / -[J] +[X]
+New.Exchange.exists_planeConstantTerm_eq_integral	drop-inst	[IsBaseAdapted X]
+New.Exchange.exists_rowColExchangeIdentity_of_even_rank	substantive	-[] +[n₁ p : Type } [Fintype n₁] [DecidableEq n₁] [Fintype p] [DecidableEq p] [Nonempty p] { s₁ : n₁ → ℤˣ } ( X : Space E n₁ s₁ ) ( A : ( hyperbolicSum Unit X ) .Splitting W p ) [IsBaseAdapted A] {] / -[s] +[s₁] / -[s] +[s₁] / -[] +[( h_planes : 1 + negCount s₁ = card p + negCount s )]
+New.Exchange.thetaLarge_eq_smul_of_areMatched	substantive	-[] +[{ y |] / -[] +[y }]
+New.Filling.CharsAgree.hasCellRank_of_add_finrank_eq	drop-inst	[HasPrimitiveRoot5040 E]
+New.Filling.Fits.exists_integral_poincareSeries_eq_period	cosmetic	r.1->r.val; ψ.1->ψ.val
+New.Filling.HasCellRank.norm_sharedVectors_le	drop-inst	[HasPrimitiveRoot5040 E]
+New.Filling.HasIntegralLifts.isIntMatrix_linkForm	drop-inst	[Fintype σ]
+New.Filling.IsFillingData.enorm_normDensity_le_mul_lintegral_normFiberMeasure	cosmetic	¹.1->¹.val
+New.Filling.IsFillingData.exists_intermediateGroup_one_place	add-inst	[S.IsAdmissible]
+New.Filling.IsFillingData.siegel_sum_le_lintegral_sphere	cosmetic	¹.1.1->¹.val.val
+New.Filling.IsLatticeOfRank.tsum_submoduleIndex_inv_pow_le	cosmetic	M.1->M.val
+New.Filling.exists_big_cell_decomp	substantive	-[ᵉ (] +[] / -[) (] +[, ∃] / -[) (] +[, ∃] / -[) (] +[, ∃]
+New.Filling.exists_integral_big_cell_decomp	substantive	-[ᵉ (] +[] / -[) (] +[, ∃] / -[) (] +[, ∃] / -[) (] +[, ∃]
+New.Filling.exists_isAddFundamentalDomain_columnLattice	drop-inst	[S.IsAdmissible]
+New.Filling.exists_mem_classUnipotent₀_frameImage_mul_eq	drop-inst	[S.IsAdmissible]
+New.Filling.isIntegral_frameProducts	drop-inst	[S.IsAdmissible]
+New.Filling.sum_leadingMinor_eq_zero_le	drop-inst	[S.IsAdmissible]
+New.Filling.sum_not_isOpenElement_le	drop-inst	[S.IsAdmissible]
+New.Filling.sum_secondMoment_inScalarCoset_le	drop-inst	[HasPrimitiveRoot5040 E] [S.IsAdmissible]
+New.Filling.volume_integers_diff_intUnits_le	drop-inst	[WeilData E] [S.IsAdmissible]
+New.Floors.IntegralPlace.enorm_localDensity_le	cosmetic	b.1->b.val; ¹.1->¹.val
+New.Floors.IntegralPlace.exists_kernel_isDisintegration_le	substantive	-[( hψ : ∀ x : A , P.ψ ( x + star x ) = 1 )] +[] / -[1] +[3]
+New.Floors.IntegralPlace.integral_skewMeasure_eq_toReal_lintegral	cosmetic	b.1->b.val; ¹.1->¹.val
+New.Floors.IntegralPlace.setIntegral_eq_slab	cosmetic	b.1->b.val; u.1->u.val; ¹.1->¹.val
+New.Floors.Place.IsDisintegration.setLIntegral_slab	cosmetic	b.1->b.val; ¹.1->¹.val
+New.Floors.leFibreMeasure_dualVector	cosmetic	i.1->i.val
+New.Floors.leFibreMeasure_frameVector	cosmetic	i.1->i.val
+New.Floors.orbitPoint_mem_lastVectorQuadric	drop-inst	[IsHermitianUnit T.splitGram]
+New.GL.weylNormSq_mulVec_le_of_equivariant	substantive	-[( hκ₀ : ∀ τ : Φ , ∀ h ∈ Ioo 0 ( rankAt n τ ) , κ₀ τ h = κ' τ h + γ τ ( h + 1 ) )] +[]
+New.GaloisRep.Attached.exists_attached_of_mul_prod	drop-inst	[IsCMField E]
+New.GaloisRep.Attached.isLabelledAt	substantive	-[{ ℓ : ℕ } [ThePrime ℓ] [PadicIso ℓ] { E n : Type } [Nonempty n] [Field E] [CMType E] [EmbeddedNumberField E] [Fintype n] [DecidableEq n] { κ : Weight E } { f : Gf E n → WeylIndex n κ.1 → ℂ } { P : FinPlace E → ℂ [X] } { r : GalRep ℓ E n } { w : FinPlace E } { A : ValuationSubring Ω } { hw : star w ≠ w } { K : Type } [Field K] [Algebra (ResField w) K] { T : MulChar K ℂ } [IsFaithfulMulChar K T] {
+New.GaloisRep.Attached.isLabelledAt_one	substantive	-[] +[private] / -[{ ℓ : ℕ } [ThePrime ℓ] [PadicIso ℓ] { E n : Type } [Nonempty n] [Field E] [CMType E] [EmbeddedNumberField E] [Fintype n] [DecidableEq n] { κ : Weight E } { f : Gf E n → WeylIndex n κ.1 → ℂ } { P : FinPlace E → ℂ [X] } { r : GalRep ℓ E n } { w : FinPlace E } { A : ValuationSubring Ω } { hw : star w ≠ w } { K : Type } [Field K] [Algebra (ResField w) K] { T : MulChar K ℂ } [IsFaith
+New.GaloisRep.Attached.twistByChar_of_scaleRoots_eq	drop-inst	[IsCMField E]
+New.GaloisRep.IsTameExponent	cosmetic	def->structure
+New.GaloisRep.IsTameExponent.pow_apply_charName	add-inst	[IsFaithfulMulChar K T]
+New.GaloisRep.exists_attached_of_isApproximatingMonoid	drop-inst	[CMType E]
+New.GaloisRep.exists_attached_of_open_subgroups	drop-inst	[CMType E]
+New.GaloisRep.exists_central_eigenform	cosmetic	w.2->w.property
+New.GaloisRep.exists_continuous_isTraceNondeg_trace_eq_sum	drop-inst	[PadicIso ℓ]
+New.GaloisRep.exists_frame_extension	cosmetic	w.2->w.property
+New.GaloisRep.exists_isTameExponent	add-inst	[IsFaithfulMulChar K T]
+New.GaloisRep.jump_eq_zero_of_jump_eq_zero_of_trace_eq_one	drop-inst	[PadicIso ℓ]
+New.Grading.IsEquivariant.unipotent_mul_constTerm	cosmetic	r.1->r.val; u.1->u.val
+New.Grading.exists_equiv_agreeingTranslates	cosmetic	.1->.val; w.1->w.val
+New.Grading.exists_mapsTo_lattice_hasDegreeGe_sub_smul_stringMap	substantive	-[[Fintype X']] +[[Finite X] [Finite X']]
+New.Grading.exists_stringSum_eq	drop-inst	[Fintype X]
+New.Grading.hasSum_unfoldStep	cosmetic	r.1->r.val
+New.Grading.integral_besselGroup_unfold	cosmetic	r.1->r.val
+New.Grading.integral_tsum_classTerm_eq_zero	cosmetic	w.1->w.val
+New.Grading.smul_map_stringMapFin_latticePlus_le	substantive	-[[Fintype X']] +[[Finite X] [Finite X']]
+New.Grading.tsum_integral_eq_of_not_survives	cosmetic	w.1->w.val
+New.HCParam.HasLargeGap.exists_decay_bound	cosmetic	f.1.1->f.val.val
+New.IsInvariantDistribution.eq_zero_of_isImage	cosmetic	Ψ.1->Ψ.val
+New.IsJointlyInvariant.sum_chain_mem_nsmul	drop-inst	[WeilData E]
+New.IsSplitLevel.doubleLiftGluing_eq_sum_schrodingerOpAt	substantive	-[hP.schrodingerOpAt ( fun T : Matrix n' ( n ⊕ Unit ) ( LocProd P ) ↦ hP.lastColDatum z ( T * ( hP.diagN n S ) .val ) ) v ⊗ ₜ [ℂ] hP.schrodingerOpAt ( fun R : Matrix ( m ⊕ Unit ) n' ( LocProd P ) ↦ hP.charDatum z ( ( hP.diagN m] +[schrodingerOpAt] / -[\ S ) ) .val * R ) ) v'] +[]
+New.IsValuationPair.smith_normal_form	substantive	-[ᵉ (] +[] / -[) (] +[, ∃] / -[) (] +[, ∃] / -[)] +[]
+New.LFunction_ne_zero_of_primeRemainder_le	substantive	-[] +[∃ A : ℝ ,] / -[] +[A *]
+New.LevelPlaces.LevelForm.innerAt_heckePolyOnForms	drop-inst	[WeilData E]
+New.LevelPlaces.LevelForm.normSqAt_nonneg	drop-inst	[WeilData E]
+New.LevelPlaces.LevelForm.normSqAt_pos	drop-inst	[WeilData E]
+New.LevelPlaces.LevelForm.normSqAt_smul	drop-inst	[WeilData E]
+New.Lift.InClass.of_jointly_injective	substantive	-[[Fintype ι]] +[[Finite ι]]
+New.Lift.KummerChart.PairingSide.exists_relLength_le_and_isScaledCupCoboundary	substantive	-[11 *] +[] / -[] +[8 *] / -[] +[3 * (] / -[] +[)]
+New.Lift.KummerChart.dualDefect_eq_zero_and_dualDefect_le	substantive	-[11 * (] +[] / -[] +[8 *] / -[] +[* ( 3]
+New.Lift.hasCupExponent_of_isTameType	substantive	-[6 * (] +[η + max η] / -[+ η )] +[] / -[150] +[( 8] / -[(] +[]
+New.OscillatorPair.isDerivedAction_integratedRep	drop-inst	[Nonempty C]
+New.OscillatorPair.map_integratedRep_dsKernel	drop-inst	[Nonempty C]
+New.OscillatorPair.re_inner_integratedRep_pos	drop-inst	[Nonempty C]
+New.OscillatorPair.swap	drop-inst	[Nonempty R] [Nonempty C]
+New.Parameters.exists_isTightFrame_coprime	substantive	-[lemma] +[theorem] / -[] +[h ≤] / -[h : ℂ] +[P.d * P.q₁ s] / -[= P.dualResolutionFactor s] +[^ 6]
+New.Parameters.mem_raises_of_standardData	substantive	-[{ c : ℂ } { K : Subgroup ( Gf ( P.E s ) n ) } { a b : AutChar ( E P s ) } { ψ ψ' : ( w : FinPlace ( P.E s ) ) → MulChar ( ResField w ) ℂ } { ha : a.HasWeight ea ψ } { hb : b.HasWeight eb ψ' } { p : ℕ } [Fact p.Prime] [PadicPlace p] { hκ : IsLiftWeight n n' κ eb e }] +[]
+New.Parameters.mem_raises_predictedDivisibility	substantive	-[{ c : ℂ } { K : Subgroup ( Gf ( P.E s ) n ) } { a b : AutChar ( E P s ) } { ψ ψ' : ( w : FinPlace ( P.E s ) ) → MulChar ( ResField w ) ℂ } { ha : a.HasWeight ea ψ } { hb : b.HasWeight eb ψ' } { p : ℕ } [Fact p.Prime] [PadicPlace p] { hκ : IsLiftWeight n n' κ eb e }] +[]
+New.Parameters.omega_mem_raises_of_schurJet_le	substantive	-[{ c : ℂ } { K : Subgroup ( Gf ( P.E s ) n ) } { a b : AutChar ( E P s ) } { ψ ψ' : ( w : FinPlace ( P.E s ) ) → MulChar ( ResField w ) ℂ } { ha : a.HasWeight ea ψ } { hb : b.HasWeight eb ψ' } { p : ℕ } [Fact p.Prime] [PadicPlace p] { hκ : IsLiftWeight n n' κ eb e }] +[]
+New.Parameters.smul_mem_raises_of_dvd	substantive	-[{ c : ℂ } { K : Subgroup ( Gf ( P.E s ) n ) } { a b : AutChar ( E P s ) } { ψ ψ' : ( w : FinPlace ( P.E s ) ) → MulChar ( ResField w ) ℂ } { ha : a.HasWeight ea ψ } { hb : b.HasWeight eb ψ' } { p : ℕ } [Fact p.Prime] [PadicPlace p] { hκ : IsLiftWeight n n' κ eb e }] +[]
+New.Patching.BaseLevel.IsOffLevel	drop-inst	[ThePrime ℓ]
+New.Patching.BaseLevel.exists_deformed_norm_family	substantive	-[! [] ( Q.place j ) ) ( hN : IsGalRepTwist N a ) ( ha : ∀ j : J , a ( Q.frobData j ) .isPlaceOver.tameGenerator = 1 ) { H : J → EllAdicIntegers [X] } { t : ℕ } ( ht : t ≠ 0 ) ( δ' : D.heckeAlgebra Q.place ) ( h_chain : ∀ ( j : J ) ( x : D.Eigensystem Q.place ) , x.val ∈ D.Eigensystem ! [] → δ'.val x ≠ 0 → HasRootChain ( x.val.heckePolyAt ( Q.place j ) ) ( ( H j ) .map ( algebraMap EllAdicIntegers
+New.Patching.BaseLevel.exists_diagOp_mem_ellIntegralForms	substantive	-[! []] +[] / -[Q.place j ) ) ( hN : IsGalRepTwist N a ) ( ha : ∀ j : J , a ( Q.frobData j ) .isPlaceOver.tameGenerator = 1 ) { ι : Type } ( δ : ι → D.Eigensystem Q.place → PadicAlgCl] +[] / -[) { K : Type } [Fintype K] ( sel : K → ι ) ( liftValue : K → EllAdicIntegers ) ( 𝓧 : Set ( D.Eigensystem Q.place ) ) ( π : 𝓧 ) ( H : J → EllAdicIntegers [X] ) { t : ℕ } ( ht : t ≠ 0 ) ( h_int : ∀ ( x : D.Eig
+New.Patching.BaseLevel.exists_higman_operator	substantive	-[! []] +[] / -[Q.place j ) ) { Δ : Type * } [Group Δ] [Fintype Δ] ( φ : Δ → * ∀ j : J , GL ( Fin ( card n ) ) ( ResField ( Q.place j ) ) ) ( hφ : Function.Injective φ ) : ∃ Ψ : D.integralEnd Q.place , ∑ g : Δ , D.residueRep Q ( φ g ⁻ ¹ ) * Ψ * D.residueRep Q ( φ g ) = c] +[ℓ]
+New.Patching.BaseLevel.exists_localOperators_aeval_hecke	substantive	-[! []] +[] / -[Q.place j ) ) { a : D.integralEnd Q.place } ( ha : a ∈ D.localOperators Q j ) ( g : GL ( Fin ( card n ) ) ( LocField ( Q.frobData j ) .place ) ) ( G : EllAdicIntegers [X] ) : let ρ] +[ℓ]
+New.Patching.BaseLevel.exists_mul_traceElement_tameGenerator_eq_frob	substantive	-[! [] ( Q.place j ) ) ( hN : IsGalRepTwist N a ) ( ha : ∀ j : J , a ( Q.frobData j ) .isPlaceOver.tameGenerator = 1 ) ( j : J ) { H : EllAdicIntegers [X] } { t : ℕ } ( ht : t ≠ 0 ) ( δ : D.heckeAlgebra Q.place ) ( h_chain : ∀ x : D.Eigensystem Q.place , x.val ∈ D.Eigensystem ! [] → δ.val x ≠ 0 → HasRootChain ( x.val.heckePolyAt ( Q.place j ) ) ( H.map ( algebraMap EllAdicIntegers ℂ ) ) ( Q.place 
+New.Patching.BaseLevel.residueRep_mem_localOperators	substantive	-[! []] +[] / -[Q.place j ) ) ( g : GL ( Fin ( card n ) ) ( ResField ( Q.place j ) ) ) : D.residueRep Q ( Pi.mulSingle j g ) ∈ D.localOperators Q j] +[ℓ]
+New.Patching.BaseLevel.smul_top_coeff_mem_ellIntegralForms	substantive	-[! []] +[] / -[Q.place j ) ) ( hN : IsGalRepTwist N a ) ( ha : ∀ j : J , a ( Q.frobData j ) .isPlaceOver.tameGenerator = 1 ) { H : J → EllAdicIntegers [X] } { t : ℕ } ( ht : t ≠ 0 ) ( A δ₀ : D.heckeAlgebra Q.place ) ( n₀ : EllAdicIntegers ) ( h_chain : ∀ ( j : J ) ( x : D.Eigensystem Q.place ) , x.val ∈ D.Eigensystem ! [] → ( A * δ₀ ) .val x ≠ 0 → HasRootChain ( x.val.heckePolyAt ( Q.place j ) ) 
+New.Patching.BaseLevel.tameTrace_smul_eq_aevalHecke	substantive	-[! [] ( Q.place j ) ) ( hN : IsGalRepTwist N a ) ( ha : ∀ j : J , a ( Q.frobData j ) .isPlaceOver.tameGenerator = 1 ) ( P : Q.LocalChoice j ) ( p : EllAdicIntegers [X] ) ( g : Gal ( Ω / E ) ) { x : D.Eigensystem Q.place } { ψ : AddChar ( ZMod] +[] / -[^ ν ) ) ℂ } ( hψ : ψ ( card n ) ! ≠ 1 ) { y : D.formsOfLevel Q.place } ( hx : ( y : V.forms κ ) ∈ ( x : Isotypic V κ ) .val ) ( hy : ∀ k : residueL
+New.Patching.BaseLevel.tameTrace_smul_eq_diamond_sub_one	substantive	-[! [] ( Q.place j ) ) { N : Isotypic V κ → GalRep ℓ E n } [V.IsStd] [WeilData E] { a : Gal ( Ω / E ) → * EllAdicIntegers } ( hN : IsGalRepTwist N a ) ( ha : ∀ j : J , a ( Q.frobData j ) .isPlaceOver.tameGenerator = 1 ) { j : J } ( P : Q.LocalChoice j ) ( p : EllAdicIntegers [X] ) ( g : Gal ( Ω / E ) ) { x : D.Eigensystem Q.place } ( ψ : AddChar ( ZMod] +[] / -[^ ν ) ) ℂ ) { y : D.formsOfLevel Q.p
+New.RelationSetting.card_torsionBy_cocycles_mul_pow_le	cosmetic	.1->.val; v.1->v.asIdeal
+New.RelationSetting.exists_hasFewCocycles_torsion	cosmetic	.1->.val
+New.RelationSetting.exists_pow_le_card_reductions	cosmetic	.1->.val; v.1->v.asIdeal
+New.Rows.glue_mem_integralForms	cosmetic	ϑ.1.normQ->ϑ.toTameChar.normQ
+New.Rows.integrable_and_mul_stdClassSum_eq_integral_mul	cosmetic	γ.1->γ.val
+New.Rows.lift_modDatum_eq_zero_of_mem_span	drop-inst	[Fact (N ≠ 0)]
+New.Rows.mul_stdClassSum_eq_integral_mul_modKernel	cosmetic	γ.1->γ.val
+New.Rows.realConv_holMinorsPi_eq_zero_of_lift_eq_zero	drop-inst	[Fact (N ≠ 0)]
+New.Rows.weylGauge_firstFactor_le_one	cosmetic	ϑ.1.normQ->ϑ.toTameChar.normQ
+New.Seesaw.exists_conjTranspose_mul_gradedGram_mul_eq_signMatrix	add-inst	[Finite X]
+New.Seesaw.gram_gradedLatticeBasis_eq_gluedGram	add-inst	[Finite X]
+New.Seesaw.isUnimodular_gradedLatticeBasis_gram	add-inst	[Finite X]
+New.Seesaw.theta_tripleWeil_rat_mul	substantive	-[: let F ( x] +[{ γ] / -[×] +[} ( hγ : γ ∈ V.Γ ) { δ :] / -[×] +[} ( hδ : δ ∈ V'.Γ ) ( g : G E ε ) ( g' : G E ε' ) ( k :] / -[] +[: ( V'.hom ( flipSum V V'' ) ) .θ ( tripleWeil a b ( γ * g , δ * g' , k ) f ) = ( V'.hom ( flipSum V V'' ) ) .θ ( tripleWeil a b ( g , g' , k ) f )]
+New.Selmer.HasDivisibleSelmerLengthLe	substantive	-[ζ : intQpBar ℓ ) (] +[]
+New.Selmer.SelmerDatum.TwistedLengthLe.hasDivisibleSelmerLengthLe	substantive	-[( O.toIntQpBar T.ζ )] +[]
+New.Selmer.SelmerDatum.divisibleSelmer	drop-inst	[DVR O']
+New.Selmer.comesFromClass_of_mem_ribetCocycles	substantive	-[[Fintype X]] +[[Finite X]]
+New.Selmer.crystallineColength_le_sum_dualDefect	cosmetic	v.1->v.val
+New.Selmer.denominatorLe_range_goodLift	substantive	-[(] +[] / -[) ( ζ : intQpBar ℓ )] +[] / -[ζ] +[]
+New.Selmer.denominatorLe_span_trivialLift	substantive	-[(] +[] / -[) ( ζ : intQpBar ℓ )] +[] / -[ζ] +[]
+New.Selmer.exists_eventually_hasRootChain_mostFrobeniiAt	substantive	-[! [] y.place ∧] +[] / -[∀ x : B.Eigensystem ! [] , IsWeakLift O x.val → ∀ S : ( PadicAlgCl] +[] / -[) [X] , 1 ≤ ‖ S.eval 1 ‖ → ( ∀ k : ℕ , ‖ ( normalisedRep O x.val.galRep y.frob ) .val.charpoly.coeff k - ( S * ∏ i ∈ Finset.range O.rankDiff , ( X - C ( cyclotomicInv ℓ D.E ( PadicAlgCl ℓ ) y.frob ^ i ) ) ) .coeff k ‖ < 1 ) → ∃ e : EllAdicIntegers [X] , HasRootChain ( x.val.heckePolyAt y.place ) (
+New.Selmer.exists_operator_ellVal_le_liftValuationBound	substantive	-[PreservesHeckeEigenspaces Λ ∧] +[]
+New.Selmer.exists_taylorWilesPlaces_hasRootChain	substantive	-[! []] +[] / -[Q.place j ) ) ∧ ∃ e : J → EllAdicIntegers [X] , ( ∀ j : J , ( e j ) .eval 1 = 1 ) ∧ ∀ ( j : J ) ( x : B.Eigensystem ! [] ) , ( ∀ ( g : Gal ( Ω / D.E ) ) ( k : ℕ ) , ‖ ( normalisedRep O x.val.galRep g ) .val.charpoly.coeff k - ( normalisedRep O x₀.galRep g ) .val.charpoly.coeff k ‖ < 1 ) → IsWeakLift O x.val → HasRootChain ( x.val.heckePolyAt ( Q.place j ) ) ( ( e j ) .map ( algebra
+New.Selmer.exists_tiedRows_addVal_det_le	drop-inst	[Fintype J]
+New.Selmer.exists_traceIdeal_multiplier_eq_sum_det	drop-inst	[Fintype J]
+New.Selmer.isRepOfType_one	drop-inst	[DecidableEq n]
+New.Selmer.liftValuationBound	drop-inst	[ThePrime ℓ] [DecidableEq n]
+New.Selmer.relLength_ribetCocycles_le	substantive	-[[Fintype X]] +[[Finite X]]
+New.Selmer.ribet_columns	substantive	-[{ ζ : 𝓧 → intQpBar ℓ }] +[] / -[x ) ( ζ] +[] / -[( ζ π )] +[]
+New.SiegelWeil.IsSharpFn.isSharp	cosmetic	.1->.val
+New.SiegelWeil.isSharp_vacuumDatum_of_mul_eq_one	cosmetic	.1->.val
+New.Space.geometricSide_singleton_eq_zero	cosmetic	φ.1->φ.val
+New.Space.geometricSide_singleton_eq_zero_of_forall	cosmetic	.1.charpoly->.val.charpoly; φ.1->φ.val
+New.Space.partialKernel_convIndicator_eq_sum	cosmetic	.1->.val
+New.TensorChain.lift_algFormRep_of_map_eq	drop-inst	[WeilData E]
+New.TensorChain.lift_kernelLift_map_omega	drop-inst	[WeilData E]
+New.ThetaKernel.liftBilin	cosmetic	S.rapidFunctions.1->S.rapidFunctions.toSubmodule
+New.ThetaTori.LatticeForm.sizes	cosmetic	inductive->abbrev
+New.TwistedLattice.CovolumeLe.sumElim	substantive	-[] +[{ S' : Type } [Fintype S'] [DecidableEq S']] / -[n : ℕ } {] +[] / -[Fin n] +[S'] / -[h] +[c']
+New.TwistedLattice.covolume_add_index_nonneg	substantive	-[∀ ξ : T ,] +[] / -[ξ] +[1] / -[] +[( h_volume_ne : ∀ ι : PrimePadicIso , L.volume ( θ ι ) ≠ 0 )] / -[T] +[PrimePadicIso]
+New.Variety.IsCuspidalType.exists_mem_range_splittingRadical	cosmetic	g.1.charpoly->g.val.charpoly; g.1.charpoly.Separable->g.val.charpoly.Separable; j.1->j.val
+New.Variety.Model.aeval_heckePoly_eq_zero_of_isEigenQuotient	drop-inst	[NeZero a]
+New.Variety.Model.isKilledBy_heckePoly_of_isEigenQuotient	drop-inst	[NeZero a]
+New.Variety.UniversalFamily.GraphClosure.exists_arc	substantive	-[ᵉ] +[] / -[] +[, ∃] / -[] +[, ∃] / -[] +[, ∃]
+New.Variety.UniversalFamily.GraphClosure.exists_arc_centre_eq	substantive	-[ᵉ] +[] / -[] +[, ∃] / -[] +[, ∃] / -[] +[, ∃]
+New.Variety.cellPoint	cosmetic	B.1->B.carrier
+New.Variety.exists_torusModel	substantive	-[ᵉ (] +[] / -[) (] +[, ∃] / -[)] +[]
+New.Variety.exists_torusModel_of_isPeriodMap	substantive	-[ᵉ (] +[] / -[) (] +[, ∃] / -[)] +[]
+New.Variety.finsum_countTerm_eq_zero_of_reducible	cosmetic	w₀.1->w₀.val
+New.Variety.finsum_countTerm_marked_eq_definite	cosmetic	w₀.1->w₀.val
+New.Variety.finsum_markedTerm_eq_finsum_definiteTerm	cosmetic	w₀.1->w₀.val
+New.Variety.hasFlatBaseChange_algPointsOf	drop-inst	[InvertsPrime Ω p]
+New.Variety.hasFlatBaseChange_geomPoints	drop-inst	[InvertsPrime Ω p]
+New.Variety.polarisationForm	substantive	-[] +[: RealVectors E D.Index → ₗ [ℝ] RealVectors E D.Index → ₗ [ℝ] ℝ]
+New.Variety.sum_mul_hodgeTateMap_scaledGraph_eq_zero	drop-inst	[IsAlgClosed k]
+New.ZetaIntegral.exists_abs_sub_thetaSum_le	substantive	-[let Θ] +[DiscreteTopology] / -[r] +[principalIdeles K ) ∧ ∃ δ > ( 0] / -[] +[, ∃ C : ℝ , ∀ l >] / -[] +[0 : ℝ ) , ∃ i : ℝ , ∀]
+New.chain_equivariant	drop-inst	[WeilData E]
+New.convIndicator_mapDomain_offPlace	cosmetic	.1->.val
+New.eq_zero_of_coprime_factors	cosmetic	.1.charpoly->.val.charpoly; f.1->f.val
+New.eventually_exists_data_of_isAdmissibleData	substantive	-[T g α N β] +[]
+New.exists_atPlace_eq_of_convIndicator_ne_zero	cosmetic	.1->.val
+New.exists_auerbach	drop-inst	[Fintype ι]
+New.exists_holomorphic_chart	substantive	-[ᵉ (] +[] / -[) (] +[, ∃] / -[)] +[]
+New.exists_norm_char_semidirect	drop-inst	[Finite S]
+New.exists_primeNorm_eq_pow	drop-inst	[Fact p.Prime]
+New.exists_rep_of_trace	drop-inst	[IsAlgClosed k]
+New.exists_smear_dsCoeffSmooth_eq	cosmetic	f.1->f.val; l.dsCoeffSmooth.1->l.dsCoeffSmooth.val
+New.exists_smul_schurCoeffPoly_eq_jointHarmonic	drop-inst	[WeilData E]
+New.identDistrib_orbitMeasure_of_unfold	drop-inst	[SFinite m]
+New.integral_gaussian_mul_stdAddChar	substantive	-[[WeilData E]] +[] / -[z.2.1] +[z.2.val]
+New.integral_quotMeasure_iwasawa	substantive	-[ᵉ (] +[] / -[) (] +[, ∃] / -[) (] +[, ∃] / -[)] +[]
+New.isGoodAt_scalarRep_cyclotomicCharIn_pow_mul	drop-inst	[PadicIso ℓ]
+New.lintegral_iwasawa	substantive	-[) ( _hw : Continuous w] +[] / -[ᵉ (] +[] / -[) (] +[, ∃] / -[) (] +[, ∃]
+New.normDensity	drop-inst	[WeilData E]
+New.normPairClosure	substantive	-[] +[noncomputable]
+New.norm_regularL_le_linear	substantive	-[1 + 4] +[8]
+New.piPrime_ne_zero	drop-inst	[PrimeSevenModEight d]
+New.polyKillsAt_scalarRep_cyclotomicCharIn_pow_mul	drop-inst	[PadicIso ℓ]
+New.pow_le_of_submultiplicative	substantive	-[hb_pos] +[hb] / -[hb_le : b ≤ 1 ) ( hc_zero : c 0 = 1 ) ( hc_nonneg] +[hc] / -[: ℕ] +[] / -[hc_le] +[hsub]
+New.sameSectionPairs.exists_linear_factor	cosmetic	
+New.selmerZ1.card_mul_pow_le	cosmetic	v.1->v.asIdeal
+New.selmerZ1.card_relations_ge	cosmetic	v.1->v.asIdeal
+New.selmerZ1.exists_splitPlaces_frob_mem_coset	cosmetic	.1->.asIdeal; v.1->v.asIdeal
+New.stdColDatum_mem_schwartzBruhat	substantive	-[] +[{ y |] / -[] +[y }]
+New.stdLineHom	drop-inst	[WeilData E]
+New.stdRowDatum_mem	cosmetic	
+New.trace_eq_of_isCuspidalAt	cosmetic	.1->.val; y.1->y.val

@@ -1,0 +1,9 @@
+# Drafts and coordination: private until the user has posted the corresponding contribution.
+notes/
+pr/
+# Local session instructions (local paths).
+CLAUDE.md
+# Local logs with machine paths.
+certs/cert1/*.log
+__pycache__/
+*.pyc

@@ -1,0 +1,12 @@
+RoadmapLab
+Copyright 2026 the RoadmapLab contributors.
+
+This repository contains tools, reports and Lean certificates about the ShortGRH roadmaps of
+TauCetiProject/TauCetiRoadmap (human-curated, written by Chris Birkbeck) and the Lean proof of the
+Riemann hypothesis for Dirichlet L-functions at leanprover-community/riemann-hypothesis
+(originally lsernau/grh-lean). The Lean certificates in certs/ quote, verbatim and for the purpose
+of checking them, target statements from TauCetiRoadmap (Apache-2.0) and declaration statements
+from the proof (Apache-2.0); copyright in those statements remains with their authors.
+
+Most of this repository is written and maintained by AI agents (Anthropic's Claude), under the
+direction of a human who reviews what is posted to other projects.

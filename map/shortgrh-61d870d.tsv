@@ -1,0 +1,912 @@
+# roadmap	section	title	file72	n_names	match	live61	changed	vanished	route_change	offroute	detail
+AbelianSchemesWithThetaStructuresAndTheirCohomology	1.1	Theta functions, Appell–Humbert data and twisted translations	Lib/Shimura/ComplexTheta/AppellHumbertData.lean	13	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	1.2	Frobenius' dimension formula and irreducibility	Lib/Shimura/ComplexTheta/DimensionFormula.lean	7	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	1.3	Multiples without base points, and the canonical multiplier	Lib/Shimura/ComplexTheta/DimensionFormula.lean	6	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	1.4	Schur orthogonality for theta translates	Lib/Shimura/ThetaNormality/NormalGeneration.lean	2	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	1.5	Tori with a hermitian action and the theta identity	Lib/Shimura/GoodReduction/MultiplicativeNorm.lean	9	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	2.1	Sizes, the theta norm and good reduction	Lib/Shimura/ThetaNormality/NormalGeneration.lean	15	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	2.2	The multiplicative norm from expanding multiplications	Lib/Shimura/GoodReduction/MultiplicativeNorm.lean	6	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	2.3	Integral normal generation under good reduction	Lib/Shimura/ThetaNormality/NormalGeneration.lean	7	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	3.1	Frames, similitudes and moduli points	Lib/Shimura/HeckeTower/HeckeData.lean	13	partial	y	0	1	1	0	finrank_eq_abelianDim:removed-absorbed
+AbelianSchemesWithThetaStructuresAndTheirCohomology	3.2	PEL data and good primes	Lib/Shimura/ThetaModuli/UniversalFamily.lean	8	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	3.3	Theta tori and their theta coordinates	Lib/Shimura/ComplexTheta/AppellHumbertData.lean	17	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	3.4	Good reduction of theta tori at good primes	Lib/Shimura/ThetaModuli/PELThetaTori.lean	2	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	3.5	Riemann's theta relation	Lib/Shimura/ThetaNormality/RiemannRelation.lean	6	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	3.6	The reduced theta vectors are cut out by the level points	Lib/Shimura/ThetaModuli/FlatClosure.lean	6	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	3.7	Existence of PEL data	Lib/Shimura/IntegralModel/PELDataExistence.lean	3	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	4.1	Abelian schemes and the pairing of a line bundle class	Lib/Shimura/AbelianScheme/Pairings.lean	11	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	4.2	Classes with the parallelogram law	Lib/Shimura/AbelianScheme/Pairings.lean	8	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	4.3	Quasi-finite surjective homomorphisms of abelian schemes are isogenies	Lib/Shimura/HeckeTower/Model.lean	4	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	4.4	Coordinates at the origin, infinitesimal points and unramified torsion	Lib/Shimura/AbelianScheme/TangentCoordinates.lean	12	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	4.5	Lifts of translations and rigidity of theta structures	Lib/Shimura/ThetaGroup.lean	13	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	5.1	Holomorphic families, uniformisations and theta coordinates	Lib/Shimura/Uniformisation/HolomorphicFamilies.lean	17	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	5.2	The exponential of a compact commutative group, and uniformisation of complex abelian varieties	Lib/Shimura/Uniformisation/LieExponential.lean	4	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	5.3	Projective embeddings are given by theta functions	Lib/Shimura/Uniformisation/AppellHumbert.lean	4	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	5.4	Homomorphisms of theta-polarised tori extend over an arc	Lib/Shimura/Uniformisation/HolomorphicFamilies.lean	9	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	5.5	Analytic families of theta tori and the ball chart	Lib/Shimura/Uniformisation/BallModel.lean	8	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	6.1	Theta families, full level structures and rigidity	Lib/Shimura/ThetaModuli/PELThetaTori.lean	8	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	6.2	Objects modelled on theta tori, and their homomorphisms	Lib/Shimura/Uniformisation/TorusModel.lean	10	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	6.3	Complex objects with full level structure are modelled on theta tori	Lib/Shimura/Uniformisation/ModelExists.lean	2	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	6.4	The sections of the theta line bundle are spanned by the coordinates	Lib/Shimura/IntegralModel/UniversalFamily.lean	2	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	6.5	Ideals cut out by points, and flat closures	Lib/Shimura/ThetaModuli/FlatClosure.lean	4	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	6.6	Linear systems and group laws by density	Lib/Shimura/ThetaModuli/FamilyFromPoints.lean	4	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	6.7	Theta families from dense complex points	Lib/Shimura/ThetaModuli/FamilyFromPoints.lean	2	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	7.1	Reduction of isogeny kernels	Lib/Shimura/CongruenceRelation/KernelReduction.lean	7	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	7.2	Counting `w`-torsion points bounds natural semilinear functions	Lib/Shimura/Deformation/TangentCount.lean	1	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	7.3	Drinfeld lifting and the tangent bound	Lib/Shimura/Deformation/TangentBound.lean	4	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	7.4	The universal theta family	Lib/Shimura/IntegralModel/UniversalFamily.lean	3	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	7.5	Points of linear data in the fibre powers	Lib/Shimura/IntegralModel/UniversalFamily.lean	7	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	7.6	Analytic families immerse; arcs and complex points of graph closures	Lib/Shimura/IntegralModel/BallImmersion.lean	7	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	8.1	Hecke elements, safe places, local terms and neat levels	Lib/Shimura/HeckeTower/Model.lean	19	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	8.2	The Kuga–Sato model and the action of Hecke elements	Lib/Cohomology/Etale/Basic.lean	6	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	8.3	The pointwise congruence relation at a split place	Lib/Shimura/CongruenceRelation/HeckeNeighbours.lean	5	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	8.4	Existence of the model	Lib/Shimura/IntegralModel/TowerExistence.lean	3	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	9.1	The congruence relation in cohomology, and unramified cohomology	Lib/Shimura/CongruenceRelation/EichlerShimura.lean	4	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	9.2	Test functions with a cuspidal type	Lib/Shimura/TraceFormula/TestFunction.lean	7	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	9.3	The trace on definite forms as a sum over marked triples	Lib/Shimura/Transfer/MarkedPairs.lean	13	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	9.4	Marked and definite sums agree	Lib/Shimura/TraceFormula/MarkedDefiniteSums.lean	6	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	9.5	The Lefschetz count over marked pairs	Lib/Cohomology/Etale/Basic.lean	7	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	9.6	Eigensystems of definite test eigenforms occur in each weight	Lib/Shimura/Transfer/WeightOccurs.lean	9	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	9.7	Eigenquotients	Lib/Shimura/Eigenspace.lean	5	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	9.8	The Galois representation of an occurring eigensystem	Lib/Shimura/Eigenspace.lean	5	same	y	0	0	0	0	
+AbelianSchemesWithThetaStructuresAndTheirCohomology	S	finrank_thetaFunctions_sq_eq_relIndex_dualLattice		0	target(see matcher)	n/a	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	1.1	Quotient integrals by cutoffs	Lib/Adelic/QuotientMeasure/MovingTheQuotient.lean	10	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	1.2	Quotients in stages and two vanishing criteria	Lib/Adelic/QuotientMeasure/UnfoldingInStages.lean	6	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	1.3	Orbit unfolding and integration in Iwasawa coordinates	Lib/Adelic/QuotientMeasure/IwasawaUnfolding.lean	4	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	1.4	Level spaces, Hecke operators and class sums	Lib/Adelic/Hecke/ClassSums.lean	11	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	1.5	Change of level for class sums, and means over compact subgroups	Lib/Adelic/Hecke/ClassSums.lean	5	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	2.1	Adeles, the standard character and Haar measures	Lib/Adelic/Adeles/IdeleModulus.lean	11	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	2.2	The field is a self-dual lattice of covolume one in its adeles	Lib/Adelic/Adeles/StrongApproximation.lean	11	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	2.3	Strong approximation omitting finite places, and a one-sided Poisson inequality	Lib/Adelic/Adeles/StrongApproximation.lean	3	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	2.4	Scaling of Haar measure by `GL_n` over the adeles, and idelic generators of ideals	Lib/Adelic/Adeles/LocalFactors.lean	8	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.1	Hermitian spaces with an adelic frame and their unitary groups	Lib/Weil/Unramified/SplitHecke.lean	18	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.2	First properties of the adelic unitary groups	Lib/Adelic/Unitary/GramMatrix.lean	13	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.3	Landherr's theorem for locally standard spaces, and the Hasse principle for unitary cocycles	Lib/Adelic/Landherr.lean	6	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.4	Witt's theorem over the integral finite adeles	Lib/Adelic/Witt/WittTheorem.lean	7	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.5	Splittings along isotropic frames	Lib/Adelic/Witt/IwasawaDecomposition.lean	3	partial	y	0	1	0	1	card_eq_of_perp_subset:removed-offroute
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.6	The Iwasawa decomposition of the adelic unitary group	Lib/Adelic/Witt/IwasawaDecomposition.lean	5	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.7	Smooth local sections of the isotropic orbit	Lib/Adelic/Witt/SmoothWitt.lean	2	none	n/a	0	2	2	0	exists_contDiff_carrying_isotropic:removed; exists_contDiff_eventually_mulVec_eq:removed-absorbed
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.8	Weak approximation	Lib/Adelic/Unitary/WeakApproximation.lean	2	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	3.9	Congruence levels	Lib/Adelic/Unitary/CongruenceLevels.lean	12	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	4.1	Adelic Minkowski theorems	Lib/Adelic/Reduction/MinkowskiTheorems.lean	7	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	4.2	First minimum, height and short bases	Lib/Adelic/Adeles/SemilocalProducts.lean	8	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	4.3	Reduction theory, finite volume and a weak form of Weil's convergence criterion	Lib/Adelic/Reduction/FiniteVolume.lean	5	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	4.4	Mahler's criterion, and integrals over definite quotients as class sums	Lib/Adelic/Unitary/Defs.lean	8	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	5.1	Automorphic functions, forms of a type and the Petersson product	Lib/Adelic/AutomorphicForms/RealConvolution.lean	10	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	5.2	Convolution over the real points, cusp kernels and projected Poincaré series	Lib/Adelic/AutomorphicForms/RealConvolution.lean	13	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	5.3	Constant terms along unipotent radicals vanish	Lib/Adelic/AutomorphicForms/UnipotentRadical.lean	6	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	5.4	Forms of a cusp kernel are cuspidal, decay rapidly and are finite in number at each level	Lib/Adelic/AutomorphicForms/Basic.lean	13	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	6.1	Algebraic modular forms	Lib/GaloisRep/Main/Defs.lean	10	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	6.2	The invariant pairing, Harish-Chandra parameters and formal degrees	Lib/Adelic/AutomorphicForms/SmoothAlgebraicForms.lean	7	partial	y	0	1	0	1	highestVector_cyclic:removed-offroute
+AdelicUnitaryGroupsAndAlgebraicModularForms	6.3	Finiteness and Hecke eigenforms	Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean	10	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	6.4	Forms on the standard definite space are algebraic forms	Lib/Adelic/AutomorphicForms/AutomorphicAsAlgebraic.lean	8	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	6.5	Periods over a block subgroup	Lib/Adelic/AutomorphicForms/BlockPeriods.lean	3	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	6.6	The `p`-adic gauge of algebraic forms and the integrality of class sums	Lib/Adelic/AutomorphicForms/PAdicGauge.lean	13	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.1	Test functions, cuspidality at a split place, and the geometric side	Lib/Adelic/TraceFormula/OrbitalUnfolding.lean	11	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.2	Idempotents of irreducible labels give cuspidal test functions	Lib/Adelic/TraceFormula/CuspidalType.lean	3	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.3	Kernel bounds and convergence of the geometric side	Lib/Adelic/TraceFormula/Convergence.lean	9	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.4	Descent of invariant distributions to a slice	Lib/Adelic/TraceFormula/FibreIntegral.lean	6	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.5	Invariant distributions on classes with coprime factors	Lib/Adelic/TraceFormula/CoprimeFactors.lean	2	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.6	The geometric side, polynomial by polynomial	Lib/Adelic/TraceFormula/ReduciblePolynomials.lean	6	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.7	Traces on forms as the geometric side, and unfolding of orbital integrals	Lib/Adelic/TraceFormula/TraceComparison.lean	8	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.8	The Selberg principle for cusp kernels	Lib/Adelic/TraceFormula/TraceComparison.lean	3	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.9	Elliptic similitudes and the change of signs	Lib/Adelic/TraceFormula/ChangingSigns.lean	5	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.10	Comparison of traces under a simple-zero condition	Lib/Adelic/TraceFormula/TraceComparison.lean	2	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.11	The Hecke relation for the stabiliser of a line	Lib/Adelic/TraceFormula/LineCount.lean	9	same	y	0	0	0	0	
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.12	Traces from a raising operator, and cutting the level at an auxiliary place	Lib/Adelic/TraceFormula/OffPlace.lean	9	partial	y	0	1	1	0	charpoly_eq_of_trace_pow_eq:removed-absorbed
+AdelicUnitaryGroupsAndAlgebraicModularForms	7.13	Comparison of traces for cuspidal test functions	Lib/Adelic/TraceFormula/CuspidalComparison.lean	3	same	y	0	0	0	0	
+AuxiliaryAlgebraAndAnalysisForThetaLifts	1.1	Amitsur's theorem on characteristic polynomials over the base ring	Lib/General/LinearAlgebra/Eigenvalues.lean	2	same	y	0	0	0	0	
+AuxiliaryAlgebraAndAnalysisForThetaLifts	1.2	Multiplicative functions of finite modules that are trivial on projective modules	Lib/General/Algebra/CartanMap.lean	4	same	y	0	0	0	0	
+AuxiliaryAlgebraAndAnalysisForThetaLifts	1.3	The weighted Combinatorial Nullstellensatz with multiplicity	Lib/General/Algebra/MultivariatePolynomials.lean	1	same	y	0	0	0	0	
+AuxiliaryAlgebraAndAnalysisForThetaLifts	2.1	Auerbach's lemma for a compact family of linear forms	Lib/General/LinearAlgebra/MatrixNormBounds.lean	1	same	y	0	0	0	0	
+AuxiliaryAlgebraAndAnalysisForThetaLifts	2.2	Gelfand's trick for `GL_n` over a valuation ring	Lib/General/LinearAlgebra/IntegralLattices.lean	5	same	y	0	0	0	0	
+AuxiliaryAlgebraAndAnalysisForThetaLifts	3.1	The complex Gaussian integral for accretive matrices	Lib/General/Analysis/GaussianIntegral.lean	3	same	y	0	0	0	0	
+AuxiliaryAlgebraAndAnalysisForThetaLifts	3.2	Hua's bound for integrals of negative powers of determinants	Lib/General/Analysis/HolomorphicIntegrals.lean	3	same	y	0	0	0	0	
+AuxiliaryAlgebraAndAnalysisForThetaLifts	S	lintegral_det_add_conjTranspose_mul_inv_pow_le		0	target(see matcher)	n/a	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	1.1	Cohomology of a functor, comparisons and density	Lib/General/Algebra/LongExactSequences.lean	16	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	1.2	Test rings	Lib/Cohomology/Etale/DenseSubfunctors.lean	9	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	1.3	Cohomology on test rings	Lib/Cohomology/TorsionTheories.lean	12	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	1.4	Proper functors, charts and atlases	Lib/Cohomology/Etale/Basic.lean	8	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	1.5	Functors of points of proper and of smooth proper schemes	Lib/General/Geometry/EtaleCharts.lean	4	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	2.1	Dévissage from representable functors, and the Leray–Hirsch map	Lib/Cohomology/LerayHirsch.lean	5	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	2.2	Total Ext, Yoneda products and external products	Lib/Cohomology/Hodge/CupProduct.lean	8	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	2.3	Čech descent and criteria for comparison maps to be bijective	Lib/Cohomology/Etale/BijectiveComparisons.lean	12	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	2.4	Dense subfunctors, Mayer–Vietoris and Zariski descent	Lib/Cohomology/Etale/DenseSubfunctors.lean	12	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	2.5	Relative chains: vanishing, excision, transfer and gluing	Lib/Cohomology/Etale/RelativeChains.lean	10	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	2.6	Tensoring a class of degree two, and cohomology over a space	Lib/Cohomology/TorsionTheories.lean	5	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	2.7	`ℓ`-torsion coefficients, theories and closed loci	Lib/Cohomology/TorsionTheories.lean	11	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	3.1	Test rings are acyclic, continuity along their colimits, and envelopes	Lib/Cohomology/Etale/FilteredLimits.lean	7	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	3.2	Continuity along cofiltered limits of affine maps	Lib/Cohomology/Etale/FilteredLimits.lean	7	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	3.3	The local-to-global principle and density criteria	Lib/Cohomology/Etale/ProperFunctors.lean	6	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	3.4	`ℓ`-adic cohomology with its Galois action	Lib/Cohomology/Etale/EllAdicCohomology.lean	9	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	3.5	Transfer for Galois coverings	Lib/Cohomology/Etale/Basic.lean	3	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	4.1	The space of places of a point and its properness	Lib/Cohomology/ProperBaseChange/PlaceSpace.lean	6	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	4.2	Splitting aic subrings of an algebraically closed field	Lib/Cohomology/ProperBaseChange/LineCharts.lean	4	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	4.3	Proper base change over aic valuation rings	Lib/Cohomology/ProperBaseChange/Theorem.lean	4	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	4.4	Detection of classes at points	Lib/Cohomology/ProperBaseChange/Theorem.lean	3	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	5.1	The Kummer sequence and the first Chern class of `O(1)`	Lib/Cohomology/ProjectiveLine/ChernClass.lean	16	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	5.2	Leray–Hirsch bases from residue fields	Lib/Cohomology/ProjectiveLine/TiltedLineFormula.lean	3	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	5.3	The perfect projective line	Lib/Cohomology/ProjectiveLine/PerfectLine.lean	5	partial	y	0	1	1	0	isCohomEquiv_gluing_tilt:removed-split
+CohomologyOfFunctorsOnTestRings	5.4	The projective line formula for the tilted theory	Lib/Cohomology/ProjectiveLine/TiltedLineFormula.lean	5	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	5.5	The projective line formula for `ℤ/ℓ` coefficients	Lib/Cohomology/ProjectiveLine/ConstantLineFormula.lean	4	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	5.6	Smooth base change from a valuation ring of `Ω` to `Ω`	Lib/Cohomology/SmoothBaseChange.lean	4	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	6.1	Hodge cohomology on pairs	Lib/General/Geometry/EtaleCharts.lean	11	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	6.2	Vanishing below the depth, and Zariski descent for Hodge cohomology	Lib/Cohomology/Hodge/DepthVanishing.lean	6	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	6.3	Grothendieck's symbol and classes of points	Lib/Cohomology/Hodge/GrothendieckSymbol.lean	12	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	6.4	The Künneth formula	Lib/Cohomology/Hodge/Kunneth.lean	1	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	6.5	The class of the diagonal	Lib/General/Geometry/EtaleCharts.lean	4	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	6.6	The fixed point formula in Hodge cohomology	Lib/Cohomology/Etale/Basic.lean	10	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	7.1	Projective Noether normalisation by linear forms	Lib/Cohomology/PointClass/NoetherNormalization.lean	8	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	7.2	Projective space, and injective pull-back along a Noether normalisation	Lib/Cohomology/PointClass/ProjectiveSpace.lean	6	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	7.3	Point classes of projective space survive the Hodge–Tate map	Lib/Cohomology/PointClass/ProjectiveNonvanishing.lean	5	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	7.4	Linear independence of point classes under the Hodge–Tate map	Lib/Cohomology/PointClass/LinearIndependence.lean	4	same	y	0	0	0	0	
+CohomologyOfFunctorsOnTestRings	7.5	The Woods Hole formula, vanishing half	Lib/Cohomology/Etale/Basic.lean	5	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.1	Definitions: Frobenius cycles, the twisted action, depth and defect	New/UpperBound/ElementaryDivisors/TwistingData.lean	7	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.2	Stepanov's count	New/UpperBound/ElementaryDivisors/RootLemma.lean	1	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.3	Gauss filtrations and the root lemma	New/UpperBound/ElementaryDivisors/TwistingData.lean	6	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.4	Few forms have only deep translates	New/UpperBound/ElementaryDivisors/Depth.lean	3	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.5	Adjoint weights and the Schur algebra of a Levi subgroup	New/UpperBound/ElementaryDivisors/InvariantAverage.lean	3	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.6	An invariant average on polynomials in the entries of a matrix	New/UpperBound/ElementaryDivisors/InvariantAverage.lean	2	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.7	Definitions: edges, halfway lattices, edge pairings and the edge Hecke operator	New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean	9	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.8	Edge pairings, the defect of forms in all halfway lattices, and functions on origins	New/UpperBound/ElementaryDivisors/Edges.lean	7	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.9	Frobenius substitution of generic matrices: weight against defect	New/UpperBound/ElementaryDivisors/FrobeniusFactors.lean	6	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.10	The averaging map	New/UpperBound/ElementaryDivisors/AveragingMap.lean	1	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.11	The share of the Pieri cone in a slab	New/UpperBound/ElementaryDivisors/PieriCone.lean	3	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.12	The dimension of the forms of bounded defect	New/UpperBound/ElementaryDivisors/DefectCount.lean	3	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.13	Conditions at an edge, and the size conditions	New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean	3	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	1.14	Elementary divisors of the edge Hecke operator	New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean	3	partial	y	0	1	0	1	elementary_divisors_length:removed-offroute
+CompositeThetaLiftsAndShortForms	2.1	Definitions: the gain, the loss and exceptional primes	New/UpperBound/Size/Estimates.lean	11	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.2	The gain prime by prime	New/UpperBound/Size/Estimates.lean	6	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.3	The sum of the allowed losses	New/UpperBound/Size/Estimates.lean	2	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.4	Definitions: induced primes, marked sets and integral source forms	New/UpperBound/Divisibility/MarkedPrimes.lean	6	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.5	Marked sets at an exceptional prime	New/UpperBound/Divisibility/MarkedPrimes.lean	13	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.6	Definition: the scaled Hecke operators of a marked set	New/UpperBound/Divisibility/MarkedPrimes.lean	1	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.7	The divisibility bound of one lift: only collisions lose	New/UpperBound/Divisibility/JetExponent.lean	7	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.8	The budget of a marked set	New/UpperBound/Divisibility/LocalDivisibility.lean	2	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.9	Scalings above the level prime	New/UpperBound/Size/ShortColumns.lean	6	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	2.11	Ramified source forms: an image, and their codimension	New/UpperBound/Size/ShortColumns.lean	9	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	3.1	The value of a chain of lifts, and its gauge	New/UpperBound/Divisibility/ChainValuation.lean	4	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	3.2	Restriction from `X_m` to `Y_m`	New/UpperBound/Divisibility/ChainValuation.lean	4	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	3.3	Expanding the gluing of a chain datum	New/UpperBound/Divisibility/ChainDatumExpansion.lean	5	weaker	y	1	0	0	0	gluedTensor_eq_sum_translates:weaker
+CompositeThetaLiftsAndShortForms	3.4	One lift, at the identity and at a neighbour	New/UpperBound/Divisibility/ValuationAtNonSplitPrimes.lean	4	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	3.5	Hecke operators through the lifts	New/UpperBound/Divisibility/ValuationAtNonSplitPrimes.lean	5	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	3.6	The chain on the image of the scaled Hecke operators	New/UpperBound/Divisibility/ValuationAtNonSplitPrimes.lean	2	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	3.7	The valuation of the chain at a prime other than `N`	New/UpperBound/Divisibility/LocalDivisibility.lean	5	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.1	The Hecke operator at a marked prime as an edge Hecke operator	New/UpperBound/Divisibility/HeckeEdges.lean	3	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.2	The Frobenius cycle of a marked prime	New/UpperBound/Divisibility/MarkOperator.lean	6	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.3	Colength of the scaled Hecke operators	New/UpperBound/Divisibility/LocalDivisibility.lean	2	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.4	Definitions: the set-up at the level prime	New/UpperBound/Divisibility/SetupAtLevel.lean	5	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.5	The places `Σ_N`, the operator `Up` and ramified forms	New/UpperBound/Divisibility/SetupAtLevel.lean	4	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.6	The level prime: valuation of the composite lift	New/UpperBound/Divisibility/ValuationAtLevel.lean	5	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.7	The level prime: colength	New/UpperBound/Divisibility/ColengthAtLevel.lean	7	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.8	The divisibility at one prime	New/UpperBound/Divisibility/LocalDivisibility.lean	1	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	4.9	The divisibility of the composite lift	New/UpperBound/Divisibility/LocalDivisibility.lean	1	none	n/a	0	1	1	0	exists_err_gaugeLe_compositeLift:removed-absorbed
+CompositeThetaLiftsAndShortForms	5.1	An explicit bound for the number of classes in a genus	New/Spanning/RemainingTerms/Box.lean	4	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	5.2	Class counts, rows of the lift diagrams and jet sizes on the data	New/UpperBound/Size/ArchimedeanSize.lean	6	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	5.3	The excess of the lifts, and the prime sums in the exponent	New/UpperBound/Size/ArchimedeanSize.lean	7	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	5.4	The size of one kernel and of the composite lift	New/UpperBound/Size/ArchimedeanSize.lean	3	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	5.5	Passage to target forms by the good projection	New/UpperBound/Size/ArchimedeanSize.lean	3	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	5.6	Short forms span at a free level	New/UpperBound/Size/ShortColumns.lean	5	same	y	0	0	0	0	
+CompositeThetaLiftsAndShortForms	5.7	Short ramified source forms span	New/UpperBound/Size/ShortColumns.lean	4	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	1.1	Galois-theoretic notation	New/Congruences/GaloisRepresentations/SelmerHypotheses.lean	4	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	1.2	Conjugate self-dual representations of a level, and representations of a type	New/Congruences/GaloisRepresentations/SelmerHypotheses.lean	3	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	1.3	Main summands	New/Congruences/GaloisRepresentations/SelmerHypotheses.lean	5	partial	y	0	2	0	2	eventually_eq_bot_or_eq_top:removed-offroute; eventually_lattice_unique:removed-offroute
+CongruencesOfTwistedThetaLifts	1.4	Lift settings and type projections	New/Congruences/GaloisRepresentations/SelmerHypotheses.lean	4	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	1.5	Twisted lattices and Selmer lengths with divisible coefficients	New/Congruences/GaloisRepresentations/SelmerHypotheses.lean	4	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	2.1	Attached representations are conjugate self-dual	New/Congruences/GaloisRepresentations/AttachedRepresentations.lean	3	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	2.2	The pairs of the data are lift settings	New/Congruences/GaloisRepresentations/AttachedRepresentations.lean	11	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	2.3	Twisting by avatars, and representations of labelled eigenforms	New/Congruences/GaloisRepresentations/AttachedRepresentations.lean	5	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	2.4	Inertia above the level primes; representations of a type are main summands	New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	2.5	Inertia at the twist places	New/Congruences/GaloisRepresentations/RowsAndColumnsFromLabels.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	2.6	Forms of a type and their base data	New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean	4	partial	y	0	1	0	1	normalisedJumps_eq_range_add_map:removed-offroute
+CongruencesOfTwistedThetaLifts	2.7	The jumps of the descent pairs and of the main pairs	New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean	7	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	2.8	Main summands for the Hecke eigensystems of good forms	New/Congruences/GaloisRepresentations/RowsFromEigensystems.lean	7	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	3.1	Trace ideals, tie ideals, triangle costs and common Ribet elements	New/Congruences/FirstOrder/RibetMatrices.lean	12	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	3.2	Amitsur's formula for block matrices and Ribet's polynomial	New/Congruences/FirstOrder/RibetMethod.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	3.3	Ribet's element for a matrix of tied rows	New/Congruences/FirstOrder/RibetMethod.lean	1	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	3.4	Fitting ideals of modules with a triangle cost	New/Congruences/FirstOrder/FittingBlock.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	3.5	Tied rows on the block	New/Congruences/FirstOrder/RibetMatrices.lean	1	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	3.6	Tied rows for the characters	New/Congruences/FirstOrder/RibetMatrices.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	3.7	Ribet's lemma to first order over a discrete valuation ring	New/Congruences/FirstOrder/RibetLemma.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	4.1	Even classes, triangles and auxiliary twists	New/Congruences/FirstOrder/EvenClasses.lean	6	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	4.2	Kummer maps and their reciprocity law with even classes	New/Congruences/FirstOrder/KummerMaps.lean	5	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	4.3	Taylor–Wiles places in a triangle, with prescribed Frobenii	New/Congruences/FirstOrder/TrianglePrimes.lean	1	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	4.4	Even parts and the triangle cost of Tate twists	New/Congruences/FirstOrder/TateTwistCocycles.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	5.1	First-order deformations of the norm, and logarithms	New/Congruences/FirstOrder/OnePrime.lean	7	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	5.2	Chains of roots for weak lifts	New/Congruences/FirstOrder/HeckeStrings.lean	5	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	5.3	Tied traces and the dictionary at one auxiliary place	New/Congruences/FirstOrder/TiedTraces.lean	6	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	5.4	The family of operators at the auxiliary places	New/Congruences/FirstOrder/AuxiliaryPrimeTie.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	5.5	The top coefficient clears denominators	New/Congruences/FirstOrder/AuxiliaryPrimeTie.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.1	The constants of the denominator bound	Lib/Cyclotomic/OddSha.lean	8	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.2	Block-diagonal lattices and the local defects of Ribet's cocycles	New/Congruences/FirstOrder/TraceRelations.lean	4	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.3	Tame relations at the places above `M` and at the twist places	New/Congruences/FirstOrder/TraceRelations.lean	1	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.4	The cocycles of the main summand at the lift	New/Congruences/FirstOrder/RibetElement.lean	1	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.5	Ribet's element for conjugate self-dual representations	New/Congruences/FirstOrder/TateTwistCocycles.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.6	The separating element and the auxiliary places of the Taylor–Wiles method	New/Congruences/FirstOrder/DenominatorBound.lean	4	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.7	The operator at one base system	New/Congruences/FirstOrder/DenominatorBound.lean	2	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.8	Lift generators and projections orthogonal to the false lifts	New/Congruences/FirstOrder/DenominatorBound.lean	3	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	6.9	The bound for denominators	New/Congruences/FirstOrder/DenominatorBound.lean	3	weaker	y	1	0	0	0	exists_operator_ellVal_le_liftValuationBound:weaker
+CongruencesOfTwistedThetaLifts	7.1	The budget of the clearing bounds	New/Congruences/FitTwistsExist.lean	7	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	7.2	Main summands of the lifts and denominators for the powers of a twist	New/OneLift/HeckeValues/CentralAction.lean	9	same	y	0	0	0	0	
+CongruencesOfTwistedThetaLifts	7.3	All data have regular families of `m`-fold twists	New/Congruences/FitTwistsExist.lean	2	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	1.1	The tilt of `O_C`, the ring `A_inf` and its elements	Lib/PadicHodge/Crystalline/Basic.lean	22	partial	y	0	1	1	0	completionAction:removed-absorbed
+CrystallineRepresentationsAndKisinModules	1.2	Structure of `A_inf`	Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean	25	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	1.3	The rings `A_max`, `B⁺`, `B_max` and `B_dR⁺`	Lib/PadicHodge/PeriodRings/DeRhamPeriods.lean	12	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	1.4	Structure of the period rings	Lib/PadicHodge/PeriodRings/CrystallineRings.lean	17	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	1.5	The period `t`, the field `B_dR` and the fundamental exact sequence for `B_max`	Lib/PadicHodge/Crystalline/FixedRatios.lean	15	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	1.6	Tate's vanishing theorem, Hodge–Tate elimination and the invariants of `B_dR`	Lib/PadicHodge/TateSen.lean	5	partial	y	0	2	2	0	exists_norm_normalizedTrace_le:removed-absorbed; eq_zero_of_smul_eq_cyclotomicGp_zpow_smul:removed-absorbed
+CrystallineRepresentationsAndKisinModules	2.1	Charts, Kummer charts and the ring `S_B`	Lib/PadicHodge/Kisin/KummerChartExistence.lean	14	same	partly	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	2.2	The ring of a chart	Lib/PadicHodge/Kisin/Charts.lean	17	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	2.3	Extension of `S`-linear maps to `B⁺`, and the ring `S_B`	Lib/PadicHodge/RadiusLemma.lean	18	partial	y	0	3	0	3	adjoinEDivP_le_bicommutant:removed-offroute; adjoinEDivPClosure_eq_bicommutant:removed-offroute; exists_E_pow_mul_eq_tau_pow_mul_iff:removed-offroute
+CrystallineRepresentationsAndKisinModules	2.4	Existence of Kummer charts	Lib/PadicHodge/Kisin/KummerChartExistence.lean	7	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	2.5	Ratios of periods fixed near `1`	Lib/PadicHodge/Crystalline/FixedRatios.lean	3	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	3.1	Admissible representations, Hodge–Tate jumps and the linear Frobenius	Lib/PadicHodge/Crystalline/Basic.lean	16	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	3.2	Tate twists, characters and restriction	Lib/PadicHodge/Crystalline/Basic.lean	8	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	3.3	Hodge frames	Lib/PadicHodge/Crystalline/HodgeTateJumps.lean	8	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	3.4	Hodge–Tate jumps under operations	Lib/PadicHodge/Crystalline/HodgeTateJumps.lean	13	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	3.5	Regularity of `B_max` and bases of fixed periods	Lib/PadicHodge/Crystalline/Regularity.lean	3	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	3.6	Closure of admissibility under subobjects, tensor products and twisted duals	Lib/PadicHodge/Crystalline/Regularity.lean	4	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	3.7	The linear Frobenius	Lib/PadicHodge/Crystalline/Regularity.lean	16	partial	y	0	1	0	1	linearFrob_eq:removed-offroute
+CrystallineRepresentationsAndKisinModules	4.1	Crystalline cocycles: coboundaries, extensions and reduction modulo `p^m`	Lib/PadicHodge/BlochKato.lean	13	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	4.2	The rank of the crystalline cocycles	Lib/PadicHodge/BlochKato.lean	4	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	4.3	The Artin–Schreier sequence over the tilt	Lib/PadicHodge/ArtinSchreierSequence.lean	10	partial	y	0	1	0	1	smallPart_spec:removed-offroute
+CrystallineRepresentationsAndKisinModules	4.4	Characters trivial on inertia near `1`	Lib/PadicHodge/Characters.lean	6	partial	y	0	1	0	1	isPotentiallyCrystalline_of_unramified_char:removed-offroute
+CrystallineRepresentationsAndKisinModules	4.5	Twists by characters	Lib/PadicHodge/Characters.lean	5	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	5.1	The different and the value fields of a Kummer chart	Lib/PadicHodge/Kisin/KummerChartDeRham.lean	14	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	5.2	Period matrices over a chart and their bases	Lib/PadicHodge/Kisin/PeriodMatrixBasis.lean	6	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	5.3	Period matrices of crystalline lattices	Lib/PadicHodge/Kisin/PeriodMatrixBasis.lean	6	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	5.4	The frame theorem for a period matrix	Lib/PadicHodge/Kisin/PeriodMatrixFrame.lean	4	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	5.5	The radius lemma	Lib/PadicHodge/RadiusLemma.lean	5	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	5.6	Jump lattices, forms and Kisin modules	Lib/PadicHodge/Kisin/Modules.lean	16	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	5.7	Letter projectors and forms of given type	Lib/PadicHodge/Kisin/Modules.lean	11	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	5.8	The frame theorem for Kisin modules	Lib/PadicHodge/Kisin/FrameTheorem.lean	7	partial	y	0	2	0	2	free_kisinModule:removed-offroute; valueFieldPoints_frobKisinAinf_eq_span:removed-offroute
+CrystallineRepresentationsAndKisinModules	5.9	Kisin modules through crystalline forms, and normalising elements	Lib/PadicHodge/Kisin/FrameTheorem.lean	6	partial	y	0	1	1	0	mem_kisinAinf_iff_crysForms:removed-weakened
+CrystallineRepresentationsAndKisinModules	6.1	A uniform bound for the periods of crystalline lattices	Lib/PadicHodge/Limit/CrystallineLimit.lean	3	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	6.2	Limits of crystalline lattices with bounded jumps	Lib/PadicHodge/Limit/CrystallineLimit.lean	8	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	6.3	Hodge–Tate projectors with bounded denominators	Lib/PadicHodge/Limit/TraceLimit.lean	2	same	y	0	0	0	0	
+CrystallineRepresentationsAndKisinModules	6.4	Local conditions at limits of traces	Lib/PadicHodge/Limit/TraceLimit.lean	12	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	1.1	Critical pairs and ratio products	New/Determinant/AuxiliaryForms/Turns.lean	10	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	1.2	Moduli up to norm powers and twisted pair characters	New/Determinant/Chain/Moduli.lean	2	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	1.3	Small ratios, denominators and regular families of twists	New/Determinant/Twist/FitTwists.lean	6	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	1.4	Heights of inverse ratios along a family with small ratios	New/Determinant/Twist/LongForms.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	2.1	The lift of a descent pair, its kernel and its adjoint	New/Determinant/Norms/AdjointThetaLift.lean	10	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	2.2	The norm of one lift	New/Determinant/Norms/AdjointThetaLift.lean	8	partial	y	0	1	1	0	normalizedDescent_eq_zero_iff:removed-weakened
+DeterminantsOfThetaLiftChains	3.1	Theta integrals with finite data at a modulus	Lib/SiegelWeil/Tower/LineGaussSums.lean	9	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	3.2	Fourier coefficients of theta integrals vanish off negative forms	New/Determinant/Exchange/NegativeIndices.lean	2	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	3.3	Matched functions and same-section pairs	New/Determinant/Exchange/MatchingPartners.lean	5	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	3.4	From standard data to all matched functions	New/Determinant/Exchange/TheoremForPartners.lean	6	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	3.5	The exchange identity for the large triple	New/Determinant/Exchange/LargeTriple.lean	10	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	3.6	Descent of the exchange identity by removing hyperbolic planes	New/Determinant/Exchange/RemovingPlanes.lean	7	partial	y	0	3	3	0	exists_analytic_extension_functional_equation:removed-absorbed; exists_analytic_extension_ne_zero:removed-absorbed; exists_thetaLarge_cone_eq_mul:removed-absorbed
+DeterminantsOfThetaLiftChains	3.7	Vanishing descends along hyperbolic planes	New/Determinant/Exchange/VanishingDescends.lean	2	none	n/a	0	2	2	0	of_add_plane:removed-absorbed; of_add_planes:removed-absorbed
+DeterminantsOfThetaLiftChains	3.8	The exchange identity measured by the equal-rank ratio, and the value of that ratio	New/Determinant/Exchange/TheoremForPartners.lean	5	stronger	y	4	0	0	0	exchange_of_matches:stronger; exists_rowColExchangeIdentity_of_even_rank:stronger; exists_equalRankThetaRatio_ne_zero:stronger; exists_equalRankThetaRatio_sq_eq:stronger
+DeterminantsOfThetaLiftChains	3.9	The exchange identity	New/Determinant/Exchange/TheoremForPartners.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	3.10	The exchange identity for a definite space with determinant data	New/Determinant/Exchange/ExplicitMatching.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	3.11	The finite square law	New/Determinant/Chain/SquareLaw.lean	6	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	3.12	One square: up then down against down then up	New/Determinant/Exchange/OneSquare.lean	4	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	4.1	Triangles of arrows and their Gram forms	New/Determinant/Chain/TriangleNorms.lean	5	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	4.2	The triangle of lifts and its first lifts	New/Determinant/Chain/TriangleLifts.lean	5	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	4.3	Commutation in the squares of the triangle and injectivity of the chain	New/Determinant/Chain/ChainNorms.lean	5	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	4.4	The norm of the chain and its two determinants	New/Determinant/Chain/NormOfChain.lean	4	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.1	Monotone paths through two grids	New/Determinant/AuxiliaryForms/GridPaths.lean	6	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.2	Weights of regular parameters	New/Determinant/AuxiliaryForms/RegularParameters.lean	4	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.3	The two grids, path data and their periods	New/Determinant/AuxiliaryForms/Turns.lean	10	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.4	Steep parameters and periods of Poincaré series of deep level	New/Determinant/AuxiliaryForms/DeepLevelPoincarePeriod.lean	2	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.5	Forms on `Y₀` are detected by the deep level on `Ỹ^0_0`	New/Determinant/AuxiliaryForms/DeepLevelVanishing.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.6	Periods on the diagonal and the first path datum	New/Determinant/AuxiliaryForms/GridFirstColumns.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.7	The maps `Θ^♭` and `res^♭`, and the first path	New/Determinant/AuxiliaryForms/FirstPath.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.8	Turns off the diagonal	New/Determinant/AuxiliaryForms/Turns.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.9	Turns on the diagonal, and the transfer from the first path to the last	New/Determinant/AuxiliaryForms/DiagonalTurns.lean	7	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.10	The branching pairing and the periods on the last path	New/Determinant/AuxiliaryForms/LastPath.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	5.11	Denominators and sizes on the last path; forms with short integral lifts span	New/Determinant/AuxiliaryForms/SpanningForms.lean	4	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	6.1	Auxiliary forms	New/Determinant/Twist/LongForms.lean	2	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	6.2	The inverse ratio of the chain determinants	New/Determinant/Twist/LongForms.lean	3	same	y	0	0	0	0	
+DeterminantsOfThetaLiftChains	6.3	Theorem C: integral forms are long	New/Determinant/Twist/LongForms.lean	2	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	1.1	The integers and the different of `E`	New/Derivatives/Field/PrimeDecomposition.lean	10	partial	y	0	1	1	0	relDifferent_spec:removed-split
+DivisibilityOfThetaDerivatives	1.2	The decomposition of the primes prime to `q₁d`	New/Derivatives/Field/PrimeDecomposition.lean	13	partial	y	0	3	0	3	betaKInE_mul_star_notMem_of_star_eq:removed-offroute; not_dvd_q₁_of_star_eq:removed-offroute; natCast_eq_neg_one_of_star_eq:removed-offroute
+DivisibilityOfThetaDerivatives	1.3	Primes congruent to `1` modulo `q₁d`	New/Derivatives/Field/WeilData.lean	9	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	1.4	The Weil data of `E` and the number `s₀`	New/Derivatives/Field/WeilData.lean	16	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	1.5	Chosen places and the residue characters `ω`	New/Derivatives/Field/ChosenPlaces.lean	11	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	1.6	Characters of `U(1)` of given weight, and pairs	New/Derivatives/Field/ChosenPlaces.lean	7	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	1.7	The size of the different at the infinite places	New/Derivatives/Field/ChosenPlaces.lean	2	partial	y	0	1	0	1	abs_log_deltaE_sub_log_rootDiscr_le:removed-offroute
+DivisibilityOfThetaDerivatives	2.1	CM lattices, their functions, and the numbers attached to a prime	New/Derivatives/FormalGroup/Resolution.lean	1	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	2.2	The Frobenius congruence for `θ`	New/Derivatives/FormalGroup/FrobeniusCongruence.lean	4	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	2.3	The exponent on one curve	New/Derivatives/FormalGroup/Exponent.lean	5	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	2.4	Couplings and the normal form	New/Derivatives/Divisibility/NormalForm.lean	13	partial	y	0	1	0	1	exists_of_norm_eq:removed-offroute
+DivisibilityOfThetaDerivatives	2.5	Resolutions of the identity and products of copies of `θ`	New/Derivatives/FormalGroup/Resolution.lean	11	partial	y	0	1	0	1	sum_conj_mul:removed-offroute
+DivisibilityOfThetaDerivatives	2.6	Partners, and the normal form of products of copies of `θ`	New/Derivatives/FormalGroup/ThetaProducts.lean	7	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	3.1	Products of minors, charges and the predicted divisibility	New/Derivatives/Divisibility/NullFrames.lean	14	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	3.2	The change of directions	New/Derivatives/Divisibility/NullFrames.lean	6	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	3.3	The count	New/Derivatives/Divisibility/Count.lean	7	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	3.4	From entries of Schur matrices to products of minors	New/Derivatives/Divisibility/Count.lean	3	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	4.1	The Weil model, theta functions of vectors, and tight frames	New/Derivatives/Vacuum/ShortVectors.lean	4	partial	y	0	2	2	0	join_family:removed-absorbed; replace_pairs:removed-absorbed
+DivisibilityOfThetaDerivatives	4.2	The CM curve and the scale of Taylor series	New/Derivatives/Vacuum/IntegralVacuum.lean	18	partial	y	0	2	0	2	norm_jetScale_sq:removed-offroute; area_eq_of_a₁_eq:removed-offroute
+DivisibilityOfThetaDerivatives	4.3	Tight frames in `𝔞₀`	New/Derivatives/Vacuum/StandardDataProducts.lean	9	partial	y	1	3	3	0	isTightFrame_orbit:removed-absorbed; dualResolutionFactor:removed-absorbed; exists_isTightFrame_coprime:incomparable; exists_hasUnitLinearForm:removed-absorbed
+DivisibilityOfThetaDerivatives	4.4	Jet series along lines	New/Derivatives/Vacuum/Scale.lean	8	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	4.5	Products of sections along a tight frame	New/Derivatives/Vacuum/TightFrames.lean	8	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	4.6	The integral vacuum	New/Derivatives/Vacuum/IntegralVacuum.lean	17	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	4.7	Conjugates of the jets of translates	New/Derivatives/Field/PrimeDecomposition.lean	7	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	4.8	Standard data and their stability	New/Derivatives/Vacuum/JetIntegrality.lean	8	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	4.9	Standard data as products of theta functions of the curve	New/Derivatives/Vacuum/StandardDataProducts.lean	9	partial	y	0	1	0	1	isResolution_resolutionVectors_zeta_pow:removed-offroute
+DivisibilityOfThetaDerivatives	4.10	Integrality of the jets of standard data at every prime	New/Derivatives/Vacuum/Divisibility.lean	7	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	4.11	Divisibility of standard data at a prime that does not split in `K`	New/Derivatives/Vacuum/Divisibility.lean	4	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	5.1	Least valuations of products of copies	New/Derivatives/Sharpness/OneCurve.lean	10	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	5.2	One curve: the rate `γ_p` is attained	New/Derivatives/Sharpness/LeastValuation.lean	11	stronger	y	1	0	0	0	pow_le_of_submultiplicative:stronger
+DivisibilityOfThetaDerivatives	5.3	Least valuations along couplings	New/Derivatives/Sharpness/Couplings.lean	8	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	5.4	Near pairs of `b`-places and the losses	New/Derivatives/Sharpness/NearPairs.lean	16	same	y	0	0	0	0	
+DivisibilityOfThetaDerivatives	5.5	The valuation bound for every prime	New/Derivatives/Sharpness/Cases.lean	19	partial	y	0	1	0	1	norm_conj_piMBar_mul_jetScale_sq:removed-offroute
+DivisibilityOfThetaDerivatives	5.6	Sharpness of the valuation bound	New/Derivatives/Sharpness/BoundAttained.lean	12	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	1.1	Hecke polynomials, eigenforms, labels and jumps	Lib/GaloisRep/Main/OddRank.lean	10	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	1.2	The filter of most Frobenii	Lib/GaloisRep/Main/Defs.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	1.3	Local conditions at a place of `Ω`	Lib/GaloisRep/Main/LocalConditions.lean	8	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	1.4	Local conditions pass to retracts	Lib/GaloisRep/Main/LocalConditions.lean	4	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	1.5	Attached representations and spherical compatibility	Lib/GaloisRep/Main/AttachedRepresentations.lean	3	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	1.6	Characteristic polynomials of attached representations, and rank one	Lib/GaloisRep/Main/AttachedRepresentations.lean	5	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	2.1	Semisimple representations: conjugacy, continuity, twists and cancellation	Lib/GaloisRep/Pseudocharacter/SemisimpleRepresentations.lean	8	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	2.2	Stable lattices and spanning families	Lib/GaloisRep/Pseudocharacter/Pseudorepresentations.lean	6	partial	y	0	2	0	2	eq_bot_or_eq_top_of_span_eq_top:removed-offroute; exists_eq_smul_of_conj_eq:removed-offroute
+GaloisRepresentationsOfUnitaryEigenforms	2.3	A function obeying every trace identity is a trace	Lib/GaloisRep/Pseudocharacter/SemisimpleRepresentations.lean	4	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	2.4	Limits of traces	Lib/GaloisRep/Pseudocharacter/Pseudorepresentations.lean	5	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	3.1	The ultrametric Stone–Weierstrass theorem for modules	Lib/GaloisRep/WeightCongruence.lean	1	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	3.2	Matrix coefficients of free weights are dense	Lib/GaloisRep/WeightCongruence.lean	3	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	3.3	`ℓ`-adic models of forms: a Hecke contraction, and density of free weights of a given type	Lib/GaloisRep/WeightCongruence.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	4.1	Free weights force the rank and identify the characteristic polynomials	Lib/GaloisRep/KillingPolynomials.lean	4	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	4.2	The Hodge–Tate cocharacter in coordinates	Lib/GaloisRep/Main/CuspidalTypes.lean	1	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	4.3	Cuspidal types and principal levels	Lib/Shimura/HeckeTower/HeckeData.lean	3	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	4.4	Multiplicity-free sums with prescribed jumps	Lib/GaloisRep/Main/CuspidalTypes.lean	3	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	4.5	One representation of rank `a` from one for each embedding	Lib/GaloisRep/Main/SeedRepresentation.lean	1	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.1	Steps, twisted norms, tame actions, matching pairs and weak base change	Lib/GaloisRep/BaseChange/TwistedTraceIdentity.lean	18	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.2	Hilbert 90 for `GL_n` and for units under tame actions	Lib/GaloisRep/Hilbert90/TameActions.lean	7	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.3	Hilbert 90 for unitary groups over profinite rings, and for finite ideles	Lib/GaloisRep/Hilbert90/UnitaryGroups.lean	5	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.4	Commuting families of local and spherical Hecke operators	Lib/GaloisRep/BaseChange/CommutingHeckeFamilies.lean	8	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.5	Norm roots on one side, and Hecke-stable matching pairs at split matched places	Lib/GaloisRep/BaseChange/StepMatchingPairs.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.6	The Hasse principle for ideles of a CM field, and global norm roots	Lib/GaloisRep/BaseChange/GlobalRoot.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.7	Matching at principal congruence levels and at unramified places	Lib/GaloisRep/BaseChange/CongruenceLevelMatching.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.8	The twisted trace identity	Lib/GaloisRep/BaseChange/TwistedTraceIdentity.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.9	A weak base change eigenform	Lib/GaloisRep/Main/OddRank.lean	7	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.10	Pro-`p` Iwahori level: Hilbert 90, matching, and base change of eigencharacters	Lib/GaloisRep/BaseChange/IwahoriEigenforms.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	5.11	Inert places: base change carries a label to its Shintani lift	Lib/GaloisRep/BaseChange/ShintaniLift.lean	5	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	6.1	Split places over `ℚ(√−d)` and quadratic steps	Lib/GaloisRep/Main/QuadraticStep.lean	5	partial	y	0	1	1	0	exists_isStep_hasQuadSubfield:removed-absorbed
+GaloisRepresentationsOfUnitaryEigenforms	6.2	Seed representations	Lib/GaloisRep/Main/SeedRepresentation.lean	5	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	6.3	The split case	Lib/GaloisRep/Main/SplitCase.lean	7	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	6.4	Odd rank: descent along a step and gluing	Lib/ClassField/Avatar/LocalGlobalCompatibility.lean	10	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	7.1	Theta lift to a larger definite unitary group	Lib/GaloisRep/Main/ThetaLift.lean	3	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	7.2	Cancelling strings of characters	Lib/GaloisRep/Main/AllRanks.lean	7	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	7.3	Attached representations in every positive rank	Lib/GaloisRep/Main/AllRanks.lean	1	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	7.4	Isotypic spaces and their Galois representations	Lib/GaloisRep/Main/AllRanks.lean	10	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	8.1	The local action at a split place, parahoric types and labels	Lib/GaloisRep/LocalGlobal/LocalFormTypes.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	8.2	Iwahori eigencharacters	Lib/GaloisRep/LocalGlobal/IwahoriCompatibility.lean	6	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	8.3	Frobenius and inertia matrices on parahoric eigenspaces	Lib/GaloisRep/LocalGlobal/IwahoriCompatibility.lean	3	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	8.4	Labelled forms	Lib/GaloisRep/LocalGlobal/LabelCompatibility.lean	7	partial	partly	1	1	1	0	isLabelledAt_one:stronger; exists_isStepOfLocalChar_inert:removed-absorbed
+GaloisRepresentationsOfUnitaryEigenforms	9.1	Taylor–Wiles places, the integral Hecke algebra and Higman operators	Lib/GaloisRep/TaylorWiles.lean	14	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	9.2	Selmer modules of cocycles	Lib/GaloisRep/Main/SelmerModules.lean	9	same	y	0	0	0	0	
+GaloisRepresentationsOfUnitaryEigenforms	9.3	Torsion and divisible coefficients	Lib/GaloisRep/Main/DivisibleSelmerModules.lean	5	stronger	y	1	0	0	0	length_le_divisibleSelmerLength:stronger
+HolomorphicDiscreteSeriesOfUnitaryGroups	1.1	Unitary groups of hermitian involutions and their compact-dual measure	Lib/General/Measure/FibreMeasure.lean	8	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	1.2	The compact-dual measure is a Haar measure	Lib/DiscreteSeries/Haar/CayleyChart.lean	4	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	1.3	The polar formula for the Gram map on bases	Lib/DiscreteSeries/Haar/GramCoordinates.lean	4	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	1.4	The volume of `U(n)`	Lib/DiscreteSeries/Haar/TotalMass.lean	2	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	1.5	Covering bounds for norm balls	Lib/DiscreteSeries/Haar/TotalMass.lean	4	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	1.6	Measures below the Gram fibre	Lib/DiscreteSeries/Haar/GramFibre.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	2.1	The split form, floors, levels and the subgroups	Lib/DiscreteSeries/Bruhat/FloorGroups.lean	12	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	2.2	Floor groups and the Bessel subgroup	Lib/DiscreteSeries/Bessel/SchurBound.lean	9	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	2.3	The Heisenberg groups of the floors	Lib/DiscreteSeries/Bruhat/FloorMeasures.lean	7	partial	y	0	2	0	2	bijOn_mulVec_eStar:removed-offroute; existsUnique_prod_of_mem_besselU:removed-offroute
+HolomorphicDiscreteSeriesOfUnitaryGroups	2.4	The big cell	Lib/DiscreteSeries/Bruhat/BigCell.lean	4	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	2.5	The real group `G₁` and its Bessel subgroups	Lib/DiscreteSeries/Bessel/Basic.lean	7	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	2.6	Haar measures on the Bessel unipotent groups	Lib/DiscreteSeries/Bessel/Basic.lean	9	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	2.7	The fibre measure on frames of `G₁`	Lib/DiscreteSeries/Bessel/FrameFibre.lean	3	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	2.8	Schur's bound and `L²` bounds for Bessel functions	Lib/DiscreteSeries/Bessel/SchurBound.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	3.1	Places, quadric measures and solved measures	Lib/DiscreteSeries/Bruhat/FourierKernels.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	3.2	The complex place, polar coordinates and spheres	Lib/DiscreteSeries/Bruhat/SphereFibres.lean	3	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	3.3	Quadrics solved in a block	Lib/DiscreteSeries/Bruhat/QuadricBlocks.lean	3	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	3.4	Plancherel's inequality and Fourier kernels between solved measures	Lib/DiscreteSeries/Bruhat/FourierKernels.lean	4	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	3.5	Measures of the floors	Lib/DiscreteSeries/Bruhat/FloorMeasures.lean	7	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	3.6	The top floor at `ℂ`: Cartan decomposition and the hyperboloid	Lib/DiscreteSeries/Bruhat/ComplexPlace.lean	6	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	3.7	Floor measures below fibre measures at `ℂ`	Lib/DiscreteSeries/Bruhat/FloorFibre.lean	3	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	4.1	Parameters, products of principal minors and `c_λ`	Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean	19	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	4.2	`𝔤𝔩_n`-modules, unitary representations and coefficient maps	Lib/DiscreteSeries/Rigidity/KernelFixes.lean	10	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	4.3	Exponentials, block diagonal matrices and equivariance of minors	Lib/DiscreteSeries/Holomorphic/HighestVectorExtension.lean	6	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	4.4	Holomorphic extension of coefficients of highest vectors	Lib/DiscreteSeries/Holomorphic/HighestVectorExtension.lean	3	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	4.5	The filtration of a `K`-highest vector and the vanishing of coefficient maps	Lib/DiscreteSeries/Rigidity/HighestVectorsAndFiltration.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	5.1	Integrals of densities on flags	Lib/DiscreteSeries/FlenstedJensen/FlagDensities.lean	6	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	5.2	Independence of the splitting, analyticity and the Casimir eigenvalue	Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean	7	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	5.3	First properties of `c_λ` and its `K`-types	Lib/DiscreteSeries/FlenstedJensen/PsiKTypes.lean	8	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	5.4	Decay, Schur orthogonality and the `L²` model	Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean	13	partial	y	0	1	0	1	isUnitaryCasimirGe_dsAction:removed-offroute
+HolomorphicDiscreteSeriesOfUnitaryGroups	5.5	Lipschitz and tail bounds for `c_λ`	Lib/DiscreteSeries/FlenstedJensen/SquareIntegrability.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	6.1	The idempotent `e_λ` and rigidity of the coefficient	Lib/DiscreteSeries/Rigidity/KernelFixes.lean	7	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	6.2	Minimal idempotent kernels kill bounded radical-invariant functions	Lib/DiscreteSeries/CuspKernel.lean	2	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	6.3	The model function and `c_λ` in the holomorphic chamber	Lib/DiscreteSeries/Holomorphic/ModelFunction.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	6.4	The peaks of a bounded holomorphic form lie away from the cusps	Lib/DiscreteSeries/Holomorphic/PeaksAwayFromCusp.lean	3	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	7.1	Weyl's character and dimension formulas for products of unitary groups	Lib/DiscreteSeries/Character/WeylCharacterFormula.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	7.2	`K`-type multiplicities of `c_λ` and orbital integrals as Laurent polynomials	Lib/DiscreteSeries/Character/MultiplicityOrbitalIntegral.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	7.3	Orbital integrals and the open orbit	Lib/DiscreteSeries/Character/OpenOrbitIntegral.lean	5	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	7.4	The formal degree and the stable orbital integral	Lib/DiscreteSeries/Character/FormalDegree.lean	3	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	8.1	Fock data, oscillator actions, matching and joint harmonics	Lib/Weil/Fock/OscillatorPair.lean	12	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	8.2	The block rule for corresponding parameters	Lib/DiscreteSeries/Theta/BlockRule.lean	7	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	8.3	Uniqueness of joint harmonics	Lib/DiscreteSeries/Theta/FockJointHarmonics.lean	4	partial	y	0	1	0	1	exists_eq_smul_of_column_weight:removed-offroute
+HolomorphicDiscreteSeriesOfUnitaryGroups	8.4	The Casimir operators of an oscillator pair	Lib/DiscreteSeries/Theta/CasimirComparison.lean	4	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	8.5	Existence of joint harmonics and Howe's argument	Lib/DiscreteSeries/Theta/LocalCorrespondence.lean	4	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	8.6	The local theta correspondence for oscillator pairs	Lib/DiscreteSeries/Theta/LocalCorrespondence.lean	6	same	y	0	0	0	0	
+HolomorphicDiscreteSeriesOfUnitaryGroups	S	integral_mul_translate_eq_zero_of_idempotent_kernel		0	target(see matcher)	n/a	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	1.1	Places of `Ω`, decomposition and inertia groups, Frobenius elements	Lib/ClassField/Local/ArtinMap.lean	19	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	1.2	Places above a prime and embeddings into `p`-adic fields	Lib/ClassField/Places/ValuationSubrings.lean	15	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	1.3	Decomposition groups as absolute Galois groups of completions	Lib/ClassField/Places/DecompositionCompletion.lean	11	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	1.4	Frobenius, inertia, roots of unity and tame inertia at a place of `Ω`	Lib/ClassField/GreenbergWiles/SelmerLevels.lean	15	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	1.5	Finite ideles and the class group	Lib/ClassField/Places/Ideles.lean	8	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	2.1	The local Artin map at a place of `Ω`	Lib/ClassField/Local/ArtinMap.lean	15	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	2.2	The global Artin map on finite ideles	Lib/ClassField/Global/AlbertBrauerHasseNoether.lean	17	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	2.3	Norm groups, Hasse's norm theorem, the existence theorem, Kummer characters and detecting points	Lib/ClassField/Global/ExistenceTheorem.lean	10	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	2.4	Galois descent from a subgroup of finite index	Lib/ClassField/GaloisCohomology/KummerCyclicClasses.lean	2	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	3.1	Continuous cocycles, Selmer cocycles and Selmer modules	Lib/ClassField/Global/CMSplittingCharacters.lean	11	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	3.2	Cocycles at tamely ramified places	Lib/ClassField/GaloisCohomology/TameSelmerCocycles.lean	6	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	3.3	Finiteness of cocycles unramified outside a finite set	Lib/ClassField/LocalDuality/KummerFiniteness.lean	3	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	4.1	Split places, `N`-units and trivialised cocycles	Lib/General/Algebra/CartanMap.lean	11	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	4.2	The equivariant `S`-unit theorem	Lib/ClassField/GaloisCohomology/TateIndexFormula.lean	5	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	4.3	Power residue reciprocity at split primes	Lib/ClassField/GreenbergWiles/SplitPrimeReciprocity.lean	7	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	4.4	The count of trivialised cocycles	Lib/ClassField/GreenbergWiles/CocycleCounts.lean	5	partial	y	0	1	0	1	hasFewCocycles_of_isHigmanProjective:removed-offroute
+IdelicReciprocityCountsAndCyclotomicClassGroups	4.5	Relations at split primes and the Greenberg–Wiles inequality	Lib/ClassField/GreenbergWiles/SelmerRelations.lean	12	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	4.6	Relations modulo `ℓ`	Lib/ClassField/GreenbergWiles/RelationsModL.lean	4	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	5.1	Classes of Galois lattices, cup-orthogonality and the dual defect	Lib/ClassField/LocalDuality/CrystallineDuality.lean	14	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	5.2	Local duality for crystalline cocycles	Lib/ClassField/LocalDuality/KummerFiniteness.lean	10	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	6.1	Grunwald's theorem in prime exponent, with the unit clause	Lib/ClassField/Grunwald.lean	1	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	6.2	Steps of prime degree with prescribed local behaviour	Lib/ClassField/Grunwald.lean	8	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	7.1	Characters of `U(1)` with given weight and tame part	Lib/ClassField/HeckeCharacter/Basic.lean	21	partial	y	0	2	0	2	card_u1_classGroup_dvd_classNumber:removed-offroute; isOfFinOrder_apply:removed-offroute
+IdelicReciprocityCountsAndCyclotomicClassGroups	7.2	Splitting characters: existence and restriction to the real subfield	Lib/Weil/Construction/WeilData.lean	9	partial	y	0	1	0	1	υ_star_eq_inv_and_apply_eq:removed-offroute
+IdelicReciprocityCountsAndCyclotomicClassGroups	7.3	Base change from `U(1)` and splitting characters of rank `k`	Lib/ClassField/HeckeCharacter/SplittingCharacters.lean	11	partial	y	0	8	0	8	exists_baseChange_eq:removed-offroute; exists_baseChange_iff:removed-offroute; IsSplitting:removed-offroute; isSplitting_iff:removed-offroute; autChar:removed-offroute; spaceChar_inv_mul_upsilonU1_pow:removed-offroute; spaceChar_stdChar:removed-offroute; inv_spaceChar_rankTwist_inv:removed-offroute
+IdelicReciprocityCountsAndCyclotomicClassGroups	7.4	Galois characters coming from the norm-one torus	Lib/GaloisRep/Main/SelmerModules.lean	10	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	7.5	Values of algebraic Hecke characters	Lib/ClassField/HeckeCharacter/AlgebraicValues.lean	15	partial	y	0	1	0	1	conjugateBy:removed-offroute
+IdelicReciprocityCountsAndCyclotomicClassGroups	7.6	Characters of `U(1)` tamely ramified at split places, on determinants and for a modulus	Lib/ClassField/HeckeCharacter/TameModulus.lean	16	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	8.1	Euler products over primes and densities at primes of degree one	Lib/ClassField/HeckeL/EulerProduct.lean	16	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	8.2	The finite Tate integral	Lib/ClassField/HeckeL/ContinuationAtOne.lean	5	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	8.3	Idelic theta sums as Riemann sums	Lib/ClassField/HeckeL/IdelicThetaSum.lean	7	partial	y	0	1	1	0	exists_abs_sub_thetaSum_le_mul_rpow:removed-absorbed
+IdelicReciprocityCountsAndCyclotomicClassGroups	8.4	Continuation to `s = 1`, non-vanishing and prime densities	Lib/ClassField/HeckeL/ContinuationAtOne.lean	8	partial	y	0	1	1	0	exists_hasPrimeDensity:removed-split
+IdelicReciprocityCountsAndCyclotomicClassGroups	8.5	`L`-functions and algebraic characters of base changes from `U(1)`	Lib/ClassField/Avatar/HeckeBaseChange.lean	8	partial	y	0	1	0	1	spaceChar_apply_of_snd_eq_one:removed-offroute
+IdelicReciprocityCountsAndCyclotomicClassGroups	9.1	The `ℓ`-adic avatar and its local behaviour	Lib/ClassField/Avatar/HeckeBaseChange.lean	5	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	9.2	Twisting by the avatar of a character of parallel type	Lib/ClassField/Avatar/HeckeBaseChange.lean	5	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	10.1	Odd classes, components and the Stickelberger property	Lib/Cyclotomic/Voronoi.lean	8	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	10.2	Voronoi's congruence and a nonzero integer in all Stickelberger ideals	Lib/Cyclotomic/Voronoi.lean	6	partial	y	0	3	3	0	LFunction_neg_nat_eq_zero_iff:removed-absorbed; sum_mul_bernoulli_eq_neg_mul_LFunction:removed-absorbed; sum_mul_bernoulli_ne_zero:removed-absorbed
+IdelicReciprocityCountsAndCyclotomicClassGroups	10.3	Jacobi-type quotients of Gauss sums over prime fields	Lib/Cyclotomic/Stickelberger.lean	5	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	10.4	Kolyvagin's derivative cocycles	Lib/Cyclotomic/Kolyvagin/DerivativeCocycles.lean	3	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	10.5	Reciprocity at auxiliary primes; annihilation and detection of odd components	Lib/Cyclotomic/Kolyvagin/ReciprocityComponentBounds.lean	4	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	10.6	Few elements detect cocycles unramified outside `ℓ`	Lib/Cyclotomic/OddSha.lean	4	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	10.7	One integer bounding the odd classes of a cyclotomic CM field at every prime	Lib/Cyclotomic/OddSha.lean	7	same	y	0	0	0	0	
+IdelicReciprocityCountsAndCyclotomicClassGroups	S	2.3		0	target(see matcher)	n/a	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	1.1	The polynomial model	Lib/GLn/SchurModule/TensorModel.lean	23	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	1.2	A basis of products of minors over every ring, and its character	Lib/GLn/SchurModule/SchurMatrix.lean	13	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	1.3	Schur matrices	Lib/GLn/Dual.lean	15	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	2.1	The Gram matrix	Lib/GLn/SchurModule/WeylKernel.lean	12	partial	y	0	1	0	1	sum_weylGram_smul_eq_weylKernel_of_exists:removed-offroute
+IntegralRepresentationsOfGeneralLinearGroups	2.2	The Fock pairing and the hook number as a denominator	Lib/GLn/SchurModule/WeylKernel.lean	10	partial	y	0	1	0	1	toPoly_mem_span_multinomialMonomial_iff:removed-offroute
+IntegralRepresentationsOfGeneralLinearGroups	2.3	The adjoint formula, the norm bound by singular values, and invariance	Lib/GLn/SchurModule/SchurNorm.lean	5	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	2.4	Schur's lemma, irreducibility, Schur orthogonality and the highest coefficient	Lib/GLn/SchurModule/Polarisation.lean	11	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	2.5	Multiplication of semi-invariants	Lib/GLn/SchurModule/GramMatrix.lean	6	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	3.1	Duality by complementary minors, and the pairing of dual weights	Lib/GLn/Dual.lean	11	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	3.2	Mixed weights and the Cartan product	Lib/GLn/Dual.lean	9	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	3.3	Leading-row fillings	Lib/GLn/SchurModule/LeadingRows.lean	8	none	n/a	0	8	8	0	flatColumns:removed-absorbed; leadingWedge:removed-absorbed; blockArray:removed-absorbed; leadingWedgeMatrix:removed-absorbed; aeval_fillingPoly_leadingWedge:removed-absorbed; leadingWedgeMatrix_mulVec_weylEval:removed-absorbed; exists_fillingMatrix_mulVec_eq_leadingWedgeMatrix_mulVec:removed-absorbed; exists_toPoly_eq_hookNumber_smul_leadingWedge:removed-absorbed
+IntegralRepresentationsOfGeneralLinearGroups	3.4	Integral branching from `GL(n + 1)` to `GL(n) × GL(1)`	Lib/GLn/Branching/IntegralMap.lean	9	partial	y	1	1	1	0	extendedTensor:removed-absorbed; weylNormSq_mulVec_le_of_equivariant:stronger
+IntegralRepresentationsOfGeneralLinearGroups	4.1	The ring of class functions on all square matrices	Lib/LocalGL/Green/HallAlgebra.lean	13	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	4.2	The Hall algebra: Mackey's formula, adjunction and Frobenius reciprocity	Lib/LocalGL/Green/HallAlgebra.lean	10	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	4.3	Cuspidal functions, `μ`, and the torus identity	Lib/LocalGL/Green/CuspidalFunctions.lean	11	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	4.4	Green's cuspidal functions `τ_P`	Lib/LocalGL/Green/TauFunctions.lean	10	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	5.1	Descent along a coset, and the extension of invariant characters	Lib/LocalGL/Shintani/CosetDescent.lean	14	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	5.2	Lifts are multiplicative, and the eigenvalue sums lift	Lib/LocalGL/Shintani/CosetDescent.lean	10	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	5.3	The characters of labels	Lib/LocalGL/Green/TauFunctions.lean	17	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	5.4	Shintani lifting of the characters of labels in prime degree	Lib/LocalGL/Shintani/LiftingGreenCharacters.lean	6	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	6.1	Parahoric subgroups, the operators `U_t`, exponents and Hecke operators	Lib/LocalGL/SphericalChainLemma.lean	13	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	6.2	The Iwasawa–Bruhat decomposition and the Iwahori factorisation	Lib/LocalGL/Iwahori/ParahoricStructure.lean	4	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	6.3	Twisted conjugacy in `I₁tI₁`	Lib/LocalGL/Iwahori/ParahoricStructure.lean	3	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	6.4	The quadratic relation, and injectivity of a `U_t`	Lib/LocalGL/Iwahori/QuadraticRelation.lean	7	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	6.5	Iwahori degrees, partial Hecke sums and Satake's formula	Lib/LocalGL/Iwahori/HeckeDegrees.lean	7	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	6.6	Sorting exponents	Lib/LocalGL/Iwahori/SortedExponents.lean	5	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	6.7	Sorted unramified exponents are seen by spherical vectors	Lib/LocalGL/Iwahori/SphericalExponents.lean	6	same	y	0	0	0	0	
+IntegralRepresentationsOfGeneralLinearGroups	6.8	Chains of roots of the Hecke polynomial of a spherical vector	Lib/LocalGL/SphericalChainLemma.lean	6	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	1.1	Point forms: inner products and descent	New/OneLift/TestedForms.lean	10	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	1.2	The adjoint of the Hecke polynomial for the conjugated pairings	New/OneLift/TestedForms.lean	6	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	1.3	False lifts, forms orthogonal to the false lifts, and test forms	New/OneLift/TestedForms.lean	3	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	1.4	The denominator of the projection to a subspace	New/OneLift/TestedForms.lean	3	same	partly	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	1.5	The projection to the lifts does not increase conjugate norms	New/OneLift/TestedForms.lean	1	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	2.1	Lift data, the kernel form and the lift of a character	New/OneLift/HeckeValues/CharacterLift.lean	13	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	2.2	The lift and the descent are adjoint; the Hecke polynomials of the lift	New/OneLift/HeckeValues/CharacterLiftNorm.lean	12	partial	y	0	1	0	1	lift_fockDatum_const_one:removed-offroute
+NormsOfThetaLiftsAndExchangeIdentities	2.3	The squared norm of the lift is a Hecke L-value	New/OneLift/HeckeValues/CharacterLiftNorm.lean	4	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	2.4	Galois conjugates of the lift	New/OneLift/HeckeValues/CharacterLift.lean	1	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	2.5	The lift of a pair, its denominator and the algebraic part	New/OneLift/HeckeValues/TwistedRatio.lean	21	partial	y	0	2	0	2	exists_ofAlgForm_trivialLift_eq_smul_lift:removed-offroute; formAction_trivialLift:removed-offroute
+NormsOfThetaLiftsAndExchangeIdentities	2.6	Products of squared L-values of a twist	New/OneLift/HeckeValues/TwistedRatio.lean	3	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	2.7	The period of a determinant theta kernel	New/OneLift/HeckeValues/PeriodAtOne.lean	5	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	3.1	One exchange, and class sums at the level of a row stabiliser	New/OneLift/ComparisonOperator/OneExchange.lean	7	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	3.2	Divided splittings and glued lattices	New/OneLift/ComparisonOperator/GluedLattices.lean	17	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	3.3	The descent of product forms, and their denominators	New/OneLift/ComparisonOperator/GluedForms.lean	4	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	3.4	The data of the three exchanges: carrier, choices and the functions `𝖥_i`	New/OneLift/ComparisonOperator/FirstFactors.lean	33	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	3.5	The polynomial map `ζ`, the datum `Ψ^add` and the series `Υ`	New/OneLift/ComparisonOperator/FirstFactors.lean	16	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	3.6	The first factors are integral away from the twist and small at the trivial twist	New/OneLift/ComparisonOperator/FirstFactors.lean	2	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	4.1	The pairs of the three exchanges and the product `Γ_j`	New/OneLift/ComparisonOperator/ThreeExchanges.lean	4	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	4.2	The first two exchanges: the carrier as a class sum of twisted kernels	New/OneLift/ComparisonOperator/ThreeExchanges.lean	3	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	4.3	The third exchange: the twist survives only as a number	New/OneLift/ComparisonOperator/ThreeExchanges.lean	3	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	4.4	Decay of Fock matrix coefficients and sparse theta sums	New/OneLift/ComparisonOperator/ProductsSpan.lean	4	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	4.5	The isolation estimate	New/OneLift/ComparisonOperator/ThetaKernelEstimates.lean	2	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	4.6	Products span	New/OneLift/ComparisonOperator/ProductsSpan.lean	6	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	5.1	The bottom of the tower: from the block datum to all data	New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean	7	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	5.2	Vanishing of descents passes to the sum with hyperbolic planes	New/OneLift/FalseLifts/HyperbolicPlaneStep.lean	5	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	5.3	The tower of descents of a false lift	New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean	1	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	5.4	Periods of false lifts over a block vanish	Lib/Weil/Periods/DescentVanishing.lean	7	partial	y	0	1	0	1	stdClassSum_gramForm_eq_zero_of_rank_one:removed-offroute
+NormsOfThetaLiftsAndExchangeIdentities	6.1	Denominators of the lift, and one group-ring element for all twists	New/OneLift/HeckeValues/AlgebraicPartIntegrality.lean	14	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	6.2	Sizes of the conjugates and the height of the untwisted squared norm	New/OneLift/HeckeValues/AlgebraicPartSize.lean	6	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	6.3	The central action, and the denominator of products of projections to the line of a lift	New/OneLift/HeckeValues/CentralAction.lean	7	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	6.4	A test form whose pairing with the lift has small valuation	New/OneLift/HeckeValues/TwistedValueHeights.lean	16	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	6.5	The height of the inverse ratio of a main pair	New/OneLift/HeckeValues/TwistedValueHeights.lean	1	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	6.6	The height of the inverse of `Γ_j(θ^j)/Γ_j(1)`	New/OneLift/HeckeValues/TwistedValueHeights.lean	5	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	7.1	Tuples of forms on `V°`, the gluing map and the slices of lifts	New/OneLift/ComparisonOperator/GluingMaps.lean	22	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	7.2	Integrality and size of the gluing map	New/OneLift/ComparisonOperator/GluingMaps.lean	8	partial	y	0	1	1	0	weylNormSq_firstFactor_le:removed-absorbed
+NormsOfThetaLiftsAndExchangeIdentities	7.3	The map `Θ°`, the seesaw identity and orthogonality to the false lifts	New/OneLift/ComparisonOperator/GluingMaps.lean	13	partial	y	0	1	0	1	stdClassSum_gramForm_eq_zero_of_mem_falseLiftsAt:removed-offroute
+NormsOfThetaLiftsAndExchangeIdentities	7.4	The comparison operator	New/OneLift/LiftVolumeHeight.lean	13	same	y	0	0	0	0	
+NormsOfThetaLiftsAndExchangeIdentities	7.5	The cost of one lift	New/OneLift/LiftVolumeHeight.lean	14	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	0.1	The remainders `R_q`	New/Reduction/Zeros/PrimeNumberTheorem.lean	7	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	0.2	The one-sided criterion	New/Reduction/Zeros/PrimeError.lean	4	stronger	y	1	0	0	0	LFunction_ne_zero_of_primeRemainder_le:stronger
+OneSidedPrimeSumBoundsAndAdmissibleData	1.1	Colength dividing an element	New/Reduction/Lattices/Colength.lean	15	partial	y	0	2	0	2	relLength_le:removed-offroute; exists_relLength_le:removed-offroute
+OneSidedPrimeSumBoundsAndAdmissibleData	1.2	Heights of families over all places	New/Reduction/Lattices/Heights.lean	12	same	partly	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	1.3	Twisted lattices, index and covolume	New/Reduction/Lattices/TwistedLattice.lean	15	stronger	y	1	0	0	0	sumElim:stronger
+OneSidedPrimeSumBoundsAndAdmissibleData	1.4	A twist for each prime	New/Reduction/Lattices/TwistedLattice.lean	3	stronger	y	1	0	0	0	covolume_add_index_nonneg:stronger
+OneSidedPrimeSumBoundsAndAdmissibleData	2.1	The parameters	New/Reduction/OneSidedBound.lean	13	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	2.2	The field `E` and its infinite places	New/Reduction/Data/FieldsAndPlaces.lean	9	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	2.3	Arithmetic of `E`	New/Reduction/Data/FieldsAndPlaces.lean	11	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	3.1	Sparse sets of places, the constant `C_P` and the lower end `N₋`	New/Reduction/Data/AdmissibleData.lean	5	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	3.2	Admissible data	New/Reduction/Data/LevelAndTwists.lean	14	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	3.3	Sizes of the data	New/Derivatives/Field/ChosenPlaces.lean	39	partial	y	0	4	0	4	m_sq_mem_Icc:removed-offroute; r_le_two_mul_k:removed-offroute; q₁_le:removed-offroute; a_div_x₁_mem_Icc:removed-offroute
+OneSidedPrimeSumBoundsAndAdmissibleData	3.4	The row parameter, twists and the characters of the lifts	New/Reduction/Data/LevelAndTwists.lean	12	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	3.5	Sets with no relation of bounded length modulo an integer	New/Reduction/Data/Existence.lean	2	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	3.6	Large sparse sets of places	New/Reduction/Data/Existence.lean	4	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	3.7	Admissible data exist at every large integer	New/Reduction/Data/Existence.lean	7	weaker	partly	1	0	0	0	eventually_exists_data_of_isAdmissibleData:weaker
+OneSidedPrimeSumBoundsAndAdmissibleData	4.1	The prime sums of the data	New/UpperBound/Size/ShortColumns.lean	9	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	4.2	The total remainder and the sizes of the prime sums	New/Reduction/PrimeSums.lean	15	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	5.1	The target lattice	New/Reduction/IntegralTargetForms.lean	6	partial	y	0	1	0	1	volume_targetLattice:removed-offroute
+OneSidedPrimeSumBoundsAndAdmissibleData	5.2	The normalised Poincaré maps	New/Reduction/ShortAndEnough.lean	12	partial	y	0	2	1	1	divisibilityError:removed-absorbed; coe_normalizedPoincare:removed-offroute
+OneSidedPrimeSumBoundsAndAdmissibleData	5.3	Theorem A: short forms of small index	New/Reduction/ShortAndEnough.lean	5	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	5.4	Theorem B: enough forms	New/Reduction/ShortAndEnough.lean	3	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	6.1	The main inequality	New/Reduction/MainInequality.lean	1	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	6.2	The one-sided bound	New/Reduction/Zeros/PrimeNumberTheorem.lean	8	partial	y	0	2	1	1	eventually_primeRemainder_le_rpow:removed-absorbed; tendsto_primeRemainder:removed-offroute
+OneSidedPrimeSumBoundsAndAdmissibleData	6.3	The half-plane and the critical line	New/Reduction/OneSidedBound.lean	1	same	y	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	6.4	The Riemann hypothesis and the forms on the critical line	New/Main.lean	2	same	partly	0	0	0	0	
+OneSidedPrimeSumBoundsAndAdmissibleData	S	LFunction_ne_zero_of_forall_primeRemainder_le		0	target(see matcher)	n/a	0	0	0	0	
+PadicComparisonForFunctorCohomology	1.1	Cells, `p`-adic tests and their tilts	Lib/PadicComparison/Primitive/PeriodCoefficients.lean	11	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	1.2	Tilting `p`-adic tests	Lib/PadicComparison/Descent/TestCovers.lean	10	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	1.3	Cells over primes, covering points and flat base change	Lib/General/Geometry/PointsOfProperSchemes.lean	13	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	2.1	Almost descent for perfect algebras	Lib/PadicComparison/Descent/AlmostDescent.lean	10	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	3.1	Derived completeness for one element	Lib/PadicComparison/Completion.lean	9	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	3.2	Comparisons that are bijective modulo `p`	Lib/PadicComparison/Descent/TestCategory.lean	6	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	4.1	Compared theories and good pairs	Lib/PadicComparison/Duality/LineIntegration.lean	10	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	4.2	Self-duality of products of the projective line	Lib/PadicComparison/Duality/LineIntegration.lean	5	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	4.3	Standard étale charts are good	Lib/Cohomology/SmoothBaseChange.lean	6	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	5.1	Period ring pairs, the primitive map and the tilted theory	Lib/PadicComparison/Primitive/PeriodCoefficients.lean	10	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	5.2	The primitive comparison theorem	Lib/PadicComparison/Primitive/ComparisonTheorem.lean	7	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	5.3	Finiteness and continuity of `p`-adic cohomology	Lib/PadicComparison/Primitive/ComparisonTheorem.lean	2	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	5.4	From almost coefficients to period coefficients	Lib/PadicComparison/Primitive/Periods.lean	6	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	5.5	The period map	Lib/PadicComparison/HodgeTate/PeriodMap.lean	5	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	6.1	The generic ring of a test and its square-zero thickening	Lib/PadicComparison/HodgeTate/GenericFibre.lean	11	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	6.2	Hodge–Tate pairs and the contraction class	Lib/PadicComparison/HodgeTate/Map.lean	14	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	6.3	The Hodge–Tate map	Lib/PadicComparison/HodgeTate/Map.lean	11	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	6.4	Galois twists and the weight of the Hodge–Tate map	Lib/PadicComparison/HodgeTate/GaloisWeight.lean	6	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	6.5	Hodge–Tate weights of the values of the Hodge–Tate map	Lib/PadicComparison/HodgeTate/PeriodMap.lean	1	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	7.1	The Wang sequence and lines	Lib/PadicComparison/ToricTower.lean	7	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	7.2	Root systems of units of a test form lines	Lib/PadicComparison/Descent/TestCategory.lean	7	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	7.3	Divided powers and the divided power envelope	Lib/PadicComparison/Crystalline/DividedPowerEnvelope.lean	16	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	7.4	The crystalline comparison on charts	Lib/PadicComparison/Crystalline/ComparisonMap.lean	14	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	7.5	Spanning of the period cohomology	Lib/PadicComparison/Crystalline/ComparisonMap.lean	5	same	y	0	0	0	0	
+PadicComparisonForFunctorCohomology	7.6	Crystallinity and the Frobenius congruence relation	Lib/PadicComparison/CrystallineFrobenius.lean	6	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	1.1	Sizes of numbers, vectors and matrices	New/Spanning/Frames/Lengths.lean	6	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	1.2	Lengths at a point, induced lengths and balanced frame vectors	New/Spanning/Frames/Lengths.lean	10	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	1.3	Comparing the lengths at two points; minors and heads	New/Spanning/Frames/TwoGauges.lean	11	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	2.1	Places, floor groups and the measures of the floors	Lib/DiscreteSeries/Bruhat/FloorMeasures.lean	6	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	2.2	Place data, the measure of the group, near points and depth	New/Spanning/Frames/Correlations.lean	24	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	2.3	Gauges, pairing kernels and partial correlations	New/Spanning/Frames/Densities.lean	12	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	2.4	Volumes on quadrics and on sections	New/Spanning/Frames/QuadricVolumes.lean	7	partial	y	0	1	0	1	lintegral_floorQuadricMeasure_eq:removed-offroute
+PairsOfFramesAtOnePlace	2.5	Plancherel's formula on quadrics and along Heisenberg groups	New/Spanning/Frames/QuadricPlancherel.lean	4	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	3.1	Depth	New/Spanning/Frames/Depth.lean	12	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	3.2	Cut Bessel functions, the forms of the floors and their descent	New/Spanning/Frames/Densities.lean	15	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	3.3	One frame	New/Spanning/Frames/Densities.lean	9	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	3.4	Two frames: separation, and the gains at one position	New/Spanning/Frames/Gains.lean	9	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	3.5	The sum over the shells	New/Spanning/Frames/Shells.lean	4	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	4.1	The place datum and the gauges at `ℂ`	New/Spanning/Frames/RealPlaceGauge.lean	14	partial	y	0	1	0	1	exists_orthonormal_mul_eq_zero_and_fixed:removed-offroute
+PairsOfFramesAtOnePlace	4.2	Cut Bessel functions at `ℂ`: convergence and the integrated bound	New/Spanning/Frames/RealShells.lean	3	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	4.3	The local bounds at `ℂ` for cut Bessel functions	New/Spanning/Frames/RealBandLimits.lean	5	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	5.1	Lattice data and large lattice data	New/Spanning/Frames/FiniteDepth.lean	12	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	5.2	The finite Bessel function and the Bessel vector of an intermediate group	New/Spanning/Frames/BesselVector.lean	21	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	5.3	Depth, heads and far positions at the finite places	New/Spanning/Frames/FiniteDepth.lean	4	partial	y	0	1	0	1	exists_ideal_depth_eq:removed-offroute
+PairsOfFramesAtOnePlace	5.4	Shells, decay and the mass at the finite places	New/Spanning/Frames/FiniteShells.lean	6	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	6.1	Fiber measures of the standard form, and the top quadric by its last entry	New/Spanning/Frames/TopFloor.lean	11	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	6.2	Scaled orbital integrals of the finite Bessel vector	New/Spanning/Frames/TopCorrelation.lean	9	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	6.3	The fiber pairing and the density at the last entry	New/Spanning/Frames/TopFloor.lean	13	partial	y	0	1	1	0	two_le_card:removed-absorbed
+PairsOfFramesAtOnePlace	7.1	Few integers at the chosen places are not units	New/Spanning/Frames/FixedLines.lean	3	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	7.2	The mass integral of a group that fixes given vectors	New/Spanning/Frames/FixedLines.lean	5	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	8.1	Steep parameters and Laplace data	New/Appendix/DiscreteSeries/SteepParameters.lean	5	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	8.2	Localisation near the compact subgroups	New/Appendix/DiscreteSeries/Localization.lean	3	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	8.3	One minor near the identity, and the Gaussian shape of the coefficient	New/Appendix/DiscreteSeries/GaussianShape.lean	7	partial	y	0	5	5	0	exists_det_one_add_proj_mul_eq_exp:removed-absorbed; crossTraceSum:removed-absorbed; det_reducedExp:removed-absorbed; exists_principalMinor_conj_reducedExp_eq_cexp:removed-absorbed; flenstedJensen_reducedExp:removed-absorbed
+PairsOfFramesAtOnePlace	8.4	Laplace's method for periods	New/Appendix/DiscreteSeries/Periods.lean	2	same	y	0	0	0	0	
+PairsOfFramesAtOnePlace	8.5	Positions and the stationary position	New/Appendix/DiscreteSeries/StationaryPosition.lean	11	partial	y	0	1	0	1	trace_eq_and_phase_eq:removed-offroute
+PairsOfFramesAtOnePlace	8.6	Periods over the group of a position, and the pairing of two steep coefficients	New/Appendix/DiscreteSeries/PositionGroup.lean	7	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	1.1	Lattices in the finite adeles, discriminants and sums over sublattices	New/Spanning/RemainingTerms/Discriminants.lean	5	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	1.2	Siegel's lemma and a height zeta function of subspaces	New/Spanning/RemainingTerms/SiegelLemma.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	2.1	Second moments of blocks	New/Spanning/RemainingTerms/Size.lean	3	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	2.2	The box and near terms	New/Spanning/Unfolding/Terms.lean	5	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	2.3	The lattice of a class and the lattice of columns	New/Spanning/RemainingTerms/Data.lean	3	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	2.4	The data of a term	New/Spanning/RemainingTerms/OrbitSize.lean	17	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	3.1	The weight of Schur's test at one real place	New/Spanning/RemainingTerms/OneRealPlace.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	3.2	Schur's test: Cauchy–Schwarz and integration in stages	New/Spanning/RemainingTerms/SchurTest.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	3.3	Schur's test for one orbit	New/Spanning/RemainingTerms/SchurOrbit.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	3.4	Near terms: the tail and the open-cell term	New/Spanning/RemainingTerms/OrbitSize.lean	3	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	3.5	The bound for a block	New/Spanning/RemainingTerms/Size.lean	4	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	3.6	From the Bessel function to its cut	New/Spanning/RemainingTerms/Size.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	4.1	The minor of a term	New/Spanning/RemainingTerms/BorderedDeterminant.lean	2	none	n/a	0	2	0	2	linearIndependent_mkQ_frameImage_and_sup_eq:removed-offroute; subframeMinor_ne_zero:removed-offroute
+RemainingAndMainTermsOfSecondMoments	4.2	Orthogonal lifts and the lattice of a link	New/Spanning/RemainingTerms/LinkLattice.lean	4	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	4.3	The vectors `z⁺` and `Υ_γ⁻¹z⁺`	New/Spanning/RemainingTerms/LinkVectors.lean	5	partial	y	0	4	1	3	linkVectors_mulVec_perpToPositive_mem:removed-offroute; linkVectors_mulVec_eq_zero_iff:removed-weakened; exists_lift_mem_linkedX₀_iff_exists_orthogonal:removed-offroute; linearIndependent_linkVectors_and_prod_norm_det:removed-offroute
+RemainingAndMainTermsOfSecondMoments	4.4	Splitting a link along a second link	New/Spanning/RemainingTerms/Cut.lean	4	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	4.5	The gain	New/Spanning/RemainingTerms/Gain.lean	4	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	5.1	Moves between frames of near terms	New/Spanning/RemainingTerms/FrameParts.lean	6	stronger	y	1	0	0	0	exists_framePartX₀_sub_eq:stronger
+RemainingAndMainTermsOfSecondMoments	5.2	Frames over a lattice of small discriminant	New/Spanning/RemainingTerms/FramesOverLattice.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	5.3	Sums over lattices of given corank and small discriminant	New/Spanning/RemainingTerms/LatticesOfCorank.lean	1	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	5.4	The sum over pairs of near terms	New/Spanning/RemainingTerms/Count.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	5.5	The remaining terms	New/Spanning/RemainingTerms/Sum.lean	4	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	6.1	Sieve systems	New/Spanning/MainTerm/SieveSystem.lean	5	partial	y	0	2	0	2	integrable_and_integral_sum_update:removed-offroute; sum_nonneg_and_lowerSemicontinuousAt:removed-offroute
+RemainingAndMainTermsOfSecondMoments	6.2	Sums over frequencies	New/Spanning/MainTerm/GlobalSieve.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	6.3	One-sided Poisson summation at the infinite places and a finite set of primes	New/Spanning/MainTerm/GlobalSieve.lean	1	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	6.4	The sieve over all places	New/Spanning/MainTerm/GlobalSieve.lean	3	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	7.1	The orbital integral at the finite places is a Kloosterman sum	New/Spanning/MainTerm/KloostermanSum.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	7.2	The completions at a finite set of primes	New/Spanning/MainTerm/FillingLevel.lean	6	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	7.3	Class sums as orbit sums, and unfolding at a set of primes	New/Spanning/MainTerm/GlobalToLocal.lean	4	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	7.4	Siegel's formula as an upper bound	New/Spanning/MainTerm/SiegelTopBound.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	7.5	Domination of class sums by the density at the last entry	New/Spanning/MainTerm/SiegelTopBound.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	7.6	The sieve system at the finite places	New/Spanning/MainTerm/FiniteSieveSystem.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	8.1	The main-term bound	New/Spanning/MainTerm/EnergyEstimate.lean	2	same	y	0	0	0	0	
+RemainingAndMainTermsOfSecondMoments	8.2	The share of non-allowed polynomials and the bad share	New/Spanning/MainTerm/BadTypes.lean	5	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	1.1	Near isometries and spreading families	New/Spanning/SecondMoment/FewTranslates.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	1.2	One translate from a second moment	New/Spanning/SecondMoment/FewTranslates.lean	4	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	1.3	Few translates span almost all	New/Spanning/SecondMoment/FewTranslates.lean	2	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	1.4	Functions of positive type and singular minors	New/Spanning/SecondMoment/PositiveType.lean	1	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	2.1	Spherical Hecke operators away from the level	New/Spanning/Multiplicities/HeckeEigensystems.lean	5	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	2.2	Equal traces on the good forms	New/Spanning/Multiplicities/EqualMultiplicities.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	2.3	Equal multiplicities and the dimension of the target	New/Spanning/Multiplicities/EqualMultiplicities.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	2.4	Series of translates away from the level, and the Rallis operator	New/Spanning/Multiplicities/EqualMultiplicities.lean	4	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.1	The group at a real place, its frame and its Bessel subgroups	New/Spanning/Bessel/Average.lean	8	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.2	The Bessel length and the Gram–Schmidt frame	New/Spanning/Bessel/Basic.lean	6	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.3	Bessel functions, cut pairs and Bessel systems	New/Spanning/Bessel/Basic.lean	6	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.4	The Gram section on the open cell	New/Spanning/Bessel/GramSection.lean	5	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.5	The mean value inequality over the Gram matrix of two frames	New/Spanning/Bessel/MeanValue.lean	2	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.6	Schur's bound for a Bessel function fixed by a discrete series	New/Spanning/Bessel/SchurBound.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.7	The L² bound at the Gram section	New/Spanning/Bessel/SobolevBound.lean	2	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.8	The Bessel average of a discrete series coefficient	New/Spanning/Bessel/Average.lean	11	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.9	A point at which the Bessel period is large	New/Spanning/Bessel/LargeFunction.lean	1	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.10	The Bessel function at a real place: decay and cut	New/Spanning/Bessel/CutTailBound.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.11	Normalisation of a Bessel function and of its cut	New/Spanning/Bessel/Orthonormality.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.12	The open cell bound for a Bessel system	New/Spanning/Bessel/OpenCellBound.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.13	One pairing on the open cell, at all places together	New/Spanning/Bessel/OpenCellPairing.lean	1	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	3.14	Bessel systems for the data	New/Spanning/Bessel/LargeFunction.lean	2	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.1	Filling data and the standing hypotheses	New/Spanning/Unfolding/Setup.lean	13	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.2	Terms, cutoffs, amplitudes and second moments	New/Spanning/RemainingTerms/Size.lean	20	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.3	Bessel level structure: Eichler maps and strong approximation for `𝖴`	New/Spanning/Unfolding/BesselLevelStructure.lean	6	partial	y	0	2	0	2	prod_wave_eq_star_unipotentChar:removed-offroute; mem_reducedImage_besselU_iff_exists_termsOver:removed-offroute
+SecondMomentsOfPoincareSeries	4.4	Near terms: frames, cell ranks, nearness and integrality	New/Spanning/Unfolding/Terms.lean	8	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.5	Links of isometries	New/Spanning/Unfolding/Link.lean	6	partial	y	0	2	1	1	linkIsometry_inv_mul_mul_of_mem_besselU:removed-offroute; termDisc_eq_zero_iff:removed-weakened
+SecondMomentsOfPoincareSeries	4.6	Reduced points and colouring	New/Spanning/Unfolding/ReducedPoints.lean	5	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.7	Counting frames in boxes	New/Spanning/Unfolding/Packing.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.8	The integral of a class cutoff over the real unipotent group	New/Spanning/Unfolding/CutoffIntegral.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.9	Sums of amplitudes over blocks	New/Spanning/Unfolding/AmplitudeSums.lean	7	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.10	Which terms contribute	New/Spanning/Unfolding/Climbing.lean	6	partial	y	0	2	0	2	mul_star_eq_and_pairOccursAt_of_le:removed-offroute; reducedImage_besselH_le_fixer:removed-offroute
+SecondMomentsOfPoincareSeries	4.11	The finite groups `Ū`, `H̄` and `R̄₀`	New/Spanning/Unfolding/ReducedGroups.lean	7	partial	y	0	3	0	3	mem_reducedImage_besselS_iff_forall_place:removed-offroute; exists_mulEquiv_reducedImage_besselH:removed-offroute; relIndex_sourceLevel:removed-offroute
+SecondMomentsOfPoincareSeries	4.12	The structure of a term and the remaining terms	New/Spanning/Unfolding/TermStructure.lean	10	partial	y	0	2	0	2	form_framePerpToX₀:removed-offroute; linkedX₀_eq_top:removed-offroute
+SecondMomentsOfPoincareSeries	4.13	The expansion of the squares and the second moment near the Bessel subgroup	New/Spanning/Unfolding/SquareExpansion.lean	3	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.14	The second moment over the whole group	New/Spanning/Unfolding/MomentBounds.lean	6	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	4.15	The second moments of the operators `P* s P`, and good forms	New/Spanning/Unfolding/Moments.lean	8	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	5.1	Poincaré series of a fitting space and their Petersson products	New/Spanning/Unfolding/PoincareSeries.lean	7	partial	y	0	1	1	0	finrank_levelSpace_eq_sourceDim:removed-absorbed
+SecondMomentsOfPoincareSeries	5.2	The Bessel function as an integral over `R(E⁺_∞)`	New/Spanning/Unfolding/BesselFormula.lean	1	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	5.3	The Poincaré map is a Poincaré series of the Bessel function	New/Spanning/Unfolding/SeriesPeriod.lean	5	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	5.4	Masses of spheres and of frames	Lib/SiegelWeil/OneVector/SiegelClassSum.lean	5	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	5.5	Filling data of the data	New/Spanning/Unfolding/FillingAdmissible.lean	7	partial	y	0	1	0	1	card_mul_prod_frameMass_le:removed-offroute
+SecondMomentsOfPoincareSeries	5.6	The dimension of the target	New/Spanning/SecondMoment/SpanningTheorem.lean	2	same	y	0	0	0	0	
+SecondMomentsOfPoincareSeries	5.7	The second moment of the Poincaré map and one good translate	New/Spanning/SecondMoment/SpanningTheorem.lean	7	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	1.1	Selmer data, tied primes and tied Selmer groups	New/Congruences/Selmer/Line.lean	12	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	1.2	Auxiliary primes with a prescribed Frobenius element	New/Congruences/Selmer/AuxiliaryPrimes.lean	2	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	1.3	Sah's lemma for Selmer data	New/Congruences/Selmer/SelmerData.lean	5	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	1.4	Adding auxiliary primes	New/Congruences/Selmer/Mirror.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	1.5	The descent	New/Congruences/Selmer/Mirror.lean	5	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	2.1	Polynomial twists and one system of equations	New/Congruences/Selmer/OneSystem.lean	6	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	2.2	The failure to be tied	New/Congruences/Selmer/Untied.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	2.3	Stickelberger systems	New/Congruences/Selmer/StickelbergerSystems.lean	5	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	2.4	Stickelberger systems on a line	New/Congruences/Selmer/StickelbergerSystems.lean	4	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	2.5	Restriction to a line	New/Congruences/Selmer/Line.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	2.6	Roots of unity at which polynomials are hardly more divisible than at given points	New/Congruences/Selmer/RootsOfUnity.lean	2	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	2.7	The twisting theorem, general form	New/Congruences/Selmer/GeneralTheorem.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	3.1	Lattices over a local Galois group, crystalline cocycles, classes and cup-orthogonality	New/Congruences/Lifting/CupOrthogonalityBounds.lean	24	partial	y	0	1	0	1	linearFrob_eq:removed-offroute
+SelmerBoundsForAnticyclotomicTwists	3.2	Kummer charts, letters and sides	New/Congruences/Lifting/CupOrthogonalityBounds.lean	7	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	3.3	Exponent bounds by cuts for paired sides: sparse b-letters	New/Congruences/Lifting/CutExponentBounds.lean	1	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	3.4	Exponent bounds by cuts for paired sides: any pattern of b-letters	New/Congruences/Lifting/CutExponentBounds.lean	1	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	3.5	Few low jumps: a submodule of small colength that cups to zero	New/Congruences/Lifting/DeepPoints.lean	2	partial	y	1	1	1	0	exists_relLength_le_and_isScaledCupCoboundary:stronger; pointsOver_nonempty_of_noMultipleNear:removed-absorbed
+SelmerBoundsForAnticyclotomicTwists	3.6	From sides to lattices: dual defects and cup exponents	New/Congruences/Lifting/CupOrthogonalityBounds.lean	4	stronger	y	1	0	0	0	dualDefect_eq_zero_and_dualDefect_le:stronger
+SelmerBoundsForAnticyclotomicTwists	3.7	Tame inertial types over `ℚ_p`	New/Congruences/Lifting/TameCharts.lean	3	stronger	y	1	0	0	0	hasCupExponent_of_isTameType:stronger
+SelmerBoundsForAnticyclotomicTwists	4.1	Main summand weights, the crystalline loss and the defect bound	New/Congruences/LocalLoss/CrystallineDefect.lean	9	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	4.2	b-places in a Galois orbit above ℓ	New/Congruences/LocalLoss/Basic.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	4.3	Cocycles that obey the relations among the `u(g) − 1`	New/Congruences/LocalLoss/Basic.lean	1	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	4.4	The rank of crystalline cocycles, and defects from cup exponents	New/Congruences/LocalLoss/CrystallineCocycles.lean	2	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	4.5	The dual defect under crystalline size conditions	New/Congruences/LocalLoss/CrystallineCocycles.lean	4	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	4.6	The defect of the dual of a summand at a place above ℓ	New/Congruences/LocalLoss/CrystallineDefect.lean	3	partial	y	0	1	1	0	summand_defect_le_at_place:removed-absorbed
+SelmerBoundsForAnticyclotomicTwists	4.7	Non-crystalline cocycles modulo `ℓ^m` bounded by the Tate dual	New/Congruences/LocalLoss/TateDualBound.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	4.8	Tame classes from roots of unity, and lattices read at a place above ℓ	New/Congruences/LocalLoss/LocalLattices.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	5.1	Main summands are Selmer data	New/Congruences/Selmer/MainSummands.lean	2	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	5.2	L-values of a ramified pair as integral measures, and avatars of tame characters	New/Congruences/Selmer/ClassSums.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	5.3	The Stickelberger systems of the L-values	New/Congruences/Selmer/LValueSystems.lean	3	same	y	0	0	0	0	
+SelmerBoundsForAnticyclotomicTwists	5.4	The twisting theorem	New/Congruences/Selmer/TwistingTheorem.lean	2	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	1.1	Definitions: neighbour vectors, vacuum coefficients and the series of translates	Lib/SiegelWeil/RallisInner/SharpData.lean	10	partial	y	0	4	4	0	IsNeighbourVector:removed-absorbed; MapsNeighbour:removed-absorbed; neighbourResidues:removed-absorbed; stepWeight:removed-absorbed
+SiegelWeilAndRallisFormulasOnUnitaryGroups	1.2	One neighbour step towards the standard lattice	Lib/SiegelWeil/NeighbourLattices.lean	5	none	n/a	0	5	5	0	card_neighbourResidues_le_one:removed; card_neighbourResidues_sq_le:removed; exists_family_mapsNeighbour:removed-absorbed; exists_isNeighbourVector_mulVec:removed-absorbed; q_mul_norm_finMultiplier_mul_sq_le:removed-absorbed
+SiegelWeilAndRallisFormulasOnUnitaryGroups	1.3	Weights of the steps and the sum of the vacuum coefficients	Lib/SiegelWeil/UnramifiedSeries/RallisSeries.lean	13	partial	y	0	8	8	0	four_le_q:removed; stepWeight_le:removed; stepWeight_le_of_isSplit:removed; tsum_stepWeight_conjClosure_singleton_le:removed; summable_stepWeight:removed; summable_norm_vacuumCoeff_union:removed-absorbed; tsum_ofReal_norm_vacuumCoeff_le:removed-absorbed; tsum_le_of_walk:removed-absorbed
+SiegelWeilAndRallisFormulasOnUnitaryGroups	1.4	The series of translates: convergence, forms, multiplicativity and injectivity	Lib/SiegelWeil/UnramifiedSeries/RallisSeries.lean	7	partial	y	0	2	2	0	norm_rallisSeries_le:removed-absorbed; eq_zero_of_rallisSeries_eq_zero:removed-absorbed
+SiegelWeilAndRallisFormulasOnUnitaryGroups	1.5	The vacuum sum over the places, and its value in rank one	Lib/SiegelWeil/RallisInner/SharpData.lean	5	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	2.1	Definitions: complete splittings, Lagrangians, zero terms and the normalised torus	Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean	8	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	2.2	Siegel sets for a split unitary group	Lib/SiegelWeil/Formula/WeilRange.lean	2	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	2.3	Zero terms under the parabolic, and a majorant for theta in Weil's range	Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean	6	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	2.4	Uniform summability of the zero terms	Lib/SiegelWeil/Formula/WeilRange.lean	1	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	2.5	Invariant functionals dominated by the zero terms vanish	Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean	2	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	2.6	The Siegel–Weil formula in Weil's range	Lib/SiegelWeil/Formula/LagrangianZeroTerms.lean	6	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	2.7	Constancy of automorphic functions on a unitary group with a hyperbolic plane	Lib/SiegelWeil/Formula/StrongApproximation.lean	2	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	3.1	Definitions: ideal zeta sums, norm-one vectors and the density at a norm	Lib/SiegelWeil/OneVector/SiegelClassSum.lean	3	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	3.2	The Siegel–Weil formula for one vector	Lib/SiegelWeil/OneVector/SiegelClassSum.lean	7	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	3.3	Siegel's class-sum formula for the vectors of one norm	Lib/SiegelWeil/OneVector/SiegelClassSum.lean	4	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	3.4	Ideal zeta bounds for adelic Gauss sums	Lib/SiegelWeil/Mass.lean	4	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	3.5	The masses of the standard lattices in consecutive ranks	Lib/SiegelWeil/OneVector/SiegelClassSum.lean	5	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	3.6	Definitions: semilocal places and disintegrations along a hermitian form	Lib/SiegelWeil/OneVector/ClassGaussSums.lean	4	partial	y	0	3	3	0	latticeMultiple:removed-absorbed; residueClass:removed-absorbed; classGaussSum:removed-absorbed
+SiegelWeilAndRallisFormulasOnUnitaryGroups	3.7	Local densities by Fourier inversion, and Gauss sums of classes	Lib/SiegelWeil/OneVector/ClassGaussSums.lean	8	partial	y	0	4	4	0	volume_residueClass:removed-absorbed; enorm_classGaussSum_sq_le:removed-absorbed; integral_classGaussSum:removed-absorbed; measure_residueClass_le_lintegral:removed-absorbed
+SiegelWeilAndRallisFormulasOnUnitaryGroups	3.8	Local density bounds by an ideal zeta value	Lib/SiegelWeil/OneVector/FinitePlaceDensity.lean	8	partial	y	1	3	2	1	lintegral_enorm_classGaussSum_le_idealZeta:removed-absorbed; measure_residueClass_le_idealZeta:removed-absorbed; one_add_enorm_measure_intVectors_sub_one_le:removed-offroute; exists_kernel_isDisintegration_le:incomparable
+SiegelWeilAndRallisFormulasOnUnitaryGroups	4.1	Definitions: matrix coefficients, clean data and sharp data	Lib/SiegelWeil/RallisInner/SharpData.lean	4	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	4.2	The doubling identity in Weil's range	Lib/SiegelWeil/RallisInner/Doubling.lean	4	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	4.3	The inner product formula for rapidly decreasing forms	Lib/SiegelWeil/RallisInner/Doubling.lean	2	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	4.4	Vacuum coefficients of the Weil representation, and sharp data modulo a modulus	Lib/SiegelWeil/RallisInner/SharpData.lean	8	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	4.5	The inner product formula for sharp data, and injectivity of the theta lift	Lib/SiegelWeil/RallisInner/SharpData.lean	5	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	4.6	A reproducing formula by theta lifts to a large definite group	Lib/SiegelWeil/Reproduction.lean	7	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	5.1	Definitions: coefficients along the centre of a radical, partial means and shears	Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean	9	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	5.2	Laws of the partial means, and singularity	Lib/SiegelWeil/SingularForms/CentreCoefficients.lean	5	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	5.3	Singular forms are governed by their coefficients at unimodular indices	Lib/SiegelWeil/SingularForms/UnimodularCoefficients.lean	3	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.1	Definitions: the plane set-up, line terms, standard data, cones and products of L-values	Lib/SiegelWeil/Tower/FiniteTateIntegral.lean	11	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.2	Products of partial L-values, and Tate's integral at the finite places	Lib/SiegelWeil/Tower/FiniteTateIntegral.lean	8	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.3	The terms along a line: Levi equivariance and Poisson's formula	Lib/SiegelWeil/Tower/LineTerms.lean	4	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.4	The constant term of a theta integral, unfolded along isotropic lines	Lib/SiegelWeil/Tower/PrincipalIdeles.lean	7	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.5	Standard partners and the line terms of standard data	Lib/SiegelWeil/Tower/LineGaussSums.lean	4	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.6	Shears and the Fourier coefficients of equivariant lifts	Lib/SiegelWeil/SingularForms/CentreCoefficients.lean	4	same	y	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.7	The real cone integral and the test vector	Lib/SiegelWeil/Tower/TestVector.lean	7	partial	y	0	4	4	0	tateVector:removed-absorbed; isSchwartzVector_tateVector:removed-absorbed; realPairWeil_tateVector:removed; coneIntegrand_tateVector:removed
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.8	The constant term on the side of the large space	Lib/SiegelWeil/Tower/LargeSideConstantTerm.lean	7	same	partly	0	0	0	0	
+SiegelWeilAndRallisFormulasOnUnitaryGroups	6.9	Continuation to a real half-line and functional equation in absolute values	Lib/SiegelWeil/Tower/FunctionalEquation.lean	5	none	n/a	0	5	5	0	exists_analyticOnNhd_eq_L_mul_gammaIntegral:removed-absorbed; exists_analytic_extension_functional_equation:removed-absorbed; exists_analytic_extension_ne_zero:removed-absorbed; gammaIntegral_pos:removed-absorbed; analyticOnNhd_gammaIntegral:removed-absorbed
+SiegelWeilAndRallisFormulasOnUnitaryGroups	S	2.7		0	target(see matcher)	n/a	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	1.1	Theta functions on a lattice	Lib/Shimura/ComplexTheta/AppellHumbertData.lean	9	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	1.2	The sigma function of a lattice: addition and duplication	Lib/CM/Sigma/Basic.lean	9	partial	y	0	2	1	1	sigma_add_of_mem_lattice:removed-absorbed; thetaSpace_two_eq_span:removed-offroute
+ThetaFunctionsAndUnitsOfCMLattices	1.3	Normalised pointed lattices and CM lattices	Lib/CM/Sigma/ThetaSections.lean	13	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	1.4	The Weierstrass equation and the addition formula for `θ`	Lib/CM/Sigma/ThetaSections.lean	22	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	1.5	Sections: isogenies, division and the spanning monomials	Lib/CM/Sigma/ThetaSections.lean	16	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	1.6	Duplication formulas for `θ` and `σ`	Lib/CM/Integrality/Doubling.lean	9	partial	y	0	1	1	0	isIsogeny_two:removed-absorbed
+ThetaFunctionsAndUnitsOfCMLattices	2.1	CM lattices and ideals	Lib/CM/ChowlaSelberg.lean	10	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	2.2	The discriminant of a CM lattice is a unit at every prime	Lib/CM/Integrality/TorsionValues.lean	13	weaker	y	1	0	0	0	norm_scaledDisc_le_one:weaker
+ThetaFunctionsAndUnitsOfCMLattices	2.3	Finitely many CM lattices	Lib/CM/FiniteLattices.lean	6	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	3.1	Torsion values	Lib/CM/Integrality/IntegralSections.lean	28	partial	y	0	22	22	0	torsionValue_mul:removed-absorbed; torsionValue_twistedTranslate:removed-absorbed; norm_torsionValue_twistedTranslate:removed-absorbed; mul:removed-absorbed; pow:removed-absorbed; comp_isogeny:removed-absorbed; translate:removed-absorbed; squarePair_two_mul:removed-absorbed; norm_squarePair:removed-absorbed; max_norm_torsionValue:removed-absorbed; hasIntegralValues_sigma:removed-absorbed; hasInteg
+ThetaFunctionsAndUnitsOfCMLattices	3.2	The ring `𝒪[[y]]`	Lib/CM/Integrality/LogTheta.lean	17	partial	y	0	1	1	0	norm_constantCoeff_le_one_and_norm_coeff_one_le_one:removed-absorbed
+ThetaFunctionsAndUnitsOfCMLattices	3.3	The integrality principle	Lib/CM/Integrality/IntegralSections.lean	10	partial	y	3	3	3	0	norm_coeff_le_one_of_norm_eval_le_one:removed-absorbed; norm_coeff_le_one_of_norm_eval_halvingPoint_le_one:removed-absorbed; norm_coeff_le_one_of_hasIntegralValues:removed-absorbed; mem_span_monomialSection:weaker; exists_polynomial_of_even:weaker; exists_taylorVia_eq_theta_pow_mul:weaker
+ThetaFunctionsAndUnitsOfCMLattices	3.4	Isogenies act integrally	Lib/CM/Integrality/IsogenyIntegrality.lean	6	weaker	y	1	0	0	0	exists_rescale_eq_theta_pow_mul:weaker
+ThetaFunctionsAndUnitsOfCMLattices	3.5	The logarithm of `θ`	Lib/CM/Integrality/LogTheta.lean	12	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	3.6	The group law is integral in `y`	Lib/CM/Integrality/LogTheta.lean	9	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	4.1	Numbers at a prime	Lib/CM/FormalGroup/PrimeNotation.lean	28	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	4.2	The inseparable degree	Lib/CM/FormalGroup/PrimeNotation.lean	15	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	4.3	The formal parameter and multiplication by `π_p`	Lib/General/NumberTheory/PadicLimitsValuation.lean	20	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	5.1	Kronecker's first limit formula	Lib/CM/KroneckerLimit.lean	10	partial	y	0	9	9	0	hasSum_pnat_rpow_neg:removed-absorbed; betaFactor:removed-absorbed; shiftedTerm:removed-absorbed; meanError:removed-absorbed; hasSum_shiftedTerm:removed-absorbed; continuousOn_tsum_meanError:removed-absorbed; tsum_meanError_one:removed-absorbed; regularPart:removed-absorbed; sub_one_mul_tsum_norm_mul_add_rpow:removed-absorbed
+ThetaFunctionsAndUnitsOfCMLattices	5.2	Conjugate CM lattices	Lib/CM/ConjugateCurve.lean	18	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	5.3	Complex multiplication for translates of `θ`	Lib/CM/ChowlaSelberg.lean	10	weaker	y	2	0	0	0	IsComplexMultiplicationData:weaker; complex_multiplication_theta:weaker
+ThetaFunctionsAndUnitsOfCMLattices	5.4	The Chowla–Selberg formula as a class mean	Lib/CM/ChowlaSelberg.lean	4	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	5.5	Chowla–Selberg for the conjugates of one CM lattice	Lib/CM/ChowlaSelberg.lean	8	same	y	0	0	0	0	
+ThetaFunctionsAndUnitsOfCMLattices	S	norm_discriminant_eq_one_of_cm		0	target(see matcher)	n/a	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	1.1	Combinations of translates of the vacuum, standard data and gauges	New/UpperBound/Kernels/ThetaLiftGauge.lean	5	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	1.2	Admissible combinations under substitution, products and the Weil action	New/UpperBound/Seesaw/AdmissibleCombinations.lean	10	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	1.3	Galois conjugation of jets	New/UpperBound/Kernels/JetConjugatesAndBounds.lean	3	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	1.4	Archimedean bounds for the conjugates of jets	New/UpperBound/Kernels/JetConjugatesAndBounds.lean	4	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	1.5	`p`-adic gauge bounds for one theta lift	New/UpperBound/Kernels/ThetaLiftGauge.lean	5	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	1.6	Data from functions modulo an ideal	New/UpperBound/Kernels/ThetaLiftGauge.lean	4	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	1.7	Rational equivariance, integrality and size of definite theta kernels	New/UpperBound/Kernels/DefiniteKernelSize.lean	2	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.1	The spaces of the chain	New/UpperBound/Objects/Columns.lean	17	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.2	Weights of the definite spaces and the branching map	New/UpperBound/Objects/Rows.lean	19	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.3	Inserting a block into a parameter	New/UpperBound/Objects/InsertBlock.lean	3	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.4	The grids of spaces and their parameters	New/UpperBound/Objects/RowChain.lean	17	partial	y	0	1	1	0	paramsCorrespond_paramY:removed-absorbed
+ThetaLiftChainsAndTheSeesawIdentity	2.5	Labels, the group `𝖦` and the good idempotent	New/UpperBound/Objects/LabelsAndIndexTypes.lean	7	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.6	Characters and levels of the lifts	New/UpperBound/Objects/RowChain.lean	8	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.7	Forms of principal level, good forms and target forms	New/UpperBound/Objects/Rows.lean	8	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.8	Source forms, ramified source forms and the lifts between the `X_j`	New/UpperBound/Size/ShortColumns.lean	8	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.9	Chains of theta lifts and jointly invariant combinations	New/UpperBound/Objects/LiftChains.lean	7	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.10	Free levels and the orders of stabilisers	New/UpperBound/Objects/Columns.lean	7	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.11	Direct and mirror data modulo `N`, and the operator `Up`	New/UpperBound/Objects/LiftLawsModuloN.lean	6	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.12	Chain data, the glued tensor and the composite lift	New/UpperBound/Objects/Columns.lean	15	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.13	The glued datum in a Schrödinger model at `N`	New/UpperBound/Objects/Columns.lean	2	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.14	The lifts above `N` and the ramified source forms	New/UpperBound/Objects/CharactersAtLevel.lean	7	partial	y	0	2	0	2	liftKernel_lift_scaling:removed-offroute; liftKernel_lift_sub_scaling_eq_zero:removed-offroute
+ThetaLiftChainsAndTheSeesawIdentity	2.15	The lower chain: level, character and `𝖦`-equivariance	New/UpperBound/Objects/Rows.lean	12	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.16	Descent pairs	New/UpperBound/Objects/AuxiliaryPair.lean	10	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.17	The block datum, the edge and the descent of a descent pair	New/UpperBound/Objects/AuxiliaryPair.lean	5	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.18	The descent pairs of the chain	New/UpperBound/Objects/Rows.lean	3	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	2.19	The Poincaré map	New/UpperBound/Objects/PoincareMap.lean	6	partial	y	0	1	0	1	poincareAt_smul:removed-offroute
+ThetaLiftChainsAndTheSeesawIdentity	3.1	Integrals over a quotient as weighted sums over a cut	New/UpperBound/Seesaw/IntegralAsCosetSum.lean	4	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.2	Glued lattices of graded spaces	New/UpperBound/Seesaw/AdmissibleCombinations.lean	6	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.3	The glued lattice line by line	New/UpperBound/Seesaw/StandardLines.lean	8	partial	y	0	1	0	1	mem_lattice_and_stringProj_eq_zero_iff:removed-offroute
+ThetaLiftChainsAndTheSeesawIdentity	3.4	Congruence levels inside the stabiliser of a glued lattice	New/UpperBound/Seesaw/GluedLevel.lean	2	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.5	Lattice bounds for the points of graded spaces	New/UpperBound/Seesaw/Sandwich.lean	5	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.6	The shift at a nonzero constant term	New/UpperBound/Seesaw/Frequency.lean	3	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.7	The gradings, lattices and levels of the spaces `Y_k`	New/UpperBound/Seesaw/UnfoldingStages.lean	8	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.8	Finite zero terms and pairs of edges	New/UpperBound/Seesaw/EdgePairEvaluation.lean	15	partial	y	0	1	0	1	zeroTermFin_omega:removed-offroute
+ThetaLiftChainsAndTheSeesawIdentity	3.9	The neighbour lattice of a pair of edges	New/UpperBound/Seesaw/NeighbourLattice.lean	12	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.10	The vacuum of the neighbour lattice	New/UpperBound/Seesaw/NeighbourVacuum.lean	3	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.11	Finite evaluation of a pair of edges	New/UpperBound/Seesaw/GoodDatum.lean	11	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.12	Evaluated data as admissible combinations of glued translates	New/UpperBound/Seesaw/GoodDatum.lean	1	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.13	Unfolding a pair of lifts	New/UpperBound/Seesaw/UnfoldingStages.lean	1	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.14	The functions of the unfolding	New/UpperBound/Seesaw/SeesawIdentity.lean	10	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.15	Support of the unfolded functions	New/UpperBound/Seesaw/UnfoldingStages.lean	2	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.16	Cuts for the outer variables	New/UpperBound/Seesaw/Cut.lean	8	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.17	The top of the chain	New/UpperBound/Seesaw/SeesawIdentity.lean	2	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.18	The outer integrals of the seesaw	New/UpperBound/Seesaw/SeesawIdentity.lean	5	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.19	The seesaw tensor	New/UpperBound/Seesaw/SeesawIdentity.lean	4	same	y	0	0	0	0	
+ThetaLiftChainsAndTheSeesawIdentity	3.20	The seesaw identity	New/UpperBound/Seesaw/SeesawIdentity.lean	1	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	1.1	Heisenberg data, vacua and the reproducing model	Lib/Weil/Construction/WeilOperators.lean	9	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	1.2	Superposition and Schur's lemma in the reproducing model	Lib/Weil/Construction/HeisenbergModel.lean	12	partial	y	0	1	0	1	form_eq_mul_modelInner:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	1.3	Weil operators: the product rule up to the cocycle	Lib/Weil/Construction/WeilOperators.lean	11	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	1.4	Orthogonal sums, Wiener's bound and transport	Lib/Weil/Construction/WeilOperators.lean	13	partial	y	0	2	0	2	norm_tmul:removed-offroute; norm_transport:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	2.1	The Fock model of `U(ε)` and the triviality of its cocycle	Lib/Weil/Fock/OscillatorPair.lean	21	partial	y	0	1	1	0	norm_realWeil_le:removed-absorbed
+WeilRepresentationsOnBanachSpacesOfData	2.2	Polynomial vectors: the Fischer pairing, density and the derivative	Lib/Weil/Fock/PolynomialVectors.lean	8	partial	y	0	1	0	1	fockInner_polyVector_monomial:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	2.3	Moments and approximation by polynomial vectors	Lib/Weil/Fock/WeightedNorms.lean	13	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	2.4	Harmonic matrix coefficients and oscillator pairs on matrices	Lib/Weil/Fock/OscillatorPair.lean	14	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	3.1	Weil data and the adelic Heisenberg datum	Lib/Weil/Construction/AdelicRepresentation.lean	13	partial	y	0	1	0	1	vacuumFn_eq_exp_mul_ite:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	3.2	The finite datum, its lattice vacuum and the finite multiplier	Lib/Weil/Construction/FiniteMultiplier.lean	20	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	3.3	The finite cocycle is a Gauss sum and is trivial	Lib/General/NumberTheory/FrobeniusOrbits.lean	10	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	3.4	The Banach space of data	Lib/Weil/Construction/VacuumProjections.lean	14	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	3.5	The adelic Weil representation	Lib/Weil/Construction/VacuumProjections.lean	8	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	3.6	Theta functionals	Lib/Weil/Construction/AdelicRepresentation.lean	20	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	3.7	Vacuum projections and the finite part	Lib/Weil/Construction/VacuumProjections.lean	19	partial	y	0	2	0	2	dataInner_finHeisenbergOp_rep_vacElem:removed-offroute; span_finHeisenbergOp_rep_vacElem:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	3.8	Products of data and changes of coordinates	Lib/Weil/Construction/ProductsAndTransport.lean	15	partial	y	0	2	0	2	dataInner_boxProd:removed-offroute; norm_map:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	3.9	The tame local Gauss sum	Lib/General/Analysis/FiniteFourier.lean	5	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	4.1	Real data and the entire theta function	Lib/Weil/MixedModel/RealTheta.lean	9	partial	y	0	2	1	1	eq_zero_of_integrated_eq_zero:removed-absorbed; theta_integrated_polyVector_eq_integral_entireTheta:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	4.2	Jet series and translation by rational vectors	Lib/Weil/Construction/ThetaJets.lean	11	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	4.3	The theta dictionary for the standard lattice	Lib/Weil/Construction/ThetaDictionary.lean	23	partial	y	0	2	1	1	exists_semichar_finiteImage_eq_neg_one_zpow:removed-offroute; isThetaFunction_iff:removed-weakened
+WeilRepresentationsOnBanachSpacesOfData	4.4	Fourier inversion for theta functions of a sublattice	Lib/Weil/Construction/FourierInversion.lean	9	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	5.1	Isotropic splittings, parabolic elements and adapted points	Lib/Weil/MixedModel/IsotropicSplitting.lean	20	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	5.2	Base-adapted splittings	Lib/Weil/MixedModel/IsotropicSplitting.lean	6	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	5.3	Schwartz–Bruhat functions above a set of places	Lib/Weil/MixedModel/SchwartzBruhat.lean	15	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	5.4	Data named by Schwartz–Bruhat functions	Lib/Weil/MixedModel/NamedData.lean	12	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	5.5	Zero terms and slices; the theta functional as a sum of slices	Lib/Weil/MixedModel/ZeroTerm.lean	17	partial	y	0	1	0	1	slice_omega_eq_integral:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	5.6	Parabolic laws, invariance of the theta functional and its normalisation	Lib/Weil/Construction/CanonicalTheta.lean	21	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	5.7	Mixed models at the real places and sections with prescribed slices	Lib/Weil/MixedModel/RealTheta.lean	7	partial	y	0	1	1	0	exists_map_vacVector_apply_zero_omega_eq:removed-absorbed
+WeilRepresentationsOnBanachSpacesOfData	6.1	The space of maps, the Weil representation of a pair and data modulo an ideal	Lib/Weil/DualPair/Defs.lean	17	partial	y	0	2	1	1	kroneckerGL:removed-absorbed; stdKernel:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	6.2	Laws of the Weil action of a pair	Lib/Weil/DualPair/Defs.lean	20	partial	y	0	1	0	1	realPairWeil_vacVector:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	6.3	Finite action, sums, negation and moved points	Lib/Weil/DualPair/FiniteAction.lean	12	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.4	Growth of theta kernels and convergence of theta lifts	Lib/Weil/DualPair/ThetaLiftConvergence.lean	16	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.5	Short isotropic vectors and means over isotropic subspaces	Lib/Weil/DualPair/ShortIsotropicVectors.lean	12	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.6	Rapid decay of theta kernels under support conditions	Lib/Weil/DualPair/KernelDecay.lean	7	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.7	Theta kernels modulo an ideal: formal laws	Lib/Weil/DualPair/KernelLaws.lean	17	partial	y	0	3	0	3	stdKernel_sum_right:removed-offroute; stdKernel_sum_left:removed-offroute; exists_stdKernel_neg_left:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	6.8	Flipping a dual pair	Lib/Weil/DualPair/Flip.lean	13	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.9	Mixed models of a pair with one split space	Lib/Weil/MixedModel/AdaptedSplitting.lean	17	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.10	Slices of an adapted splitting: real, named and finite parts	Lib/Weil/TameGaussSum.lean	14	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.11	Zero terms at the real places along an isotropic line	Lib/Weil/MixedModel/TargetZeroTerm.lean	9	none	n/a	0	9	9	0	adaptedTargetBasis:removed-absorbed; isAdapted_homTarget:removed-absorbed; realTargetZeroTerm:removed-absorbed; homSlice_integrated_of_real:removed-absorbed; lineTermReal_true_eq_realTargetZeroTerm:removed-absorbed; exists_realTargetZeroTerm_eq:removed-absorbed; realSlice_realPairWeil:removed-absorbed; lineVector:removed-absorbed; exists_realTargetZeroTerm_realPairWeil:removed-absorbed
+WeilRepresentationsOnBanachSpacesOfData	6.12	Terms of theta kernels at rational matrices and theta integrals	Lib/Weil/DualPair/ThetaIntegrals.lean	12	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.13	The Galois law of the finite Weil representation	Lib/Weil/DualPair/GaloisLaw.lean	7	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.14	Holomorphic data and theta kernels as level multipliers	Lib/Weil/DualPair/HolomorphicData.lean	8	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	6.15	Two edges joined into one datum	Lib/Weil/DualPair/TwoEdges.lean	14	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	7.1	Products of minors are jointly highest vectors	Lib/Weil/Lift.lean	3	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	7.2	Joint harmonics are edges	Lib/Weil/Lift.lean	12	partial	y	0	1	0	1	prod_eq_smul_jointHarmonic:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	7.3	Arrows: lifts of forms, transposition and adjointness	Lib/Weil/Lift.lean	12	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	7.4	Edge families and the seesaw for periods	Lib/Weil/Seesaw.lean	14	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	7.5	The jet kernel of a definite pair	Lib/Weil/CompactLift/ThetaKernelDefs.lean	9	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	7.6	Definite theta lifts as algebraic lifts by jets	Lib/Weil/DualPair/WeilAction.lean	6	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	8.1	Graded spaces, Bessel groups and the string map	Lib/Weil/Periods/RealAndFinitePoints.lean	32	partial	y	0	4	1	3	shift_mulVec_stringPower:removed-offroute; form_stringPower:removed-offroute; form_middlePower:removed-offroute; isMulRightInvariant_haar_besselReal_besselFin:removed-absorbed
+WeilRepresentationsOnBanachSpacesOfData	8.2	The lattice of a finite point of a graded space	Lib/Weil/Periods/PointLattice.lean	17	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	8.3	Iwasawa decomposition for the flag of the grades	Lib/Weil/Periods/GradedLattice.lean	4	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	8.4	Finitely many lattices under the bounds	Lib/Weil/Periods/LatticeBounds.lean	4	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	8.5	Integrals over the Bessel group and the maps that survive unipotent twists	Lib/Weil/Periods/BesselIntegral.lean	11	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	8.6	The unipotent character and equivariant functions on the Bessel group	Lib/Weil/Periods/Equivariant.lean	11	partial	y	0	1	1	0	sourceFn_mul:removed-absorbed
+WeilRepresentationsOnBanachSpacesOfData	8.7	Constant terms along maps of positive degree	Lib/Weil/Periods/ConstantTerm.lean	18	partial	y	0	1	0	1	hasSum_constTerm:removed-offroute
+WeilRepresentationsOnBanachSpacesOfData	8.8	One step of the seesaw unfolding	Lib/Weil/Periods/Unfolding.lean	9	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	8.9	Fourier coefficients of theta lifts along the centre of a unipotent radical	Lib/Weil/Periods/DescentVanishing.lean	4	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	8.10	Vanishing descents force vanishing periods	Lib/Weil/Periods/DescentVanishing.lean	8	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	9.1	The basic double cosets of `GL_n` at a finite place	Lib/Weil/Unramified/HeckeGL.lean	14	partial	y	0	2	2	0	diagGL_mem_basicDoubleCoset:removed-split; basicCosetRep_mem_and_residueKer_eq:removed-split
+WeilRepresentationsOnBanachSpacesOfData	9.2	Hecke operators and Hecke polynomials at split places	Lib/Weil/Unramified/SplitHecke.lean	19	same	y	0	0	0	0	
+WeilRepresentationsOnBanachSpacesOfData	9.3	Hecke polynomials pass through theta lifts	Lib/Weil/Unramified/HeckeTransfer.lean	12	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	1.1	L-functions with the pole removed, and quadratic twists	Lib/Analytic/EntireLFunction.lean	10	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	1.2	Reflection of the zeros for every character	Lib/Analytic/ZeroSymmetry.lean	2	same	partly	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	1.3	Growth near the line `Re s = 1`	Lib/Analytic/PrimeNumberTheorem/LFunctionGrowth.lean	3	weaker	y	1	0	0	0	norm_regularL_le_linear:weaker
+ZeroFreeRegionsAndPrimesInShortWindows	1.4	A zero-free region with a bound for the logarithmic derivative	Lib/Analytic/PrimeNumberTheorem/ZeroFreeRegion.lean	6	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	2.1	A Tauberian theorem with a rate	Lib/Analytic/PrimeNumberTheorem/Tauberian.lean	3	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	2.2	Primes `≡ 1` modulo powers of a fixed modulus in logarithmic windows	Lib/Analytic/Primes.lean	6	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	3.1	Theta series and the tail integral	Lib/Analytic/QuadraticTwist.lean	7	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	3.2	The theta series of a character: transformation in absolute value and Mellin transform	Lib/Analytic/DirichletTheta.lean	10	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	3.3	A zero in a box makes the theta tail large	Lib/Analytic/QuadraticTwist.lean	5	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	3.4	A mean square of theta series twisted by Jacobi symbols	Lib/Analytic/PolyaVinogradov.lean	6	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	3.5	Zero density for quadratic twists over the primes of a class, and the choice of `d`	Lib/Analytic/QuadraticTwist.lean	6	same	y	0	0	0	0	
+ZeroFreeRegionsAndPrimesInShortWindows	S	exists_prime_twist_LFunction_ne_zero		0	target(see matcher)	n/a	0	0	0	0	

@@ -1,0 +1,24 @@
+{
+  "roadmap": {
+    "repo": "TauCetiProject/TauCetiRoadmap",
+    "family": "TauCetiRoadmap/ShortGRH",
+    "commit": "ae109eb8",
+    "lean": "leanprover/lean4:v4.36.0-rc2",
+    "mathlib": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+    "tauceti": "2fd255d997f47c0b5d834ee416c7015d55444ce5"
+  },
+  "shortproof": {
+    "repo": "lsernau/grh-lean",
+    "commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+    "folder": "grh/src",
+    "note": "The roadmaps' [ShortProof]. The same commit is the root commit of the upstream repository below, with the same folder."
+  },
+  "upstream": {
+    "repo": "leanprover-community/riemann-hypothesis",
+    "snapshot": "61d870d08d5f6f5cc12f31fe40f5689024ea15ab",
+    "folder": "src",
+    "lean": "leanprover/lean4:v4.37.0-rc1",
+    "mathlib": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
+    "tauceti": "6d810e58e90dc1a8f89e5cb6056ee36c26da67d3"
+  }
+}

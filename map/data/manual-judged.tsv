@@ -1,0 +1,7 @@
+# name	verdict	confidence	reason	tag
+New.CMLattice.norm_coeff_le_one_of_hasIntegralValues	incomparable	med	renamed to norm_coeff_le_one_of_norm_le_naiveHeight_pow; hypothesis HasIntegralValues replaced by a naive-height bound ‖ιₚ(f z)‖ ≤ naiveHeight z^m (PR #6517)	read
+New.CoordChange.norm_map	removed	high	Librarian rename to private CoordChange.map_val is a skeleton-prefix artefact: norm identity vs pointwise value formula	read
+New.Floors.IntegralPlace.IsLargeLatticeData.exists_ideal_depth_eq	removed	high	Librarian rename to a private unrelated lemma (exists_ne_zero_of_formMajorant_ne_zero) is a skeleton-prefix artefact	read
+New.Floors.IntegralPlace.IsLargeLatticeData.two_le_card	stronger	high	renamed New.Floors.PlaceData.two_le_card; hypothesis [IsLargeLatticeData F] dropped	read
+New.GaloisRep.exists_isStepOfLocalChar_inert	same-meaning	high	renamed private exists_inertStep; ∃η moved inside a conjunct	read
+New.Grading.isMulRightInvariant_haar_besselReal_besselFin	weaker	high	renamed isMulRightInvariant_haar_besselReal; the besselFin conjunct dropped	read
