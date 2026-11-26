@@ -49,6 +49,22 @@ Current certificates (all proved, standard axioms only):
 - **`watch`** (daily). It sparse-clones the roadmap family and the upstream source at head and at `72fead1`. It reports every cited declaration that no longer resolves at head and still resolved at `72fead1`; a cited name that resolved at neither is reported as extractor noise or a possible roadmap typo. It commits `reports/latest.md`, and opens or updates one issue (label `drift`) when names newly go missing. The check is at source level and approximate: a name that still resolves may have changed its statement, and the map does the elaborated comparison.
 - **`cert1`** (weekly, and on demand for any public repository and ref). Every ShortGRH `Suggested.lean` must elaborate at the roadmap's pins, with no warning other than `declaration uses sorry`. Run it on a revision branch before proposing it.
 
+## Posting, validated by a human merge
+
+The user's posts to TauCetiRoadmap (a revision PR, a review, a comment) are prepared here, one file per post under `posts/`. Each file has a short front matter block (kind, target repository, PR number or branch, and for a PR the patch path under `posts/patches/`), followed by the exact body.
+- **The human act is the merge.** A post is sent only after a pull request in this repository that adds or changes its file has been merged into `main` by the approver (a merge or squash commit, not a rebase, auto-merge or merge queue), and the file appears in that PR's own file list. A direct push posts nothing.
+- In the RoadmapLab PR, the `post` workflow renders the exact payload into the job summary, so the approver merges what they have read.
+- **The gluing check blocks a post** while it still carries:
+  - an `OBSERVATION` or `[INTERNAL…]` mark;
+  - a `TODO-USER` or other placeholder;
+  - a local path;
+  - internal vocabulary;
+  - no AI-use disclosure line naming the model;
+  - for a review or comment, no leading 🤖 (TauCetiRoadmap's convention for AI-assisted comments).
+- Approvals are never automated: reviews are `COMMENT` or `REQUEST_CHANGES` only.
+- After the merge, `post.yml` sends the post with the poster's own token, at most once. It first checks the target repository for a hidden marker or an existing head branch, then records the URL in `reports/posted.tsv`.
+- **Posting is a dry run** until the repository variable `POSTING` is set to `on`. Settings: the secret `POSTER_TOKEN`, a **classic** token with scope `public_repo` (a fine-grained token cannot write to public repositories the user does not own), in environment `tauceti-post`; the variables `POST_APPROVER`, `POST_FORK`, `POST_AUTHOR_NAME`, `POST_AUTHOR_EMAIL` and `POSTING` (see the header of `.github/workflows/post.yml`).
+
 ## Credit
 
 The roadmaps are by Chris Birkbeck and the Tau Ceti project. The proof is by the authors of grh-lean and of leanprover-community/riemann-hypothesis. This repository only checks their work against each other.
