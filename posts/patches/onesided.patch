@@ -1,5 +1,5 @@
 diff --git a/TauCetiRoadmap/ShortGRH/OneSidedPrimeSumBoundsAndAdmissibleData/README.md b/TauCetiRoadmap/ShortGRH/OneSidedPrimeSumBoundsAndAdmissibleData/README.md
-index 25b979e4..fd1dc3b0 100644
+index 25b979e4..6948c5f3 100644
 --- a/TauCetiRoadmap/ShortGRH/OneSidedPrimeSumBoundsAndAdmissibleData/README.md
 +++ b/TauCetiRoadmap/ShortGRH/OneSidedPrimeSumBoundsAndAdmissibleData/README.md
 @@ -163,6 +163,12 @@ Let `q₀ ≥ 1` with `8 | q₀`, let `d₀ ≡ 7 (mod 8)` be prime to `q₀`, a
@@ -33,9 +33,9 @@ index 25b979e4..fd1dc3b0 100644
    states: the folder `grh` of github.com/lsernau/grh-lean at commit `72fead1`; paths are relative to its directory
 -  `src/`. It is the reference of every target whose origin is particular to this proof.
 +  `src/`. It is the reference of every target whose origin is particular to this proof. Its continuation is the
-+  branch `main` of github.com/leanprover-community/riemann-hypothesis, based since 25 November 2026 on that folder
-+  (paths relative to `src/`); 0.2 and 6.2 cite it at commit `61d870d`. RiemannHypothesisForDirichletLFunctions cites
-+  the same repository as [FormalProof] in its earlier form, which that repository keeps on its branch `alpoge`.
++  branch `main` of github.com/leanprover-community/riemann-hypothesis, which holds that folder from commit `47fcde5`
++  on (paths relative to `src/`); 0.2 and 6.2 cite it at commit `61d870d`. RiemannHypothesisForDirichletLFunctions
++  cites the same repository in its earlier form, which that repository keeps on its branch `alpoge`.
  - E. Landau, *Über einen Satz von Tschebyschef*, Math. Ann. 61 (1905), 527–550: Landau's theorem on Laplace and Mellin
    transforms of functions bounded on one side (0.2, through PositivityOfDirichletSeriesWithKernels §6.4).
  - F. A. Behrend, *On sets of integers which contain no three terms in arithmetical progression*, Proc. Nat. Acad. Sci.

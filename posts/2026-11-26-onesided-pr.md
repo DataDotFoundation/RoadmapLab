@@ -8,7 +8,7 @@ patch: posts/patches/onesided.patch
 label_comment: awaiting-review
 ---
 This updates two citations in OneSidedPrimeSumBounds to the current upstream proof and adds two remarks; no statement changes, so open implementation PRs are unaffected.
-<!-- OBSERVATION (checklist): your chosen opening line. "open implementation PRs are unaffected" concerns the TauCeti PRs, a venue with no cited overlap proof; it is supported by reading their bodies (they target the existing statements). "updates two citations" is accurate as "adds": the [ShortProof] lines are unchanged. Your words, your call. -->
+<!-- OBSERVATION (checklist): your chosen opening line. "open implementation PRs are unaffected" concerns the TauCeti PRs, a venue with no cited overlap proof; it is supported by reading their bodies (they target the existing statements). "updates two citations" is accurate as "adds": the [ShortProof] lines are unchanged, and the rehearsal predicts the AI pass will flag it; a version that matches the head: "This adds two remarks to OneSidedPrimeSumBoundsAndAdmissibleData, each citing the current upstream proof; no statement changes, so open implementation PRs are unaffected." Your words, your call. -->
 
 <!-- roadmap-summary -->
 **What this revision changes.** §0.2 gains a remark: the one-sided criterion is equivalent to its form with a constant in the hypothesis, `R_{q₀}^{(d)}(x) ≤ A·x^{β−1}` for some `A`. §6.2 (c) gains a remark: the one-sided bound is equivalent to the same bound with a constant factor. Each remark cites the declaration that proves the constant form in the continuation of [ShortProof] at commit `61d870d`, and the [ShortProof] reference now says what that continuation is.
