@@ -1,8 +1,56 @@
 # ShortGRH citation drift
 
-roadmap: `ae109eb8` · upstream: `61d870d`
+roadmap: `fde779b8` · upstream: `8c828eda`
 
-6632 citations. 254 cited names no longer resolve at upstream head (present at `72fead1`); 18 do not resolve at `72fead1` either. Source level and approximate: a resolving name may still have changed its statement; see the correspondence map for the elaborated comparison.
+6630 citations. 287 cited names no longer resolve at upstream head (present at `72fead1`); 18 do not resolve at `72fead1` either. Source level and approximate: a resolving name may still have changed its statement; see the correspondence map for the elaborated comparison.
+
+## Since the previous run: 39 newly missing, 6 newly resolved
+
+- `New.DescentPair.normalizedDescent_mul_eq_normalizedDescent_formAction`: DeterminantsOfThetaLiftChains §2.1
+- `New.DiscreteModule.trivialisedCocycles`: IdelicReciprocityCountsAndCyclotomicClassGroups §4.1
+- `New.DiscreteModule.trivialisedCocycles.card_eq_of_isShortExact`: IdelicReciprocityCountsAndCyclotomicClassGroups §4.3
+- `New.DiscreteModule.trivialisedCocycles.corestrict_mem`: IdelicReciprocityCountsAndCyclotomicClassGroups §4.3
+- `New.DiscreteModule.trivialisedCocycles.exists_mem_of_orbit_reps`: IdelicReciprocityCountsAndCyclotomicClassGroups §4.3
+- `New.DiscreteModule.trivialisedCocycles.hasFewCocycles_of_isShortExact`: IdelicReciprocityCountsAndCyclotomicClassGroups §4.3
+- `New.Exchange.exists_planeConstantTerm_eq_thetaLarge_dualCone`: SiegelWeilAndRallisFormulasOnUnitaryGroups §6.8
+- `New.Floors.leFibreMeasure_dualVector`: HolomorphicDiscreteSeriesOfUnitaryGroups §3.7
+- `New.Floors.leFibreMeasure_frameVector`: HolomorphicDiscreteSeriesOfUnitaryGroups §3.7
+- `New.FockDualPair.centre`: HolomorphicDiscreteSeriesOfUnitaryGroups §8.4
+- `New.FockDualPair.centredCasimir_swap_oscRows_eq_add`: HolomorphicDiscreteSeriesOfUnitaryGroups §8.4
+- `New.GlModule.centredCasimir`: HolomorphicDiscreteSeriesOfUnitaryGroups §8.4
+- `New.HasHeckePolyAt.unique`: GaloisRepresentationsOfUnitaryEigenforms §1.1
+- `New.HeightLe.neg_le_of_norm_map_le`: OneSidedPrimeSumBoundsAndAdmissibleData §1.2
+- `New.IsLargeLevel.SplitPlaces.card_trivialisedCocycles_eq_of_isHigmanProjective`: IdelicReciprocityCountsAndCyclotomicClassGroups §4.4
+- `New.IsLargeLevel.SplitPlaces.card_trivialised_of_isHigmanProjective`: IdelicReciprocityCountsAndCyclotomicClassGroups §4.4
+- `New.IsMatch.centred_casimirValue_eq`: HolomorphicDiscreteSeriesOfUnitaryGroups §8.4
+- `New.IsPlaceOver.isLocalGalois_and_residueCard_eq_and_isUniformiser`: IdelicReciprocityCountsAndCyclotomicClassGroups §1.3
+- `New.LeGramFibre`: HolomorphicDiscreteSeriesOfUnitaryGroups §1.1
+- `New.LeGramFibre.append`: HolomorphicDiscreteSeriesOfUnitaryGroups §1.6
+- `New.LeGramFibre.append_vector`: HolomorphicDiscreteSeriesOfUnitaryGroups §1.6
+- `New.LeGramFibre.insert`: HolomorphicDiscreteSeriesOfUnitaryGroups §1.6
+- `New.LeGramFibre.le_haar`: HolomorphicDiscreteSeriesOfUnitaryGroups §1.6
+- `New.LeGramFibre.mconv_embedH_le`: HolomorphicDiscreteSeriesOfUnitaryGroups §2.7
+- `New.LeGramFibre.mconv_fixerHaar_le`: HolomorphicDiscreteSeriesOfUnitaryGroups §2.7
+- `New.Lift.Chart.adjoinEDivP`: CrystallineRepresentationsAndKisinModules §2.1
+- `New.Lift.Chart.adjoinEDivPClosure`: CrystallineRepresentationsAndKisinModules §2.1
+- `New.QZChar.abelianLift_symmetrise`: IdelicReciprocityCountsAndCyclotomicClassGroups §6.2
+- `New.Rows.DividedSplitting.IsBlockNormalised`: NormsOfThetaLiftsAndExchangeIdentities §3.2
+- `New.Selmer.IsFormOfType.isRepOfType_normalisedRep`: CongruencesOfTwistedThetaLifts §2.6
+- `New.Selmer.isRepOfType_normalisedRep`: CongruencesOfTwistedThetaLifts §2.6
+- `New.Selmer.normalisedRep`: CongruencesOfTwistedThetaLifts §1.1
+- `New.Selmer.normalisedRep_quadratic_on_inertia`: CongruencesOfTwistedThetaLifts §2.5
+- `New.Selmer.tiedNormaliser`: CongruencesOfTwistedThetaLifts §3.1
+- `New.Variety.ComparedTheory.isFiniteLerayHirsch_offClosedFibre_sup_testUnitLocus_preimage`: PadicComparisonForFunctorCohomology §4.3
+- `New.Variety.Comparison.isBijective_of_fibres`: CohomologyOfFunctorsOnTestRings §2.3
+- `New.fibreIntegral`: AdelicUnitaryGroupsAndAlgebraicModularForms §7.4
+- `New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero`: ZeroFreeRegionsAndPrimesInShortWindows §1.2
+- `New.leGramFibre_haar`: HolomorphicDiscreteSeriesOfUnitaryGroups §1.6
+- resolved again: `New.Data.paramsCorrespond_paramY`
+- resolved again: `New.Fock.norm_realWeil_le`
+- resolved again: `New.Grading.sourceFn_mul`
+- resolved again: `New.Rows.weylNormSq_firstFactor_le`
+- resolved again: `New.SiegelWeil.norm_rallisSeries_le`
+- resolved again: `New.sigma_add_of_mem_lattice`
 
 ## Missing at upstream head
 
@@ -10,16 +58,18 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 
 - §3.1 `New.Variety.IsPeriodMap.finrank_eq_abelianDim`
 
-### AdelicUnitaryGroupsAndAlgebraicModularForms (5)
+### AdelicUnitaryGroupsAndAlgebraicModularForms (6)
 
 - §3.5 `New.Space.card_eq_of_perp_subset`
 - §3.7 `New.Exchange.exists_contDiff_carrying_isotropic`
 - §3.7 `New.Exchange.exists_contDiff_eventually_mulVec_eq`
 - §6.2 `New.highestVector_cyclic`
+- §7.4 `New.fibreIntegral`
 - §7.12 `New.charpoly_eq_of_trace_pow_eq`
 
-### CohomologyOfFunctorsOnTestRings (1)
+### CohomologyOfFunctorsOnTestRings (2)
 
+- §2.3 `New.Variety.Comparison.isBijective_of_fibres`
 - §5.3 `New.Variety.PerfectLine.isCohomEquiv_gluing_tilt`
 
 ### CompositeThetaLiftsAndShortForms (2)
@@ -27,17 +77,24 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §1.14 `New.FrobeniusCycle.elementary_divisors_length`
 - §4.9 `New.Data.exists_err_gaugeLe_compositeLift`
 
-### CongruencesOfTwistedThetaLifts (3)
+### CongruencesOfTwistedThetaLifts (8)
 
+- §1.1 `New.Selmer.normalisedRep`
 - §1.3 `New.Selmer.IsMainSummandLike.eventually_eq_bot_or_eq_top`
 - §1.3 `New.Selmer.IsMainSummandLike.eventually_lattice_unique`
+- §2.5 `New.Selmer.normalisedRep_quadratic_on_inertia`
+- §2.6 `New.Selmer.IsFormOfType.isRepOfType_normalisedRep`
+- §2.6 `New.Selmer.isRepOfType_normalisedRep`
 - §2.6 `New.Selmer.normalisedJumps_eq_range_add_map`
+- §3.1 `New.Selmer.tiedNormaliser`
 
-### CrystallineRepresentationsAndKisinModules (12)
+### CrystallineRepresentationsAndKisinModules (14)
 
 - §1.1 `New.completionAction`
 - §1.6 `New.Period.eq_zero_of_smul_eq_cyclotomicGp_zpow_smul`
 - §1.6 `New.Period.exists_norm_normalizedTrace_le`
+- §2.1 `New.Lift.Chart.adjoinEDivP`
+- §2.1 `New.Lift.Chart.adjoinEDivPClosure`
 - §2.3 `New.Lift.Chart.adjoinEDivPClosure_eq_bicommutant`
 - §2.3 `New.Lift.Chart.adjoinEDivP_le_bicommutant`
 - §2.3 `New.Lift.Chart.exists_E_pow_mul_eq_tau_pow_mul_iff`
@@ -48,8 +105,9 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §5.8 `New.Lift.KummerChart.JumpLattice.valueFieldPoints_frobKisinAinf_eq_span`
 - §5.9 `New.Lift.KummerChart.JumpLattice.mem_kisinAinf_iff_crysForms`
 
-### DeterminantsOfThetaLiftChains (6)
+### DeterminantsOfThetaLiftChains (7)
 
+- §2.1 `New.DescentPair.normalizedDescent_mul_eq_normalizedDescent_formAction`
 - §2.2 `New.Data.normalizedDescent_eq_zero_iff`
 - §3.6 `New.Exchange.exists_analytic_extension_functional_equation`
 - §3.6 `New.Exchange.exists_analytic_extension_ne_zero`
@@ -76,23 +134,47 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §4.9 `New.Parameters.isResolution_resolutionVectors_zeta_pow`
 - §5.5 `New.Data.norm_conj_piMBar_mul_jetScale_sq`
 
-### GaloisRepresentationsOfUnitaryEigenforms (4)
+### GaloisRepresentationsOfUnitaryEigenforms (5)
 
+- §1.1 `New.HasHeckePolyAt.unique`
 - §2.2 `New.Selmer.eq_bot_or_eq_top_of_span_eq_top`
 - §2.2 `New.Selmer.exists_eq_smul_of_conj_eq`
 - §6.1 `New.GaloisRep.exists_isStep_hasQuadSubfield`
 - §8.4 `New.GaloisRep.exists_isStepOfLocalChar_inert`
 
-### HolomorphicDiscreteSeriesOfUnitaryGroups (4)
+### HolomorphicDiscreteSeriesOfUnitaryGroups (18)
 
+- §1.1 `New.LeGramFibre`
+- §1.6 `New.LeGramFibre.append`
+- §1.6 `New.LeGramFibre.append_vector`
+- §1.6 `New.LeGramFibre.insert`
+- §1.6 `New.LeGramFibre.le_haar`
+- §1.6 `New.leGramFibre_haar`
 - §2.3 `New.Floors.FloorGroups.bijOn_mulVec_eStar`
 - §2.3 `New.Floors.FloorGroups.existsUnique_prod_of_mem_besselU`
+- §2.7 `New.LeGramFibre.mconv_embedH_le`
+- §2.7 `New.LeGramFibre.mconv_fixerHaar_le`
+- §3.7 `New.Floors.leFibreMeasure_dualVector`
+- §3.7 `New.Floors.leFibreMeasure_frameVector`
 - §5.4 `New.HCParam.HasLargeGap.isUnitaryCasimirGe_dsAction`
 - §8.3 `New.IsJointHarmonic.exists_eq_smul_of_column_weight`
+- §8.4 `New.FockDualPair.centre`
+- §8.4 `New.FockDualPair.centredCasimir_swap_oscRows_eq_add`
+- §8.4 `New.GlModule.centredCasimir`
+- §8.4 `New.IsMatch.centred_casimirValue_eq`
 
-### IdelicReciprocityCountsAndCyclotomicClassGroups (19)
+### IdelicReciprocityCountsAndCyclotomicClassGroups (28)
 
+- §1.3 `New.IsPlaceOver.isLocalGalois_and_residueCard_eq_and_isUniformiser`
+- §4.1 `New.DiscreteModule.trivialisedCocycles`
+- §4.3 `New.DiscreteModule.trivialisedCocycles.card_eq_of_isShortExact`
+- §4.3 `New.DiscreteModule.trivialisedCocycles.corestrict_mem`
+- §4.3 `New.DiscreteModule.trivialisedCocycles.exists_mem_of_orbit_reps`
+- §4.3 `New.DiscreteModule.trivialisedCocycles.hasFewCocycles_of_isShortExact`
+- §4.4 `New.IsLargeLevel.SplitPlaces.card_trivialisedCocycles_eq_of_isHigmanProjective`
+- §4.4 `New.IsLargeLevel.SplitPlaces.card_trivialised_of_isHigmanProjective`
 - §4.4 `New.IsLargeLevel.SplitPlaces.hasFewCocycles_of_isHigmanProjective`
+- §6.2 `New.QZChar.abelianLift_symmetrise`
 - §7.1 `New.AutChar.HasWeight.isOfFinOrder_apply`
 - §7.1 `New.card_u1_classGroup_dvd_classNumber`
 - §7.2 `New.Cohomology.υ_star_eq_inv_and_apply_eq`
@@ -131,14 +213,15 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §2.2 `New.LValueData.lift_fockDatum_const_one`
 - §2.5 `New.Data.CriticalPair.exists_ofAlgForm_trivialLift_eq_smul_lift`
 - §2.5 `New.Data.CriticalPair.formAction_trivialLift`
+- §3.2 `New.Rows.DividedSplitting.IsBlockNormalised`
 - §5.4 `New.Rows.stdClassSum_gramForm_eq_zero_of_rank_one`
-- §7.2 `New.Rows.weylNormSq_firstFactor_le`
 - §7.3 `New.Rows.stdClassSum_gramForm_eq_zero_of_mem_falseLiftsAt`
 
-### OneSidedPrimeSumBoundsAndAdmissibleData (11)
+### OneSidedPrimeSumBoundsAndAdmissibleData (12)
 
 - §1.1 `New.ColengthDvd.relLength_le`
 - §1.1 `New.IsOntoUpToColength.exists_relLength_le`
+- §1.2 `New.HeightLe.neg_le_of_norm_map_le`
 - §3.3 `New.Data.a_div_x₁_mem_Icc`
 - §3.3 `New.Data.m_sq_mem_Icc`
 - §3.3 `New.Data.q₁_le`
@@ -148,6 +231,10 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §5.2 `New.Data.divisibilityError`
 - §6.2 `New.eventually_primeRemainder_le_rpow`
 - §6.2 `New.tendsto_primeRemainder`
+
+### PadicComparisonForFunctorCohomology (1)
+
+- §4.3 `New.Variety.ComparedTheory.isFiniteLerayHirsch_offClosedFibre_sup_testUnitLocus_preimage`
 
 ### PairsOfFramesAtOnePlace (10)
 
@@ -215,7 +302,6 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §1.3 `New.SiegelWeil.tsum_stepWeight_conjClosure_singleton_le`
 - §1.3 `New.tsum_le_of_walk`
 - §1.4 `New.SiegelWeil.eq_zero_of_rallisSeries_eq_zero`
-- §1.4 `New.SiegelWeil.norm_rallisSeries_le`
 - §3.6 `New.Floors.IntegralPlace.classGaussSum`
 - §3.6 `New.Floors.IntegralPlace.latticeMultiple`
 - §3.6 `New.Floors.IntegralPlace.residueClass`
@@ -230,16 +316,16 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §6.7 `New.Exchange.isSchwartzVector_tateVector`
 - §6.7 `New.Exchange.realPairWeil_tateVector`
 - §6.7 `New.Exchange.tateVector`
+- §6.8 `New.Exchange.exists_planeConstantTerm_eq_thetaLarge_dualCone`
 - §6.9 `New.Exchange.analyticOnNhd_gammaIntegral`
 - §6.9 `New.Exchange.exists_analyticOnNhd_eq_L_mul_gammaIntegral`
 - §6.9 `New.Exchange.exists_analytic_extension_functional_equation`
 - §6.9 `New.Exchange.exists_analytic_extension_ne_zero`
 - §6.9 `New.Exchange.gammaIntegral_pos`
 
-### ThetaFunctionsAndUnitsOfCMLattices (38)
+### ThetaFunctionsAndUnitsOfCMLattices (37)
 
 - §1.2 `New.IsAppellHumbert.thetaSpace_two_eq_span`
-- §1.2 `New.sigma_add_of_mem_lattice`
 - §1.6 `New.CMLattice.isIsogeny_two`
 - §3.1 `New.CMLattice.HasIntegralValues.comp_isogeny`
 - §3.1 `New.CMLattice.HasIntegralValues.mul`
@@ -277,21 +363,19 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §5.1 `New.sub_one_mul_tsum_norm_mul_add_rpow`
 - §5.1 `New.tsum_meanError_one`
 
-### ThetaLiftChainsAndTheSeesawIdentity (6)
+### ThetaLiftChainsAndTheSeesawIdentity (5)
 
-- §2.4 `New.Data.paramsCorrespond_paramY`
 - §2.14 `New.Data.liftKernel_lift_scaling`
 - §2.14 `New.Data.liftKernel_lift_sub_scaling_eq_zero`
 - §2.19 `New.Data.poincareAt_smul`
 - §3.3 `New.Grading.SpansLattice.mem_lattice_and_stringProj_eq_zero_iff`
 - §3.8 `New.Seesaw.zeroTermFin_omega`
 
-### WeilRepresentationsOnBanachSpacesOfData (40)
+### WeilRepresentationsOnBanachSpacesOfData (38)
 
 - §1.2 `New.Heisenberg.IsVacuum.form_eq_mul_modelInner`
 - §1.4 `New.Heisenberg.IsVacuum.norm_transport`
 - §1.4 `New.Heisenberg.OrthogonalSum.norm_tmul`
-- §2.1 `New.Fock.norm_realWeil_le`
 - §2.2 `New.Fock.fockInner_polyVector_monomial`
 - §3.1 `New.vacuumFn_eq_exp_mul_ite`
 - §3.7 `New.Space.dataInner_finHeisenbergOp_rep_vacElem`
@@ -324,10 +408,13 @@ roadmap: `ae109eb8` · upstream: `61d870d`
 - §8.1 `New.Grading.form_stringPower`
 - §8.1 `New.Grading.isMulRightInvariant_haar_besselReal_besselFin`
 - §8.1 `New.Grading.shift_mulVec_stringPower`
-- §8.6 `New.Grading.sourceFn_mul`
 - §8.7 `New.Grading.hasSum_constTerm`
 - §9.1 `New.basicCosetRep_mem_and_residueKer_eq`
 - §9.1 `New.diagGL_mem_basicDoubleCoset`
+
+### ZeroFreeRegionsAndPrimesInShortWindows (1)
+
+- §1.2 `New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero`
 
 ## Not a declaration at `72fead1` either (extractor noise or a possible roadmap typo)
 

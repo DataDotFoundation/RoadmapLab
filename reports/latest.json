@@ -1,9 +1,9 @@
 {
  "meta": {
-  "roadmap": "ae109eb8",
-  "upstream": "61d870d"
+  "roadmap": "fde779b8",
+  "upstream": "8c828eda"
  },
- "cited": 6632,
+ "cited": 6630,
  "missing": {
   "Main": {
    "class": "noise",
@@ -293,12 +293,6 @@
     "DeterminantsOfThetaLiftChains §2.2"
    ]
   },
-  "New.Data.paramsCorrespond_paramY": {
-   "class": "drift",
-   "sections": [
-    "ThetaLiftChainsAndTheSeesawIdentity §2.4"
-   ]
-  },
   "New.Data.poincareAt_smul": {
    "class": "drift",
    "sections": [
@@ -321,6 +315,42 @@
    "class": "drift",
    "sections": [
     "OneSidedPrimeSumBoundsAndAdmissibleData §5.1"
+   ]
+  },
+  "New.DescentPair.normalizedDescent_mul_eq_normalizedDescent_formAction": {
+   "class": "drift",
+   "sections": [
+    "DeterminantsOfThetaLiftChains §2.1"
+   ]
+  },
+  "New.DiscreteModule.trivialisedCocycles": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §4.1"
+   ]
+  },
+  "New.DiscreteModule.trivialisedCocycles.card_eq_of_isShortExact": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §4.3"
+   ]
+  },
+  "New.DiscreteModule.trivialisedCocycles.corestrict_mem": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §4.3"
+   ]
+  },
+  "New.DiscreteModule.trivialisedCocycles.exists_mem_of_orbit_reps": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §4.3"
+   ]
+  },
+  "New.DiscreteModule.trivialisedCocycles.hasFewCocycles_of_isShortExact": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §4.3"
    ]
   },
   "New.DiscreteSeries.IsStationary.trace_eq_and_phase_eq": {
@@ -419,6 +449,12 @@
    "class": "drift",
    "sections": [
     "AdelicUnitaryGroupsAndAlgebraicModularForms §3.7"
+   ]
+  },
+  "New.Exchange.exists_planeConstantTerm_eq_thetaLarge_dualCone": {
+   "class": "drift",
+   "sections": [
+    "SiegelWeilAndRallisFormulasOnUnitaryGroups §6.8"
    ]
   },
   "New.Exchange.exists_realTargetZeroTerm_eq": {
@@ -709,16 +745,34 @@
     "PairsOfFramesAtOnePlace §4.1"
    ]
   },
+  "New.Floors.leFibreMeasure_dualVector": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §3.7"
+   ]
+  },
+  "New.Floors.leFibreMeasure_frameVector": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §3.7"
+   ]
+  },
   "New.Fock.fockInner_polyVector_monomial": {
    "class": "drift",
    "sections": [
     "WeilRepresentationsOnBanachSpacesOfData §2.2"
    ]
   },
-  "New.Fock.norm_realWeil_le": {
+  "New.FockDualPair.centre": {
    "class": "drift",
    "sections": [
-    "WeilRepresentationsOnBanachSpacesOfData §2.1"
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §8.4"
+   ]
+  },
+  "New.FockDualPair.centredCasimir_swap_oscRows_eq_add": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §8.4"
    ]
   },
   "New.FrobeniusCycle.elementary_divisors_length": {
@@ -743,6 +797,12 @@
    "class": "drift",
    "sections": [
     "GaloisRepresentationsOfUnitaryEigenforms §6.1"
+   ]
+  },
+  "New.GlModule.centredCasimir": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §8.4"
    ]
   },
   "New.Grading.SpansLattice.mem_lattice_and_stringProj_eq_zero_iff": {
@@ -781,16 +841,16 @@
     "WeilRepresentationsOnBanachSpacesOfData §8.1"
    ]
   },
-  "New.Grading.sourceFn_mul": {
-   "class": "drift",
-   "sections": [
-    "WeilRepresentationsOnBanachSpacesOfData §8.6"
-   ]
-  },
   "New.HCParam.HasLargeGap.isUnitaryCasimirGe_dsAction": {
    "class": "drift",
    "sections": [
     "HolomorphicDiscreteSeriesOfUnitaryGroups §5.4"
+   ]
+  },
+  "New.HasHeckePolyAt.unique": {
+   "class": "drift",
+   "sections": [
+    "GaloisRepresentationsOfUnitaryEigenforms §1.1"
    ]
   },
   "New.HasNormalForm.exists_of_norm_eq": {
@@ -827,6 +887,12 @@
    "class": "drift",
    "sections": [
     "IdelicReciprocityCountsAndCyclotomicClassGroups §7.3"
+   ]
+  },
+  "New.HeightLe.neg_le_of_norm_map_le": {
+   "class": "drift",
+   "sections": [
+    "OneSidedPrimeSumBoundsAndAdmissibleData §1.2"
    ]
   },
   "New.Heisenberg.IsVacuum.form_eq_mul_modelInner": {
@@ -871,16 +937,40 @@
     "HolomorphicDiscreteSeriesOfUnitaryGroups §8.3"
    ]
   },
+  "New.IsLargeLevel.SplitPlaces.card_trivialisedCocycles_eq_of_isHigmanProjective": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §4.4"
+   ]
+  },
+  "New.IsLargeLevel.SplitPlaces.card_trivialised_of_isHigmanProjective": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §4.4"
+   ]
+  },
   "New.IsLargeLevel.SplitPlaces.hasFewCocycles_of_isHigmanProjective": {
    "class": "drift",
    "sections": [
     "IdelicReciprocityCountsAndCyclotomicClassGroups §4.4"
    ]
   },
+  "New.IsMatch.centred_casimirValue_eq": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §8.4"
+   ]
+  },
   "New.IsOntoUpToColength.exists_relLength_le": {
    "class": "drift",
    "sections": [
     "OneSidedPrimeSumBoundsAndAdmissibleData §1.1"
+   ]
+  },
+  "New.IsPlaceOver.isLocalGalois_and_residueCard_eq_and_isUniformiser": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §1.3"
    ]
   },
   "New.IsResolution.sum_conj_mul": {
@@ -911,6 +1001,60 @@
    "class": "drift",
    "sections": [
     "NormsOfThetaLiftsAndExchangeIdentities §2.2"
+   ]
+  },
+  "New.LeGramFibre": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §1.1"
+   ]
+  },
+  "New.LeGramFibre.append": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §1.6"
+   ]
+  },
+  "New.LeGramFibre.append_vector": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §1.6"
+   ]
+  },
+  "New.LeGramFibre.insert": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §1.6"
+   ]
+  },
+  "New.LeGramFibre.le_haar": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §1.6"
+   ]
+  },
+  "New.LeGramFibre.mconv_embedH_le": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §2.7"
+   ]
+  },
+  "New.LeGramFibre.mconv_fixerHaar_le": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §2.7"
+   ]
+  },
+  "New.Lift.Chart.adjoinEDivP": {
+   "class": "drift",
+   "sections": [
+    "CrystallineRepresentationsAndKisinModules §2.1"
+   ]
+  },
+  "New.Lift.Chart.adjoinEDivPClosure": {
+   "class": "drift",
+   "sections": [
+    "CrystallineRepresentationsAndKisinModules §2.1"
    ]
   },
   "New.Lift.Chart.adjoinEDivPClosure_eq_bicommutant": {
@@ -1070,6 +1214,18 @@
     "CrystallineRepresentationsAndKisinModules §4.4"
    ]
   },
+  "New.QZChar.abelianLift_symmetrise": {
+   "class": "drift",
+   "sections": [
+    "IdelicReciprocityCountsAndCyclotomicClassGroups §6.2"
+   ]
+  },
+  "New.Rows.DividedSplitting.IsBlockNormalised": {
+   "class": "drift",
+   "sections": [
+    "NormsOfThetaLiftsAndExchangeIdentities §3.2"
+   ]
+  },
   "New.Rows.stdClassSum_gramForm_eq_zero_of_mem_falseLiftsAt": {
    "class": "drift",
    "sections": [
@@ -1082,16 +1238,16 @@
     "NormsOfThetaLiftsAndExchangeIdentities §5.4"
    ]
   },
-  "New.Rows.weylNormSq_firstFactor_le": {
-   "class": "drift",
-   "sections": [
-    "NormsOfThetaLiftsAndExchangeIdentities §7.2"
-   ]
-  },
   "New.Seesaw.zeroTermFin_omega": {
    "class": "drift",
    "sections": [
     "ThetaLiftChainsAndTheSeesawIdentity §3.8"
+   ]
+  },
+  "New.Selmer.IsFormOfType.isRepOfType_normalisedRep": {
+   "class": "drift",
+   "sections": [
+    "CongruencesOfTwistedThetaLifts §2.6"
    ]
   },
   "New.Selmer.IsMainSummandLike.eventually_eq_bot_or_eq_top": {
@@ -1124,16 +1280,40 @@
     "GaloisRepresentationsOfUnitaryEigenforms §2.2"
    ]
   },
+  "New.Selmer.isRepOfType_normalisedRep": {
+   "class": "drift",
+   "sections": [
+    "CongruencesOfTwistedThetaLifts §2.6"
+   ]
+  },
   "New.Selmer.normalisedJumps_eq_range_add_map": {
    "class": "drift",
    "sections": [
     "CongruencesOfTwistedThetaLifts §2.6"
    ]
   },
+  "New.Selmer.normalisedRep": {
+   "class": "drift",
+   "sections": [
+    "CongruencesOfTwistedThetaLifts §1.1"
+   ]
+  },
+  "New.Selmer.normalisedRep_quadratic_on_inertia": {
+   "class": "drift",
+   "sections": [
+    "CongruencesOfTwistedThetaLifts §2.5"
+   ]
+  },
   "New.Selmer.summand_defect_le_at_place": {
    "class": "drift",
    "sections": [
     "SelmerBoundsForAnticyclotomicTwists §4.6"
+   ]
+  },
+  "New.Selmer.tiedNormaliser": {
+   "class": "drift",
+   "sections": [
+    "CongruencesOfTwistedThetaLifts §3.1"
    ]
   },
   "New.SiegelWeil.IsNeighbourVector": {
@@ -1182,12 +1362,6 @@
    "class": "drift",
    "sections": [
     "SiegelWeilAndRallisFormulasOnUnitaryGroups §1.1"
-   ]
-  },
-  "New.SiegelWeil.norm_rallisSeries_le": {
-   "class": "drift",
-   "sections": [
-    "SiegelWeilAndRallisFormulasOnUnitaryGroups §1.4"
    ]
   },
   "New.SiegelWeil.q_mul_norm_finMultiplier_mul_sq_le": {
@@ -1304,6 +1478,18 @@
     "WeilRepresentationsOnBanachSpacesOfData §4.1"
    ]
   },
+  "New.Variety.ComparedTheory.isFiniteLerayHirsch_offClosedFibre_sup_testUnitLocus_preimage": {
+   "class": "drift",
+   "sections": [
+    "PadicComparisonForFunctorCohomology §4.3"
+   ]
+  },
+  "New.Variety.Comparison.isBijective_of_fibres": {
+   "class": "drift",
+   "sections": [
+    "CohomologyOfFunctorsOnTestRings §2.3"
+   ]
+  },
   "New.Variety.IsPeriodMap.finrank_eq_abelianDim": {
    "class": "drift",
    "sections": [
@@ -1412,10 +1598,22 @@
     "IntegralRepresentationsOfGeneralLinearGroups §3.3"
    ]
   },
+  "New.fibreIntegral": {
+   "class": "drift",
+   "sections": [
+    "AdelicUnitaryGroupsAndAlgebraicModularForms §7.4"
+   ]
+  },
   "New.flatColumns": {
    "class": "drift",
    "sections": [
     "IntegralRepresentationsOfGeneralLinearGroups §3.3"
+   ]
+  },
+  "New.gammaFactor_eq_zero_or_LFunction_one_sub_eq_zero": {
+   "class": "drift",
+   "sections": [
+    "ZeroFreeRegionsAndPrimesInShortWindows §1.2"
    ]
   },
   "New.hasSum_pnat_rpow_neg": {
@@ -1440,6 +1638,12 @@
    "class": "drift",
    "sections": [
     "WeilRepresentationsOnBanachSpacesOfData §6.1"
+   ]
+  },
+  "New.leGramFibre_haar": {
+   "class": "drift",
+   "sections": [
+    "HolomorphicDiscreteSeriesOfUnitaryGroups §1.6"
    ]
   },
   "New.leadingWedge": {
@@ -1500,12 +1704,6 @@
    "class": "drift",
    "sections": [
     "ThetaFunctionsAndUnitsOfCMLattices §5.1"
-   ]
-  },
-  "New.sigma_add_of_mem_lattice": {
-   "class": "drift",
-   "sections": [
-    "ThetaFunctionsAndUnitsOfCMLattices §1.2"
    ]
   },
   "New.sqrt_weylNormSq_classSum_le": {
