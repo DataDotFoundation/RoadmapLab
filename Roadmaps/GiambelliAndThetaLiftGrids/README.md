@@ -68,7 +68,7 @@ Prove `diagramSchurPoly N R λ = det (diagramSchurPoly N R (a_i | b_j))_{i,j<d(�
 - The same argument proves the identity for any pair of symbols `h`, `e` vanishing in negative degree, with `h_0 = e_0 = 1` and `H(X)E(−X) = 1`.
 - Prove that general form too, since it covers the specialisations used in 2.3.
 
-A formalization against Tau Ceti's `diagramSchurPoly` and `schurPoly` has been submitted to Lean Pool: [LeanPool/lean-pool#1038](https://github.com/LeanPool/lean-pool/pull/1038), commit `1b4e705`. Its declarations are `Giambelli.diagramSchurPoly_eq_det_hook`, `Giambelli.schurPoly_eq_det_hook`, `Giambelli.giambelli_jt'` and `Giambelli.diagramSchurPoly_hookDiagram`.
+A formalization against Tau Ceti's `diagramSchurPoly` and `schurPoly` is merged in Lean Pool ([LeanPool/lean-pool#1038](https://github.com/LeanPool/lean-pool/pull/1038), merge commit `fb336fb`). Its declarations are [`Giambelli.diagramSchurPoly_eq_det_hook`](https://github.com/LeanPool/lean-pool/blob/fb336fb85bca1f6669c9b13fc334467a29530b89/LeanPool/Giambelli/Schur.lean#L160), [`Giambelli.schurPoly_eq_det_hook`](https://github.com/LeanPool/lean-pool/blob/fb336fb85bca1f6669c9b13fc334467a29530b89/LeanPool/Giambelli/Schur.lean#L173), [`Giambelli.giambelli_jt'`](https://github.com/LeanPool/lean-pool/blob/fb336fb85bca1f6669c9b13fc334467a29530b89/LeanPool/Giambelli/Basic.lean#L541) and [`Giambelli.diagramSchurPoly_hookDiagram`](https://github.com/LeanPool/lean-pool/blob/fb336fb85bca1f6669c9b13fc334467a29530b89/LeanPool/Giambelli/Schur.lean#L147).
 
 *Check:* for `λ = (2, 2) = (1, 0 | 1, 0)`, Giambelli gives `s_{22} = s_{(1|1)} s_{(0|0)} − s_{(1|0)} s_{(0|1)} = s_{211} s_1 − s_2 s_{11}`.
 
@@ -185,7 +185,7 @@ None on the route of the proof. The shorter formal proof neither states nor uses
 ## Provenance
 
 This roadmap was written by an AI model (Claude Opus 5.5, Anthropic), following a research direction set by Paul-Olivier Dehaye.
-- The formal results it cites are their authors': Tau Ceti; Mathlib; the authors of the shorter formal proof ([ShortProof]); and the Lean Pool submission cited in 2.2.
+- The formal results it cites are their authors': Tau Ceti; Mathlib; the authors of the shorter formal proof ([ShortProof]); and the Lean Pool formalization cited in 2.2.
 - Every section carries a label from the Conventions.
 - [ShortProof] was read at commit `72fead1`. The cited declarations are unchanged at `61d870d` of its continuation, leanprover-community/riemann-hypothesis.
 
@@ -196,4 +196,4 @@ This roadmap was written by an AI model (Claude Opus 5.5, Anthropic), following 
 - R. P. Stanley, *Enumerative Combinatorics* Vol. 2, Cambridge (1999), Chapter 7 (Murnaghan–Nakayama rule; hook length formula): 2.3, 3.2.
 - P.-O. Dehaye, *Joint moments of derivatives of characteristic polynomials*, Algebra & Number Theory 2 (2008), 31–68, §8: the last section.
 - P.-O. Dehaye, *On an identity due to Bump and Diaconis, and Tracy and Widom*, Canad. Math. Bull. 54 (2011), 255–269: the last section.
-- [LeanPool/lean-pool#1038](https://github.com/LeanPool/lean-pool/pull/1038), *Add Giambelli: Giambelli's identity for Schur polynomials*: 2.2.
+- [LeanPool/lean-pool#1038](https://github.com/LeanPool/lean-pool/pull/1038), *Add Giambelli: Giambelli's identity for Schur polynomials*, merged as `fb336fb` (`LeanPool/Giambelli/Basic.lean`, `LeanPool/Giambelli/Schur.lean`): 2.2.
