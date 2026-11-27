@@ -154,7 +154,7 @@ Three observations:
 A Giambelli reduction of the theta lifts could serve two different goals, and every task and result below is tagged with the goal it bears on.
 
 - **(L) Compression.** Fewer lines in the proof: a determinant identity replacing cell-by-cell bookkeeping. It is measured by the line spans of Part I and of §3.
-- **(U) Understanding.** The proxy is proximity to an Erdős-like argument: an elementary, counting or divisibility-style argument in the spirit of Erdős's proof of Bertrand's postulate. The alignment metrics for (U) are being defined by MeaningOps. Until its definitions, baseline and scores are published, the effect of each result on (U) is recorded as **open**, and no number is given here.
+- **(U) Understanding.** The proxy is proximity to an Erdős-like argument: an elementary, counting or divisibility-style argument in the spirit of Erdős's proof of Bertrand's postulate. The effect of each result on (U) is recorded as **open**.
 
 | task | goal | result | effect on (L) | effect on (U) |
 |---|---|---|---|---|
@@ -220,7 +220,7 @@ Upstream is pinned at `7c4ccbd`. Each result gives its label, the exact declarat
 
 **What this shows and does not show.**
 - It shows that the chain moduli of the condensed proof, in the form the proof uses them, carry no Giambelli or Jacobi–Trudi structure: compression by this route is **L ≈ 0**.
-- It does not show that no determinant form of the theta lifts exists. Amplitudes built from other data (7.1) remain untested, and the effect on understanding (U) is open until MeaningOps reports.
+- It does not show that no determinant form of the theta lifts exists. Amplitudes built from other data (7.1) remain untested, and the effect on understanding (U) is open.
 
 ## Part III: Open tests (a roadmap for a roadmap; do not implement)
 
