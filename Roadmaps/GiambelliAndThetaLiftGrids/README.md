@@ -102,11 +102,21 @@ The first path, through `(0, 0)`, gives the empty diagram. The last, through `(m
 
 *Needs:* 1.1; DeterminantsOfThetaLiftChains §5.1 (the paths, their halves, `squares`, and that the last path encloses the whole box).
 
+*Status:* (a), (c) and the injectivity half of (b) are **proved in Lean** against [ShortProof]'s continuation at commit `7c4ccbd`, on its own `New.TwoGridPath`, with no restatement of its definitions ([`certs/GridDiagram.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagram.lean); axioms `propext`, `Classical.choice`, `Quot.sound`):
+- `New.TwoGridPath.isLowerSet_squares`: the squares form a lower set in the plain componentwise order, so no reflection is needed;
+- `New.TwoGridPath.diag_mem_squares_iff`: `(i, i) ∈ Γ.squares ↔ i < Γ.diagonalIndex`;
+- `New.TwoGridPath.diagonalIndex_eq_card`: the diagonal index is the Durfee rank;
+- `New.TwoGridPath.squares_injective`: a path is determined by its squares.
+
+The surjectivity half of (b), and (d), remain targets.
+
 ### 3.2 Turns add one cell; sweeps are standard tableaux
 
 *Label:* source-verified for (a), classical consequence for (b).
 
 (a) A turn from `Γ` to `Γ′` at `s` adds the single cell `s` to `λ(Γ)`, and `s ∉ λ(Γ)` (DeterminantsOfThetaLiftChains §5.1; [ShortProof] `New.TwoGridPath.Turn.squares_eq`). Prove that, under 3.1, the cells that can be added by a turn are exactly the addable corners of `λ(Γ)` in the box.
+
+*Status of (a):* the corner statement is **proved in Lean**, as `New.TwoGridPath.Turn.addable` ([`certs/GridDiagram.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagram.lean)): a turn at `s` adds `s`, every cell strictly below `s` is already enclosed, and the result is a lower set.
 
 (b) Prove that a sequence of turns from the first path to the last is the same as a standard Young tableau of shape `(m^m)`: the cell added at step `t` gets the label `t`. Their number is the hook length formula's `(m²)! / ∏_{i,j<m} (i + j + 1)`.
 

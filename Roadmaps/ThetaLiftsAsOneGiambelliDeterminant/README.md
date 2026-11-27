@@ -164,6 +164,7 @@ A Giambelli reduction of the theta lifts could serve two different goals, and ev
 | T3 Toeplitz → Giambelli in Lean | L, U | positive (proved) | none until the proof has such a determinant | open |
 | T4 amplitudes, `m = 2` Plücker | U | not run (premise failed) | — | open |
 | T5 coverage, exponent | L, U | not run | — | open |
+| D1 grids are Young diagrams (Lean) | U | positive (proved) | none | open |
 
 RH-Dual's earlier finding that Giambelli would shorten 0 of 11 candidate sites (*giambelli-sites*) also reads as L ≈ 0.
 
@@ -213,6 +214,12 @@ Upstream is pinned at `7c4ccbd`. Each result gives its label, the exact declarat
 - *Label:* proved (RMTlib; `lake build --wfail`; axioms `propext`, `Classical.choice`, `Quot.sound`).
 - *Source:* [`RMT.Symmetric.Giambelli.giambelli_toeplitz`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L583): for `c : ℕ → R` with `c 0 = 1`, `det(c_{λ_i−i+j})_{i,j<n} = det(jt (symbolOf c) (hookShape (frobA λ i) (frobB λ j)))_{i,j<d(λ)}`. It rests on [`hePair_dualSymbol`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L555), [`giambelli_jt'`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L538) and [`jt_hook`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L526). Documentation: [docs/giambelli.md](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/docs/giambelli.md).
 - *Meaning:* the algebra is ready. It applies to the proof only where the proof has a Toeplitz determinant, and T1 found none.
+
+**D1. The grids are Young diagrams, in Lean.**
+- *Goal:* U.
+- *Label:* proved in Lean against upstream `7c4ccbd` ([`certs/GridDiagram.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagram.lean), 195 lines).
+- *Result:* on upstream's own `New.TwoGridPath`, the squares a path encloses form a lower set; the diagonal index is their Durfee rank; a turn adds an addable corner; and a path is determined by its squares (GiambelliAndThetaLiftGrids 3.1–3.2).
+- *Meaning:* the combinatorial skeleton of the chain of lifts is, provably, Young-diagram combinatorics. It does not change any number in the proof (L: none). It is the precondition for any Giambelli formulation of the grid.
 
 **T4, T5.**
 - *Label:* not run.
