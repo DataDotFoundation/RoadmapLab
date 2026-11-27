@@ -134,6 +134,11 @@ The Gram determinant `det(Θ*Θ)` of a lift is a squared norm. It is positive wh
 
 None on the route of the proof. The shorter formal proof neither states nor uses Giambelli's identity, Frobenius coordinates or hook Schur polynomials, and none of its determinants is a Schur-function determinant of Jacobi–Trudi type. This roadmap makes no claim that Giambelli's identity shortens or replaces any step of that proof. Layer 3 is a dictionary for reading the grids, not a step of the proof.
 
+**Expected impact on upstream issue [leanprover-community/riemann-hypothesis#6836](https://github.com/leanprover-community/riemann-hypothesis/issues/6836)** ("Places of `Ω` as absolute values", open).
+- *Label:* open test.
+- The author of the research direction expects this roadmap to bear on that issue. No mechanism is stated here, and none is established.
+- Any such impact concerns how places are represented in the proof, not a shortening of it.
+
 ## Scope and ownership
 
 ### Owned here
