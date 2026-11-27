@@ -134,3 +134,7 @@ H3. Downstream, the bound is consumed where any exp(x^C) with a fixed C suffices
 H4. RMTlib: a Lean lemma hookNumber ≤ exp(C·L·log L) from a hook-content product formula is NOT cheap. The proof only has the crude bound `hookNumber_le`, and a product formula for the Fock norm is a real development. Confidence 70%.
 S1. §3.1(b) surjectivity in Lean, every Young diagram in the m×m box is some path's squares: proved within ~300 lines by constructing the halves from the diagram (75%).
 - S1: **held** (75%). §3.1(b) is fully proved: `New.TwoGridPath.exists_squares_eq` (surjectivity) and `toDiagram_bijective` (paths ↔ Young diagrams in the m×m box), certs/GridDiagramSurj.lean, 355 lines, no sorry, standard axioms, checked against upstream 7c4ccbd.
+- H1: **half.** The form O(L log L) is right, but the true L is f·r⁸·m² (μ⁻ stops below m ≈ √x), not f·t²·gap. log hk = Θ(x^{52–53} log x) (computed; RH-Dual#270).
+- H2: **half.** The provable bound is exp(x^{53+o(1)}) (cheap, via a colsMinus vanishing lemma, or RMTlib's middle route), but "single digits" was wrong: 53, not < 10.
+- H3: **held.** The only consumer (LiftVolumeHeight.lean:445) accepts log hk up to ~A/8 ≥ x^{10¹²}; improving changes no downstream number.
+- H4: **partly wrong.** The exact identity hookNumber = H(μ) is indeed not cheap (~1000 lines, constants only), but a cheap improved bound exists (~50–100 lines, proof-side). It is not pursued, since it moves no downstream number.

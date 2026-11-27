@@ -166,6 +166,7 @@ A Giambelli reduction of the theta lifts could serve two different goals, and ev
 | T5 coverage, exponent | L, U | not run | — | open |
 | T6 shape of the turn ratios | L, U | negative (none of separable / content / Hankel) | L ≈ 0 | open |
 | D1 grids are Young diagrams (Lean) | U | positive (proved) | none | open |
+| H the hook-number bound | U, L | assessed: 999 → 62 → ≈53 → ≥10¹² needed | none (budget set elsewhere) | open |
 
 RH-Dual's earlier finding that Giambelli would shorten 0 of 11 candidate sites (*giambelli-sites*) also reads as L ≈ 0.
 
@@ -227,6 +228,18 @@ Upstream is pinned at `7c4ccbd`. Each result gives its label, the exact declarat
   - At the trivial twist every turn ratio is `1` (proved).
   - The product over the cells of a diagram `λ` is `|λ|` distinct L-products over a denominator indexed by the antidiagonal profile, not a hook-content product.
 - *Meaning:* the period transfer along the grid is not a Schur-function evaluation, so Giambelli cannot act on it as stated.
+
+**H. How far the hook-number bound can be improved.**
+- *Goal:* U (and L).
+- *Label:* computed and read (RH-Dual#270).
+- *Source:* [report](https://github.com/DataDotFoundation/RH-Dual/blob/64273ad552ae067f98e3c4a0d564c923aca81638/bridge/links/hook-bound-gap/README.md).
+- *Site:* `New.Data.hookNumberMinus_le`, `hookNumberMinus j ≤ exp(x^999)` (`New/OneLift/ComparisonOperator/GluingMaps.lean:644`).
+- *Result:* the diagram `μ⁻` is a staircase: rows `R + (n+1−i)(gap−1)`, `n = m − j − 1`, with `R` about `gap/2`. It is the same at every place. Its hook product is pinned by an exact sandwich `Σ log r_i! ≤ log H ≤ Σ(log r_i! + n log(r_i+n))`. In exponents of `x`, the gap runs:
+  - **999** stated;
+  - **62** from the proof's own intermediate bound (free);
+  - **≈ 53**, the true size, `log hk = Θ(x^{52–53} log x)`, cheaply provable (computed);
+  - **≥ 10¹²** needed, by the only consumer (`LiftVolumeHeight.lean:445`), whose budget is set by `b ≥ x^{10¹²}`.
+- *Meaning:* the bound overshoots the truth by a factor of about 19 in the exponent, and the truth is far inside what the proof needs. Improving it changes no downstream number (L ≈ 0). The exponent is set by the number of boxes, not by the hook formula. The identity `hookNumber = H(μ)` behind the true size is certified only for one row (RMTlib#177), and is not used by the proof.
 
 **D1. The grids are Young diagrams, in Lean.**
 - *Goal:* U.
