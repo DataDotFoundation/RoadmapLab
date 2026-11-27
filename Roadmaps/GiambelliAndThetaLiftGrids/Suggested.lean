@@ -9,7 +9,7 @@ below are suggestions, not an exhaustive checklist.
 It states the Durfee rank and the Frobenius coordinates of a Young diagram (README 1.1) on
 Mathlib's `YoungDiagram`, with the headline properties of 1.1 as `sorry`'d targets. Giambelli's
 identity (2.2) is stated against Tau Ceti's `diagramSchurPoly` and `schurPoly`; a formalization of it,
-with the hook formula (2.1), has been submitted to Lean Pool (LeanPool/lean-pool#1038), so its
+with the hook formula (2.1), is merged in Lean Pool (LeanPool/lean-pool#1038, `fb336fb`), so its
 signatures are not repeated here. Layer 3 is stated on the paths of TauCetiRoadmap's DeterminantsOfThetaLiftChains
 §5.1, which have no signature at the pins, so nothing of it is stated here.
 -/
