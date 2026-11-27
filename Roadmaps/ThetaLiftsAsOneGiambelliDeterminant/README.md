@@ -149,6 +149,79 @@ Three observations:
 - The other family, RiemannHypothesisForDirichletLFunctions (the original export), states the same theta machinery in nine roadmaps, among them ThetaKernelsForUnitaryDualPairs, SeesawForThetaChains, RowTowerAndRallisIdentities, ThetaChainsOnDefiniteUnitaryGroups and LocalGainOfThetaChains. A Giambelli form found for the condensed proof would be a candidate there too. The assessment here is computed for the condensed proof only.
 - The geometric Giambelli formula of Schubert calculus is TensorProductCombinatorics §6.4. A determinant of hook amplitudes would sit between it and the arithmetic, in GiambelliAndThetaLiftGrids.
 
+## Two goals
+
+A Giambelli reduction of the theta lifts could serve two different goals, and every task and result below is tagged with the goal it bears on.
+
+- **(L) Compression.** Fewer lines in the proof: a determinant identity replacing cell-by-cell bookkeeping. It is measured by the line spans of Part I and of §3.
+- **(U) Understanding.** The proxy is proximity to an Erdős-like argument: an elementary, counting or divisibility-style argument in the spirit of Erdős's proof of Bertrand's postulate. The alignment metrics for (U) are being defined by MeaningOps. Until its definitions, baseline and scores are published, the effect of each result on (U) is recorded as **open**, and no number is given here.
+
+| task | goal | result | effect on (L) | effect on (U) |
+|---|---|---|---|---|
+| R0 Toeplitz moduli | L, U | positive (read) | none by itself | open |
+| T1 classify the determinants | L | negative (no Jacobi–Trudi determinant) | L ≈ 0 at the chain-norm level | open |
+| T2 explicit symbol, Schur test | L, U | negative for m ≥ 3 | L ≈ 0 | open |
+| T3 Toeplitz → Giambelli in Lean | L, U | positive (proved) | none until the proof has such a determinant | open |
+| T4 amplitudes, `m = 2` Plücker | U | not run (premise failed) | — | open |
+| T5 coverage, exponent | L, U | not run | — | open |
+
+RH-Dual's earlier finding that Giambelli would shorten 0 of 11 candidate sites (*giambelli-sites*) also reads as L ≈ 0.
+
+## Implementation status
+
+Upstream is pinned at `7c4ccbd`. Each result gives its label, the exact declaration or script with a permalink, and what it means for this roadmap's claim.
+
+**R0. The chain moduli are Toeplitz.**
+- *Label:* read (upstream lemma).
+- *Source:* [`New.Data.quotientRatio`](https://github.com/leanprover-community/riemann-hypothesis/blob/7c4ccbd64d02774b0a5b40a5f923f5b7a18e8abc/src/New/Determinant/Chain/Moduli.lean#L287) and [`New.Data.quotientRatio_add_eq_lRatioProd`](https://github.com/leanprover-community/riemann-hypothesis/blob/7c4ccbd64d02774b0a5b40a5f923f5b7a18e8abc/src/New/Determinant/Chain/Moduli.lean#L290). `quotientRatio i (i+n)` depends only on `n`, because the lift characters form a geometric progression. Write `C_n` for it.
+- *Meaning:* the moduli have the shape a Jacobi–Trudi symbol needs.
+
+**R1. The moduli enter the chain norm as a product, not as a determinant.**
+- *Label:* read.
+- *Source:* [`New.Data.exists_inner_weightedChain_eq`](https://github.com/leanprover-community/riemann-hypothesis/blob/7c4ccbd64d02774b0a5b40a5f923f5b7a18e8abc/src/New/Determinant/Chain/NormOfChain.lean#L168). The norm carries `∏_{0<i<j≤m} quotientRatio i j = ∏_n C_n^{m−n}`, up to a constant and a power of the norm of the conductor.
+- *Meaning:* there is no determinant of the moduli for Giambelli to rewrite.
+
+**T1. No Jacobi–Trudi determinant among the determinant bridges.**
+- *Label:* computed and read (RH-Dual).
+- *Source:* [report](https://github.com/DataDotFoundation/RH-Dual/blob/c845d86abf0499eec4267a64faa42e91325a5243/bridge/links/toeplitz-symbol/README.md), [classification](https://github.com/DataDotFoundation/RH-Dual/blob/c845d86abf0499eec4267a64faa42e91325a5243/bridge/links/toeplitz-symbol/det-bridges-7c4ccbd.tsv), [script](https://github.com/DataDotFoundation/RH-Dual/blob/c845d86abf0499eec4267a64faa42e91325a5243/bridge/scripts/classify_det_bridges.py).
+- *Result:* `quotientRatio` is used only as the product over pairs, or as the modulus of a single square. The 82 bridges that take a determinant split as follows:
+
+  | class | bridges |
+  |---|---|
+  | determinant of a group element, residue matrix or diagonal block, fed to a character or norm (`χ(det g)`) | 45 |
+  | minors of a variable matrix (highest-weight polynomials `∏ det^c`) | 5 |
+  | structural determinant algebra | 4 |
+  | a Gram matrix, used for invertibility | 1 |
+  | no determinant in their own source | 27 |
+  | Jacobi–Trudi type `det(C_{λ_i−i+j})` | **0** |
+
+- *Meaning:* the direct route is closed at the chain-norm level.
+
+**T2. The explicit symbol and the Schur test.**
+- *Label:* read, proved and computed (RH-Dual).
+- *Source:* [report](https://github.com/DataDotFoundation/RH-Dual/blob/c845d86abf0499eec4267a64faa42e91325a5243/bridge/links/toeplitz-symbol/README.md), [Lean](https://github.com/DataDotFoundation/RH-Dual/blob/c845d86abf0499eec4267a64faa42e91325a5243/bridge/links/toeplitz-symbol/ToeplitzSymbol.lean), [script](https://github.com/DataDotFoundation/RH-Dual/blob/c845d86abf0499eec4267a64faa42e91325a5243/bridge/scripts/toeplitz_symbol_check.py).
+- *Result:*
+  - `C_n(ϑ) = ∏_{z=1}^{t} ‖L^{MQ}(z, (ν_n ϑ^n)^{−1})‖ / ‖L^M(z, ν_n^{−1})‖`, with `ν_n = (υ^{−Δ} χ_M)^n`.
+  - Normalisation is free: the proof uses the moduli only up to `f ↦ K · N(Q)^a · f` (proved).
+  - `c_0 ≠ 1` in general (proved).
+  - The symbol is two-sided as defined and one-sided as used (proved).
+  - `P_m = ∏ C_n^{m−n}` is a single Schur function only for `m = 2` (`P_2 = s_{(1)}`); `P_3 = s_4 + 2s_{31} + s_{22} + s_{211}`, and `P_4`, `P_5` have 33 and 510 terms (computed, exact).
+  - There is no form `C_n = g(a+n)/g(n)` (inferred).
+- *Meaning:* the product of the moduli is not a principal specialisation of one Schur function, so Giambelli does not reduce it.
+
+**T3. Toeplitz to Giambelli, in Lean.**
+- *Label:* proved (RMTlib; `lake build --wfail`; axioms `propext`, `Classical.choice`, `Quot.sound`).
+- *Source:* [`RMT.Symmetric.Giambelli.giambelli_toeplitz`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L583): for `c : ℕ → R` with `c 0 = 1`, `det(c_{λ_i−i+j})_{i,j<n} = det(jt (symbolOf c) (hookShape (frobA λ i) (frobB λ j)))_{i,j<d(λ)}`. It rests on [`hePair_dualSymbol`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L555), [`giambelli_jt'`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L538) and [`jt_hook`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L526). Documentation: [docs/giambelli.md](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/docs/giambelli.md).
+- *Meaning:* the algebra is ready. It applies to the proof only where the proof has a Toeplitz determinant, and T1 found none.
+
+**T4, T5.**
+- *Label:* not run.
+- *Reason:* their premise, a determinant structure from T1/T2, failed. Any amplitudes `τ_λ` would have to come from elsewhere: the turn ratios, which are not Hankel (RH-Dual, `condensed-twin-audit.md`), or the 5 minor-polynomial bridges of T1.
+
+**What this shows and does not show.**
+- It shows that the chain moduli of the condensed proof, in the form the proof uses them, carry no Giambelli or Jacobi–Trudi structure: compression by this route is **L ≈ 0**.
+- It does not show that no determinant form of the theta lifts exists. Amplitudes built from other data (7.1) remain untested, and the effect on understanding (U) is open until MeaningOps reports.
+
 ## Part III: Open tests (a roadmap for a roadmap; do not implement)
 
 **Do not implement this part.** Each test must pass before a formalization roadmap can be written.
@@ -180,6 +253,7 @@ This roadmap was written by an AI model (Claude Opus 5.5, Anthropic), on Paul-Ol
 ## References
 
 - [ShortProof] The shorter Lean formalization of the Riemann hypothesis for Dirichlet L-functions: the folder `grh` of github.com/lsernau/grh-lean at commit `72fead1`; continued at github.com/leanprover-community/riemann-hypothesis (assessment at commit `61d870d`).
-- RH-Dual (github.com/DataDotFoundation/RH-Dual): *giambelli-sites* (`bridge/links/giambelli-sites.md`); the ED audit (the Erdős → Diamond–Erdős lane, a precise negative); the theta ↔ number-field inventory and metrics, `bridge/links/theta-numberfields/` at commit `b82c853` ([RH-Dual#267](https://github.com/DataDotFoundation/RH-Dual/pull/267)).
+- RH-Dual (github.com/DataDotFoundation/RH-Dual): the Toeplitz-symbol report (`bridge/links/toeplitz-symbol/`, RH-Dual#268 at `c845d86`); *giambelli-sites* (`bridge/links/giambelli-sites.md`); the ED audit (the Erdős → Diamond–Erdős lane, a precise negative); the theta ↔ number-field inventory and metrics, `bridge/links/theta-numberfields/` at commit `b82c853` ([RH-Dual#267](https://github.com/DataDotFoundation/RH-Dual/pull/267)).
 - GiambelliAndThetaLiftGrids (this repository, `Roadmaps/GiambelliAndThetaLiftGrids`).
+- RMTlib (github.com/DataDotFoundation/RMTlib): `RMTlib/Symmetric/Giambelli.lean` and `docs/giambelli.md` at `c2c73a6`.
 - TauCetiProject/TauCetiRoadmap: the ShortGRH roadmaps in §6; RiemannHypothesisForDirichletLFunctions; TensorProductCombinatorics §6.4.

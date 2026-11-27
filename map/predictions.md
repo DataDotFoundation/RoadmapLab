@@ -91,3 +91,22 @@ G6. Savings: an honest upper bound for what a "single Giambelli determinant" ref
 - G6: **held.** The upper bound is New/Determinant at 13,759 live lines; the expected realised saving is ~0 (RH-Dual 0/11).
 - Unpredicted: the bridges form ONE line of reasoning, a connected component of 581 of 591 bridges.
 - Revision after RH-Dual's review (Θ 28 → 41, adding the theta kernels and the chain `lowerChain`/`Θ`): 741 live bridges, 18,445 lines (6.3%; G4 now **held**); 82 with det (11%; G5 held); 10 bridges in New/Reduction via the chain (G1's "<10% in New/Reduction" still held, at 1.3%); one component of 731 of 741.
+
+---
+
+# Predictions: implementing ThetaLiftsAsOneGiambelliDeterminant (2026-11-27, upstream 7c4ccbd, before any task runs)
+
+Known before predicting (read at 7c4ccbd):
+- `quotientRatio i (i+n) = lRatioProd (quotientPair n).character … (ϑ^n)` does not depend on i (`quotientRatio_add_eq_lRatioProd`), so the moduli are Toeplitz above the diagonal: C_n := quotientRatio 0 n.
+- They enter `exists_inner_weightedChain_eq` (Chain/NormOfChain.lean) as the product ∏_{0<i<j≤m} quotientRatio i j = ∏_n C_n^{m−n}.
+
+T1. Every use of `quotientRatio` (and every one of the 82 `Matrix.det` bridges) is a product over pairs or a single-lift Gram determinant; none is a determinant of a matrix whose entries are C_{j−i}. Confidence 85%. If this holds, a Toeplitz/Jacobi–Trudi structure is absent at the level of the chain norms.
+T2. The product ∏_{i<j} C_{j−i} is not a principal specialisation of a Schur function. That would need C_n = g(a+n)/g(n) for one fixed g (q-number type); the C_n are products of ratios of Hecke L-values over 1 ≤ z ≤ t. Confidence 70%.
+T3. The generic algebra holds: a one-sided symbol with c₀ = 1 gives (h, e) with H(X)E(−X) = 1, and RMTlib `giambelli_jt'` turns its Toeplitz minors into hook determinants. Lean in ≤ 150 lines on top of RMTlib. Confidence 90%. It is informative only if T1 or T2 comes out positive.
+T4. The m = 2 Plücker test cannot be stated with actual quantities before amplitudes τ_λ are defined. The expected outcome is an obstruction from the scalar (non-additive) exchange law. Confidence 60%.
+
+## Scored (implementation, upstream 7c4ccbd)
+- T1: **held** (85%). None of the 82 det bridges and no use of `quotientRatio` is a determinant with Toeplitz entries: 45 χ(det g)-type, 5 minors of a variable matrix, 4 structural, 1 Gram, 27 with no det in their own source (RH-Dual#268, computed and read).
+- T2: **held** (70%). P_m = ∏ C_n^{m−n} is a single Schur function only at m = 2 (P_2 = s_(1)). P_3 = s_4 + 2s_31 + s_22 + s_211; P_4 has 33 terms, P_5 has 510 (computed). There is no g(a+n)/g(n) form (inferred). Not predicted: c₀ ≠ 1 in general, and the symbol is two-sided as defined (proved by RH-Dual).
+- T3: **held** (90%). `giambelli_toeplitz`, RMTlib 8057de4, about 15 lines on top of #181.
+- T4: **not run.** Its premise (a determinant structure from T1/T2) failed, and τ_λ remain undefined; candidates are the turn ratios or T1's 5 minor-polynomial bridges.
