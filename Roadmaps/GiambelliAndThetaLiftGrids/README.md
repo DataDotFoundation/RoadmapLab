@@ -108,7 +108,11 @@ The first path, through `(0, 0)`, gives the empty diagram. The last, through `(m
 - `New.TwoGridPath.diagonalIndex_eq_card`: the diagonal index is the Durfee rank;
 - `New.TwoGridPath.squares_injective`: a path is determined by its squares.
 
-The surjectivity half of (b), and (d), remain targets.
+The surjectivity half of (b) is also **proved in Lean** ([`certs/GridDiagramSurj.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagramSurj.lean)):
+- `New.TwoGridPath.exists_squares_eq`: every lower set in the `m × m` box is the set of squares of a path;
+- `New.TwoGridPath.toDiagram_bijective`: paths ↔ Young diagrams in the box.
+
+(b) is therefore proved in full. (d) remains a target.
 
 ### 3.2 Turns add one cell; sweeps are standard tableaux
 

@@ -230,8 +230,8 @@ Upstream is pinned at `7c4ccbd`. Each result gives its label, the exact declarat
 
 **D1. The grids are Young diagrams, in Lean.**
 - *Goal:* U.
-- *Label:* proved in Lean against upstream `7c4ccbd` ([`certs/GridDiagram.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagram.lean), 195 lines).
-- *Result:* on upstream's own `New.TwoGridPath`, the squares a path encloses form a lower set; the diagonal index is their Durfee rank; a turn adds an addable corner; and a path is determined by its squares (GiambelliAndThetaLiftGrids 3.1–3.2).
+- *Label:* proved in Lean against upstream `7c4ccbd` ([`certs/GridDiagram.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagram.lean), 195 lines; [`certs/GridDiagramSurj.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagramSurj.lean), 355 lines).
+- *Result:* on upstream's own `New.TwoGridPath`, the squares a path encloses form a lower set; the diagonal index is their Durfee rank; a turn adds an addable corner; and paths are in bijection with the Young diagrams in the box (`New.TwoGridPath.toDiagram_bijective`; GiambelliAndThetaLiftGrids 3.1–3.2).
 - *Meaning:* the combinatorial skeleton of the chain of lifts is, provably, Young-diagram combinatorics. It does not change any number in the proof (L: none). It is the precondition for any Giambelli formulation of the grid.
 
 **T4, T5.**
