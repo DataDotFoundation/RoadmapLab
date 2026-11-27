@@ -120,7 +120,7 @@ The surjectivity half of (b) is also **proved in Lean** ([`certs/GridDiagramSurj
 
 (a) A turn from `Γ` to `Γ′` at `s` adds the single cell `s` to `λ(Γ)`, and `s ∉ λ(Γ)` (DeterminantsOfThetaLiftChains §5.1; [ShortProof] `New.TwoGridPath.Turn.squares_eq`). Prove that, under 3.1, the cells that can be added by a turn are exactly the addable corners of `λ(Γ)` in the box.
 
-*Status of (a):* the corner statement is **proved in Lean**, as `New.TwoGridPath.Turn.addable` ([`certs/GridDiagram.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagram.lean)): a turn at `s` adds `s`, every cell strictly below `s` is already enclosed, and the result is a lower set.
+*Status of (a):* one direction is **proved in Lean**, as `New.TwoGridPath.Turn.addable` ([`certs/GridDiagram.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagram.lean)): a turn at `s` adds `s`, every cell strictly below `s` is already enclosed, and the result is a lower set, so every turn adds an addable corner. The converse, that every addable corner is the cell of some turn, is open.
 
 (b) Prove that a sequence of turns from the first path to the last is the same as a standard Young tableau of shape `(m^m)`: the cell added at step `t` gets the label `t`. Their number is the hook length formula's `(m²)! / ∏_{i,j<m} (i + j + 1)`.
 
