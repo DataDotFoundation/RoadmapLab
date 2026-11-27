@@ -110,3 +110,31 @@ T4. The m = 2 Plücker test cannot be stated with actual quantities before ampli
 - T2: **held** (70%). P_m = ∏ C_n^{m−n} is a single Schur function only at m = 2 (P_2 = s_(1)). P_3 = s_4 + 2s_31 + s_22 + s_211; P_4 has 33 terms, P_5 has 510 (computed). There is no g(a+n)/g(n) form (inferred). Not predicted: c₀ ≠ 1 in general, and the symbol is two-sided as defined (proved by RH-Dual).
 - T3: **held** (90%). `giambelli_toeplitz`, RMTlib 8057de4, about 15 lines on top of #181.
 - T4: **not run.** Its premise (a determinant structure from T1/T2) failed, and τ_λ remain undefined; candidates are the turn ratios or T1's 5 minor-polynomial bridges.
+
+---
+
+# Predictions: next steps after L ≈ 0 (2026-11-27, upstream 7c4ccbd)
+
+Known before predicting (read): `turnRatio i j = lRatioProd (χ_{i+1} χ_{j+1}) t (ϑ^{j+1})`. The character depends on i + j (geometric progression) and the twist on j, so the ratio is a function of (i + j, j), not of the content j − i.
+
+D1. Lean, at upstream 7c4ccbd, on upstream's own `TwoGridPath`: (a) `Γ.squares` is a lower set of ℕ × ℕ in the orientation of `squares_last`; (b) `Γ.diagonalIndex = #{i | (i, i) ∈ Γ.squares}`, the Durfee rank; (c) a turn adds an addable corner. (a) and (c) will be proved within ~300 lines (80%); (b) will need an orientation fix or a restatement (50%).
+T6. Up to the normalisation the proof allows (a constant and a power of N(Q), uniform over the cells), `turnRatio i j` is NOT separable as A(i)·B(j), and NOT of content type f(j − i). Confidence 80%. At the trivial twist ϑ = 1 it is Hankel (a function of i + j only) (read).
+- D1: **held, better than predicted.** (a), (b) and (c) are all proved in 195 lines, with (d) (injectivity) as a bonus. (b) needed **no** orientation fix: the 50% hedge was too cautious. The lower set holds in the plain componentwise order. File RoadmapLab certs/GridDiagram.lean, checked against upstream 7c4ccbd; axioms propext, Classical.choice, Quot.sound.
+- T6: **held** (80%). turnRatio i j = G(i+j, j+1) is none of separable, content or Hankel for any nontrivial twist (computed, free model, m ≤ 6; RH-Dual#269). The proof's normalisation is per cell, not uniform. All three properties hold trivially at ϑ = 1, where every turn ratio is 1 (proved).
+
+---
+
+# Predictions: hookNumberMinus_le and §3.1(b) surjectivity (2026-11-27, upstream 7c4ccbd)
+
+Known before predicting (read): `hookNumberMinus_le : (hookNumberMinus j : ℝ) ≤ exp (D.x ^ 999)` (New/OneLift/ComparisonOperator/GluingMaps.lean:644). Proof: hookNumber ≤ (L^L)^3 ≤ exp(3L²) ≤ exp(x^999), with L = |Φ|·t·(t·gap) and 3L² ≤ x^999 from `le_of_hasLogBound`. `hookNumber` is the Fock self-pairing of the highest-weight polynomial (Lib/GLn/SchurModule/Basic.lean:239).
+
+H1. By the hook-length / hook-content formula, the true size is log hookNumberMinus j = O(L log L), not Θ(L²). The proof's step (L^L)^3 ≤ exp(3L²) alone loses a factor ~L/log L in the exponent. Confidence 75%.
+H2. In terms of x, L is at most a small power of x times logs. So the provable bound is exp(x^{c} log x) for a small c (single digits), against the proof's exp(x^999): an exponent gap of roughly 990 in the power of x. Confidence 60% (it depends on how t and gap scale in the admissible data).
+H3. Downstream, the bound is consumed where any exp(x^C) with a fixed C suffices: the consumer absorbs it in a quantity that only needs to be exp(x^{O(1)}). So the *needed* bound is far weaker than even the proof's, and improving it changes no downstream number (L ≈ 0). The value is in understanding (U), since it says how much room there is. Confidence 65%.
+H4. RMTlib: a Lean lemma hookNumber ≤ exp(C·L·log L) from a hook-content product formula is NOT cheap. The proof only has the crude bound `hookNumber_le`, and a product formula for the Fock norm is a real development. Confidence 70%.
+S1. §3.1(b) surjectivity in Lean, every Young diagram in the m×m box is some path's squares: proved within ~300 lines by constructing the halves from the diagram (75%).
+- S1: **held** (75%). §3.1(b) is fully proved: `New.TwoGridPath.exists_squares_eq` (surjectivity) and `toDiagram_bijective` (paths ↔ Young diagrams in the m×m box), certs/GridDiagramSurj.lean, 355 lines, no sorry, standard axioms, checked against upstream 7c4ccbd.
+- H1: **half.** The form O(L log L) is right, but the true L is f·r⁸·m² (μ⁻ stops below m ≈ √x), not f·t²·gap. log hk = Θ(x^{52–53} log x) (computed; RH-Dual#270).
+- H2: **half.** The provable bound is exp(x^{53+o(1)}) (cheap, via a colsMinus vanishing lemma, or RMTlib's middle route), but "single digits" was wrong: 53, not < 10.
+- H3: **held.** The only consumer (LiftVolumeHeight.lean:445) accepts log hk up to ~A/8 ≥ x^{10¹²}; improving changes no downstream number.
+- H4: **partly wrong.** The exact identity hookNumber = H(μ) is indeed not cheap (~1000 lines, constants only), but a cheap improved bound exists (~50–100 lines, proof-side). It is not pursued, since it moves no downstream number.
