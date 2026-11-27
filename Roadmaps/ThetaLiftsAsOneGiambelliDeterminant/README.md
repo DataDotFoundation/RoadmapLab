@@ -164,6 +164,7 @@ A Giambelli reduction of the theta lifts could serve two different goals, and ev
 | T3 Toeplitz → Giambelli in Lean | L, U | positive (proved) | none until the proof has such a determinant | open |
 | T4 amplitudes, `m = 2` Plücker | U | not run (premise failed) | — | open |
 | T5 coverage, exponent | L, U | not run | — | open |
+| T6 shape of the turn ratios | L, U | negative (none of separable / content / Hankel) | L ≈ 0 | open |
 | D1 grids are Young diagrams (Lean) | U | positive (proved) | none | open |
 
 RH-Dual's earlier finding that Giambelli would shorten 0 of 11 candidate sites (*giambelli-sites*) also reads as L ≈ 0.
@@ -215,6 +216,18 @@ Upstream is pinned at `7c4ccbd`. Each result gives its label, the exact declarat
 - *Source:* [`RMT.Symmetric.Giambelli.giambelli_toeplitz`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L583): for `c : ℕ → R` with `c 0 = 1`, `det(c_{λ_i−i+j})_{i,j<n} = det(jt (symbolOf c) (hookShape (frobA λ i) (frobB λ j)))_{i,j<d(λ)}`. It rests on [`hePair_dualSymbol`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L555), [`giambelli_jt'`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L538) and [`jt_hook`](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/RMTlib/Symmetric/Giambelli.lean#L526). Documentation: [docs/giambelli.md](https://github.com/DataDotFoundation/RMTlib/blob/c2c73a6d6c95fb610f96ea31ffb15af374738057/docs/giambelli.md).
 - *Meaning:* the algebra is ready. It applies to the proof only where the proof has a Toeplitz determinant, and T1 found none.
 
+**T6. The turn ratios have no Giambelli shape.**
+- *Goal:* L, U.
+- *Label:* proved, computed and read (RH-Dual#269).
+- *Source:* [report](https://github.com/DataDotFoundation/RH-Dual/blob/8eb12cf9f71e4d524a3c8343abab1acad37a363d/bridge/links/turn-ratio-shape/README.md), [Lean](https://github.com/DataDotFoundation/RH-Dual/blob/8eb12cf9f71e4d524a3c8343abab1acad37a363d/bridge/links/turn-ratio-shape/TurnRatioShape.lean), [script](https://github.com/DataDotFoundation/RH-Dual/blob/8eb12cf9f71e4d524a3c8343abab1acad37a363d/bridge/scripts/turn_ratio_shape.py).
+- *Result:*
+  - `turnRatio i j = G(i+j, j+1)`, with `G(s, n)(ϑ) = ∏_{z≤t} ‖L^{MQ}(z, (ν_s ϑ^n)^{−1})‖ / ‖L^M(z, ν_s^{−1})‖` (proved). The character depends on the antidiagonal `i + j`, the twist on the column.
+  - The normalisation the proof allows is per cell, not uniform (read).
+  - For every nontrivial twist the ratio is **neither** separable `A(i)B(j)`, **nor** of content type `f(j − i)`, **nor** Hankel `g(i + j)` (computed, in the free model with the L-values as independent symbols, `m ≤ 6`).
+  - At the trivial twist every turn ratio is `1` (proved).
+  - The product over the cells of a diagram `λ` is `|λ|` distinct L-products over a denominator indexed by the antidiagonal profile, not a hook-content product.
+- *Meaning:* the period transfer along the grid is not a Schur-function evaluation, so Giambelli cannot act on it as stated.
+
 **D1. The grids are Young diagrams, in Lean.**
 - *Goal:* U.
 - *Label:* proved in Lean against upstream `7c4ccbd` ([`certs/GridDiagram.lean`](https://github.com/DataDotFoundation/RoadmapLab/blob/main/certs/GridDiagram.lean), 195 lines).
@@ -226,7 +239,7 @@ Upstream is pinned at `7c4ccbd`. Each result gives its label, the exact declarat
 - *Reason:* their premise, a determinant structure from T1/T2, failed. Any amplitudes `τ_λ` would have to come from elsewhere: the turn ratios, which are not Hankel (RH-Dual, `condensed-twin-audit.md`), or the 5 minor-polynomial bridges of T1.
 
 **What this shows and does not show.**
-- It shows that the chain moduli of the condensed proof, in the form the proof uses them, carry no Giambelli or Jacobi–Trudi structure: compression by this route is **L ≈ 0**.
+- It shows that neither arithmetic datum along the chain has a Giambelli shape. The chain moduli are Toeplitz but enter only as a product (R1, T1, T2), and the turn ratios are neither Toeplitz, Hankel nor separable (T6). Compression by this route is **L ≈ 0**. Separately, the grids themselves are provably Young-diagram combinatorics (D1).
 - It does not show that no determinant form of the theta lifts exists. Amplitudes built from other data (7.1) remain untested, and the effect on understanding (U) is open.
 
 ## Part III: Open tests (a roadmap for a roadmap; do not implement)

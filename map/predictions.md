@@ -110,3 +110,14 @@ T4. The m = 2 Plücker test cannot be stated with actual quantities before ampli
 - T2: **held** (70%). P_m = ∏ C_n^{m−n} is a single Schur function only at m = 2 (P_2 = s_(1)). P_3 = s_4 + 2s_31 + s_22 + s_211; P_4 has 33 terms, P_5 has 510 (computed). There is no g(a+n)/g(n) form (inferred). Not predicted: c₀ ≠ 1 in general, and the symbol is two-sided as defined (proved by RH-Dual).
 - T3: **held** (90%). `giambelli_toeplitz`, RMTlib 8057de4, about 15 lines on top of #181.
 - T4: **not run.** Its premise (a determinant structure from T1/T2) failed, and τ_λ remain undefined; candidates are the turn ratios or T1's 5 minor-polynomial bridges.
+
+---
+
+# Predictions: next steps after L ≈ 0 (2026-11-27, upstream 7c4ccbd)
+
+Known before predicting (read): `turnRatio i j = lRatioProd (χ_{i+1} χ_{j+1}) t (ϑ^{j+1})`. The character depends on i + j (geometric progression) and the twist on j, so the ratio is a function of (i + j, j), not of the content j − i.
+
+D1. Lean, at upstream 7c4ccbd, on upstream's own `TwoGridPath`: (a) `Γ.squares` is a lower set of ℕ × ℕ in the orientation of `squares_last`; (b) `Γ.diagonalIndex = #{i | (i, i) ∈ Γ.squares}`, the Durfee rank; (c) a turn adds an addable corner. (a) and (c) will be proved within ~300 lines (80%); (b) will need an orientation fix or a restatement (50%).
+T6. Up to the normalisation the proof allows (a constant and a power of N(Q), uniform over the cells), `turnRatio i j` is NOT separable as A(i)·B(j), and NOT of content type f(j − i). Confidence 80%. At the trivial twist ϑ = 1 it is Hankel (a function of i + j only) (read).
+- D1: **held, better than predicted.** (a), (b) and (c) are all proved in 195 lines, with (d) (injectivity) as a bonus. (b) needed **no** orientation fix: the 50% hedge was too cautious. The lower set holds in the plain componentwise order. File RoadmapLab certs/GridDiagram.lean, checked against upstream 7c4ccbd; axioms propext, Classical.choice, Quot.sound.
+- T6: **held** (80%). turnRatio i j = G(i+j, j+1) is none of separable, content or Hankel for any nontrivial twist (computed, free model, m ≤ 6; RH-Dual#269). The proof's normalisation is per cell, not uniform. All three properties hold trivially at ϑ = 1, where every turn ratio is 1 (proved).
